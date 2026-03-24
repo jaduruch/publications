@@ -1,0 +1,1210 @@
+<!DOCTYPE html> 
+<html lang='de' xml:lang='de'> 
+<head><title></title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='main.css' rel='stylesheet' type='text/css' /> 
+<meta content='main.tex' name='src' /> 
+</head><body>
+<!-- l. 1 --><p class='noindent'>
+                                                                                       
+                                                                                       
+</p>
+<div class='center'>
+<!-- l. 2 --><p class='noindent'>
+</p><!-- l. 8 --><p class='noindent'><span class='rm-lmcsc-10x-x-120'>Berufsmaturitätsschule Winterthur</span><br />
+<span class='rm-lmcsc-10x-x-109'>Ausrichtung TALS</span><br /><br />
+</p>
+<div class='centerline'>_______________________________________________________________________________________</div>
+<span class='rm-lmcsc-10x-x-144'>BEDROHEN QUANTENCOMPUTER UNSERE DATEN?</span>
+<div class='centerline'>_______________________________________________________________________________________</div>
+<!-- l. 18 --><p class='noindent'><span class='rm-lmcsc-10x-x-144'>Hatt Darius, Ruch Jana</span><br /><br />
+<span class='rm-lmr-12'>Betreuung:</span><br />
+<span class='rm-lmr-12'>Dr. Jose Osuna</span><br />
+<span class='rm-lmr-12'>Abgabe:</span><br />
+<span class='rm-lmr-12'>30. Januar 2026</span><br />
+_______________________________________________________________________
+<span class='rm-lmcsc-10x-x-120'>Berufsmaturitätsarbeit 2025/2026</span><br />
+<span class='rm-lmr-12'>Klasse 6ZVT25c</span>
+</p>
+</div>
+<!-- l. 36 --><p class='indent'>                                                                                   <img alt='PIC' height='256' src='images/title_bloch_sphere.png' width='256' />
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+</p>
+   <h2 class='likechapterHead' id='abstract'><a id='x1-1000'></a>Abstract</h2>
+<!-- l. 6 --><p class='noindent'>This thesis examines how seriously quantum computers threaten the security of today’s encryption and
+to what extent data would be endangered if a market-ready quantum computer were available
+tomorrow. This thesis introduces the physical principles of quantum computing, including qubits,
+superposition, entanglement, and quantum gates, and contrasts their computational potential with
+that of classical computers. The current state of development and realistic timelines for fault-tolerant
+devices with thousands of logical qubits are outlined. Building on this foundation, modern
+cryptographic methods are explained, focusing on the role of symmetric and asymmetric schemes and
+the dependence of RSA on the hardness of integer factorization. Using brute-force attacks
+and Shor’s algorithm as central examples, it is shown how a sufficiently powerful quantum
+computer could break widely used public-key systems in polynomial time. The resulting
+risks for long-term confidentiality under “harvest now, decrypt later”-attacks are assessed
+for governments, companies, and private individuals. An expert interview in the field of
+cryptography serves to validate and complement the theoretical findings. Finally, the societal and
+economic impacts are discussed and the future outlook through post-quantum cryptography is
+evaluated. The thesis concludes that although the day of market-ready quantum computers has
+not yet arrived, immediate migration strategies are essential to ensure future-proof data
+security.
+                                                                                       
+                                                                                       
+</p>
+   <h2 class='likechapterHead' id='kurzfassung'><a id='x1-2000'></a>Kurzfassung</h2>
+<!-- l. 16 --><p class='noindent'>Diese Berufsmaturitätsarbeit untersucht, wie ernsthaft Quantencomputer die Sicherheit der
+heutigen Verschlüsselung bedrohen und inwieweit Daten gefährdet wären, wenn morgen
+ein marktreifer Quantencomputer verfügbar wäre. Diese Arbeit stellt die physikalischen
+Prinzipien des Quantencomputings vor, darunter Qubits, Superposition, Verschränkung
+und Quantengatter, und vergleicht deren Rechenpotenzial mit dem klassischer Computer.
+Der aktuelle Entwicklungsstand und realistische Zeitpläne für fehlertolerante Geräte mit
+tausenden von logischen Qubits werden skizziert. Auf dieser Grundlage werden moderne
+kryptografische Methoden erläutert, wobei der Schwerpunkt auf der Rolle symmetrischer
+und asymmetrischer Verfahren und der Abhängigkeit von RSA von der Schwierigkeit der
+Faktorisierung ganzer Zahlen liegt. Anhand von Brute-Force-Angriffen und Shors Algorithmus als
+zentrale Beispiele wird gezeigt, wie ein ausreichend leistungsfähiger Quantencomputer weit
+verbreitete Public-Key-Systeme in polynomieller Zeit entschlüsseln könnte. Die daraus
+resultierenden Risiken für die langfristige Vertraulichkeit bei „Harvest now, decrypt later”-Angriffen
+werden für Regierungen, Unternehmen und Privatpersonen bewertet. Zur Validierung und
+Ergänzung der theoretischen Erkenntnisse dient ein Experteninterview im Bereich Kryptografie.
+Abschliessend werden die gesellschaftlichen und wirtschaftlichen Auswirkungen diskutiert und die
+Zukunftsaussicht durch Post-Quanten-Kryptografie bewertet. Die Arbeit kommt zu dem
+Schluss, dass der Tag der marktreifen Quantencomputer zwar noch nicht gekommen ist, aber
+sofortige Migrationsstrategien unerlässlich sind, um eine zukunftssichere Datensicherheit zu
+gewährleisten.
+                                                                                       
+                                                                                       
+</p>
+   <h2 class='likechapterHead' id='vorwort'><a id='x1-3000'></a>Vorwort</h2>
+<!-- l. 6 --><p class='noindent'>Diese Arbeit entstand im Rahmen der Berufsmaturitätsarbeit an der Berufsmaturitätsschule
+Winterthur. <br class='newline' />Die Forschung hat im Bereich Quantencomputer in den letzten Jahren enorme Fortschritte gemacht.
+Sie gelten daher als Technologie der Zukunft. 2025 wurden Quantenphysiker mit dem Nobelpreis im
+Bereich Physik ausgezeichnet. Die verfassenden Personen dieser Arbeit haben einen technischen Beruf
+erlernt und bringen bereits Vorwissen in Elektrotechnik mit. Mit dieser Arbeit können
+persönliche Interessen optimal mit einem aktuellen technologischen Thema verbunden werden.
+<br class='newline' />Wir bedanken uns bei unserer Betreuungsperson Dr. José Osuna für die grosse Unterstützung. Ein
+Dank gilt auch Dipl.-Ing. Christian Weber (WEEI) MBA, IT-Sicherheitsexperten und Dozent an der
+ZHAW, für das Interview und die wertvollen Inputs.
+                                                                                       
+                                                                                       
+</p>
+   <h2 class='likechapterHead' id='inhaltsverzeichnis'><a id='x1-4000'></a>Inhaltsverzeichnis</h2>
+   <div class='tableofcontents'>
+   <span class='chapterToc'> <a href='#einleitung1'>1. Einleitung</a></span>
+<br />   <span class='chapterToc'> <a href='#grundlagen-quantencomputer1'>2. Grundlagen Quantencomputer</a></span>
+<br />   <span class='sectionToc'>2.1 <a href='#wichtige-prinzipien-der-quantenphysik' id='QQ2-1-9'>Wichtige Prinzipien der Quantenphysik</a></span>
+<br />   <span class='subsectionToc'>2.1.1 <a href='#superposition' id='QQ2-1-10'>Superposition</a></span>
+<br />   <span class='subsectionToc'>2.1.2 <a href='#verschrankung' id='QQ2-1-14'>Verschränkung</a></span>
+<br />   <span class='sectionToc'>2.2 <a href='#quantengatter' id='QQ2-1-15'>Quantengatter</a></span>
+<br />   <span class='sectionToc'>2.3 <a href='#rechengeschwindigkeit' id='QQ2-1-19'>Rechengeschwindigkeit</a></span>
+<br />   <span class='sectionToc'>2.4 <a href='#aktueller-stand-der-entwicklung' id='QQ2-1-22'>Aktueller Stand der Entwicklung</a></span>
+<br />   <span class='subsectionToc'>2.4.1 <a href='#herausforderungen' id='QQ2-1-23'>Herausforderungen</a></span>
+<br />   <span class='subsectionToc'>2.4.2 <a href='#dauer-bis-marktreife' id='QQ2-1-25'>Dauer bis Marktreife</a></span>
+<br />   <span class='chapterToc'> <a href='#datenverschlusselung1'>3. Datenverschlüsselung</a></span>
+<br />   <span class='sectionToc'>3.1 <a href='#funktionsweise-moderner-verschlusselung' id='QQ2-1-28'>Funktionsweise moderner Verschlüsselung</a></span>
+<br />   <span class='subsectionToc'>3.1.1 <a href='#symmetrische-verschlusselung' id='QQ2-1-29'>Symmetrische Verschlüsselung</a></span>
+<br />   <span class='subsectionToc'>3.1.2 <a href='#asymmetrische-verschlusselung' id='QQ2-1-31'>Asymmetrische Verschlüsselung</a></span>
+<br />   <span class='subsectionToc'>3.1.3 <a href='#rsaverschlusselungsverfahren' id='QQ2-1-33'>RSA-Verschlüsselungsverfahren</a></span>
+<br />   <span class='sectionToc'>3.2 <a href='#methoden-der-entschlusselung' id='QQ2-1-34'>Methoden der Entschlüsselung</a></span>
+<br />   <span class='subsectionToc'>3.2.1 <a href='#bruteforce-angriff' id='QQ2-1-35'>Brute-Force Angriff</a></span>
+<br />   <span class='subsectionToc'>3.2.2 <a href='#shoralgorithmus' id='QQ2-1-37'>Shor-Algorithmus</a></span>
+<br />   <span class='sectionToc'>3.3 <a href='#beurteilung-der-aktuellen-sicherheit' id='QQ2-1-40'>Beurteilung der aktuellen Sicherheit</a></span>
+<br />   <span class='subsectionToc'>3.3.1 <a href='#grenzen-der-sicherheit' id='QQ2-1-42'>Grenzen der Sicherheit</a></span>
+<br />   <span class='subsectionToc'>3.3.2 <a href='#harvest-now-decrypt-later' id='QQ2-1-43'>Harvest now, decrypt later</a></span>
+<br />   <span class='subsectionToc'>3.3.3 <a href='#gesamtbewertung' id='QQ2-1-44'>Gesamtbewertung</a></span>
+<br />   <span class='sectionToc'>3.4 <a href='#zukunftsaussichten' id='QQ2-1-45'>Zukunftsaussichten</a></span>
+<br />   <span class='chapterToc'> <a href='#fazit-ausblick'>4. Fazit &amp; Ausblick</a></span>
+<br />   <span class='sectionToc'>4.1 <a href='#zusammenfassung' id='QQ2-1-48'>Zusammenfassung</a></span>
+<br />   <span class='sectionToc'>4.2 <a href='#beantwortung-der-fragestellung' id='QQ2-1-49'>Beantwortung der Fragestellung</a></span>
+<br />   <span class='sectionToc'>4.3 <a href='#kritische-reflexion' id='QQ2-1-50'>Kritische Reflexion</a></span>
+<br />   <span class='chapterToc'> <a href='#anhang1'>5. Anhang</a></span>
+<br />   <span class='sectionToc'>5.1 <a href='#glossar' id='QQ2-1-53'>Glossar</a></span>
+<br />   <span class='sectionToc'>5.2 <a href='#abkurzungsverzeichnis' id='QQ2-1-56'>Abkürzungsverzeichnis</a></span>
+<br />   <span class='sectionToc'>5.3 <a href='#abbildungsverzeichnis' id='QQ2-1-57'>Abbildungsverzeichnis</a></span>
+<br />   <span class='sectionToc'>5.4 <a href='#tabellenverzeichnis' id='QQ2-1-58'>Tabellenverzeichnis</a></span>
+<br />   <span class='sectionToc'>5.5 <a href='#literaturverzeichnis' id='QQ2-1-59'>Literaturverzeichnis</a></span>
+<br />   <span class='subsectionToc'>5.5.1 <a href='#mundliche-quellen' id='QQ2-1-60'>Mündliche Quellen</a></span>
+                                                                                       
+                                                                                       
+   </div>
+                                                                                       
+                                                                                       
+<p><a id='x1-4001r1'></a>
+                                                                                       
+                                                                                       
+   </p><h2 class='likechapterHead' id='einleitung'><a id='x1-5000'></a>1. Einleitung</h2>
+<p id='einleitung1'><a id='Q1-1-6'></a>
+<!-- l. 9 --></p><p class='noindent'>Die rasante Entwicklung der Quantencomputertechnologie stellt die Informationssicherheit vor
+grundlegende Herausforderungen. Während klassische Computer an physikalische Grenzen stossen,
+versprechen Quantencomputer durch die Nutzung quantenmechanischer Phänomene wie Superposition
+und Verschränkung für bestimmte mathematische Probleme eine signifikant gesteigerte
+Rechenleistung. Diese technologische Revolution birgt jedoch ein erhebliches Risiko für die
+Sicherheit heutiger Verschlüsselungsverfahren, die auf mathematischen Problemen basieren.
+Besonders betroffen sind asymmetrische Verschlüsselungsverfahren wie RSA, sie könnten
+durch ausreichend leistungsfähige Quantencomputer vollständig entschlüsselt werden [<a id='x1-5001'></a><a id='page.2'></a><a href='main.html#X0-ct2025verschluesselung'>1</a>].
+<br class='newline' />Die vorliegende Berufsmaturitätsarbeit untersucht die konkrete Bedrohungslage, die von
+Quantencomputern für aktuelle Verschlüsselungsstandards ausgeht. Im Zentrum steht die Fragestellung:
+<span class='rm-lmri-10x-x-109'>Welche Bedrohung stellen Quantencomputer für die Sicherheit aktueller Verschlüsselungsverfahren dar,
+und inwiefern wären dadurch Daten gefährdet, wenn morgen ein Quantencomputer marktreif wäre?</span>
+<br class='newline' />Zur Beantwortung dieser Frage werden zunächst die physikalischen Grundlagen der
+Quantencomputertechnologie erläutert, um die Funktionsweise von Qubits und deren Überlegenheit
+gegenüber klassischen Bits zu verstehen. Anschliessend erfolgt eine detaillierte Analyse moderner
+Verschlüsselungsverfahren, wobei der Fokus auf der RSA-Verschlüsselung und deren Verwundbarkeit
+gegenüber quantenbasierten Angriffsalgorithmen wie dem Shor-Algorithmus liegt. Als messbare
+Kriterien dienen die erforderliche Anzahl logischer Quantenbits (Qubits) zur Entschlüsselung gängiger
+Schlüssellängen sowie die Zeitspanne bis zur voraussichtlichen Marktreife derartiger Systeme.
+<br class='newline' />Methodisch stützt sich diese Arbeit auf Fachliteratur und Experteninterviews. Ergänzend wurde ein
+qualitatives Interview mit Dipl.-Ing. Christian Weber MBA, einem IT-Sicherheitsexperten an der
+ZHAW, geführt. Diese Primärquelle ermöglicht eine praxisnahe Einschätzung der aktuellen Risiken.
+<br class='newline' />Die wissenschaftliche Literatur zeigt, dass das Thema in der Fachwelt intensiv diskutiert wird,
+insbesondere die Bedrohung für bestehende Verschlüsselungsverfahren. Die Aktualität der Bedrohung
+wird durch die konkreten Roadmaps führender Unternehmen wie IBM unterstrichen, die die
+Entwicklung von Quantencomputern mit über 2000 logischen Qubits für die 2030er Jahre
+prognostizieren [<a href='main.html#X0-ct2025verschluesselung'>1</a>].
+<a id='x1-5002r2'></a>
+                                                                                       
+                                                                                       
+</p>
+   <h2 class='likechapterHead' id='grundlagen-quantencomputer'><a id='x1-6000'></a>2. Grundlagen Quantencomputer</h2>
+<p id='grundlagen-quantencomputer1'><a id='Q1-1-8'></a>
+<!-- l. 8 --></p><p class='noindent'>Nachfolgend werden die physikalischen Grundlagen der Quantencomputertechnologie erläutert, wie
+Superposition, Verschränkung und Quantengatter. Zusätzlich werden die Unterschiede zu
+klassischen Computern aufgezeigt und der aktuelle Stand der Entwicklung beschrieben.
+<br class='newline' />Klassische Computer speichern und verarbeiten Informationen mit Bits. Diese werden mithilfe von
+Transistoren realisiert und können entweder den Wert 0 oder 1 annehmen. Gemäss dem Gesetz von
+Moore verdoppelt sich die Anzahl der Transistoren auf einem Chip alle 18 bis 24 Monate, was zu einer
+stetigen Steigerung der Rechenleistung klassischer Computer führt [<a id='x1-6001'></a><a id='page.3'></a><a href='main.html#X0-mooreslaw'>2</a>]. Die Rechenleistung
+wird gesteigert, weil die Transistoren kleiner werden. Diese sind mittlerweile nur noch drei
+Nanometer gross [<a id='x1-6002'></a><a href='main.html#X0-tsmc2022'>3</a>]. Da Transistoren nicht kleiner als einzelne Atome werden können, ist
+eine Miniaturisierung nach klassischem Prinzip irgendwann nicht mehr möglich [<a href='main.html#X0-mooreslaw'>2</a>]. Bei
+dieser atomaren Grössenordnung dominiert nicht mehr die klassische Physik, sondern die
+Quantenmechanik und ihre kontraintuitiven Phänomene werden zu dominanten Effekten [<a id='x1-6003'></a><a href='main.html#X0-bashiri2025quantencomputing'>4</a>].
+<br class='newline' />Quantencomputer stellen einen grundlegend neuen Ansatz dar, indem sie die Prinzipien der
+Quantenmechanik nutzen. Sie arbeiten mit sogenannten Qubits (Quantenbits). Diese basieren auf der
+mikroskopischen Skala, wo quantenmechanische Phänomene herrschen, und nicht auf der
+makroskopischen Skala der klassischen Physik. Der entscheidende Unterschied liegt in der Natur der
+Qubits. Während klassische Bits zu jedem Zeitpunkt entweder den Zustand 0 oder 1 haben, können
+sich Qubits dank der Superposition (siehe Kapitel <a href='#wichtige-prinzipien-der-quantenphysik'>2.1<!-- tex4ht:ref: sec:superposition  --></a>) gleichzeitig in einer Überlagerung mehrerer
+Zustände befinden. Dies ermöglicht es Quantencomputern, Informationen auf völlig neue Art
+zu verarbeiten, und eröffnet das Potenzial, bestimmte Probleme exponentiell schneller zu
+lösen als klassische Computer. Diese exponentielle Zunahme der Rechengeschwindigkeit hat
+weitreichende Konsequenzen, insbesondere für die Kryptographie, da zahlreiche heute verwendete
+Verschlüsselungsverfahren durch die Rechenkapazität von Quantencomputern potenziell gefährdet sind
+[<a href='main.html#X0-bashiri2025quantencomputing'>4</a>].
+                                                                                       
+                                                                                       
+</p>
+   <h3 class='sectionHead' id='wichtige-prinzipien-der-quantenphysik'><span class='titlemark'>2.1   </span> <a id='x1-70002.1'></a>Wichtige Prinzipien der Quantenphysik</h3>
+<!-- l. 35 --><p class='noindent'>In der Quantenphysik gibt es zwei grundlegende Prinzipien, die sie von der klassischen Physik
+unterscheiden und die das Verhalten von Qubits bestimmen: Superposition und Verschränkung.
+</p>
+   <h4 class='subsectionHead' id='superposition'><span class='titlemark'>2.1.1   </span> <a id='x1-80002.1.1'></a>Superposition</h4>
+<!-- l. 38 --><p class='noindent'>Ein Qubit kann sich in einer Überlagerung mehrerer Zustände befinden, der sogenannten
+Superposition. Das Qubit befindet sich dabei im Zustand <a href='#bra-ket-def'>Ket</a>-Psi, dargestellt als <span class='lmsy-10x-x-109'>|</span><span class='lmmi-10x-x-109'>ψ</span><span class='lmsy-10x-x-109'>⟩</span>. Dieser Zustand
+wird ausgedrückt durch:
+</p>
+   <table class='equation-star'><tr><td>
+   <div class='math-display'>
+<img alt='|ψ⟩ = α|0⟩+ β |1⟩
+' class='math-display' src='main0x.png' /></div>
+   </td></tr></table>
+<!-- l. 43 --><p class='nopar'>Dabei gilt: <span class='lmsy-10x-x-109'>|</span><span class='lmmi-10x-x-109'>α</span><span class='lmsy-10x-x-109'>|</span><sup><span class='rm-lmr-8'>2</span></sup> + <span class='lmsy-10x-x-109'>|</span><span class='lmmi-10x-x-109'>β</span><span class='lmsy-10x-x-109'>|</span><sup><span class='rm-lmr-8'>2</span></sup> = 1, damit die Gesamtwahrscheinlichkeit der beiden Zustände 100 % beträgt,
+wobei <span class='lmmi-10x-x-109'>α,β </span><span class='lmsy-10x-x-109'>∈</span><span class='msbm-10x-x-109'>ℂ</span>. Da <span class='lmmi-10x-x-109'>α </span>und <span class='lmmi-10x-x-109'>β </span><a href='#komplexe-zahlen-def'>komplexe Zahlen</a> sind, können sie auch als Summe von Real- und
+Imaginärteil dargestellt werden:
+</p>
+   <table class='equation-star'><tr><td>
+   <div class='math-display'>
+<img alt='|ψ⟩ = (Re(α )+ Im (α)i)|0⟩+ (Re (β)+ Im (β)i)|1⟩
+' class='math-display' src='main1x.png' /></div>
+   </td></tr></table>
+<!-- l. 49 --><p class='nopar'>Dies kann auch in der polaren Schreibweise dargestellt werden:
+</p>
+   <table class='equation-star'><tr><td>
+                                                                                       
+                                                                                       
+   <div class='math-display'>
+<img alt='           i∗φα          i∗φβ
+|ψ⟩ = rα ∗ e  |0⟩+ rβ ∗e    |1⟩
+' class='math-display' src='main2x.png' /></div>
+   </td></tr></table>
+<!-- l. 53 --><p class='nopar'><span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>α</span></sub> und <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>β</span></sub> sind die Beträge der <a href='#komplexe-zahlen-def'>komplexe Zahlen</a> <span class='lmmi-10x-x-109'>α </span>und <span class='lmmi-10x-x-109'>β</span>, während <span class='lmmi-10x-x-109'>φ</span><sub><span class='lmmi-8'>α</span></sub> und <span class='lmmi-10x-x-109'>φ</span><sub><span class='lmmi-8'>β</span></sub> deren Phasenwinkel
+repräsentieren. <br class='newline' />Da für die Quantenmechanik nur die relative Phase zwischen den Zuständen relevant ist, wird die
+Phase <span class='lmmi-10x-x-109'>φ</span><sub><span class='lmmi-8'>α</span></sub> auf 0<span class='ts1-lmr10-x-x-109'>° </span>gesetzt und <span class='lmmi-10x-x-109'>φ</span><sub><span class='lmmi-8'>β</span></sub> = <span class='lmmi-10x-x-109'>φ</span><sub><span class='lmmi-8'>β</span></sub> <span class='lmsy-10x-x-109'>− </span><span class='lmmi-10x-x-109'>φ</span><sub><span class='lmmi-8'>α</span></sub>. Die folgenden Abbildungen in Tabelle <a href='#uberblick-amplituden-und-phasenanteile-eines-qubits'>1<!-- tex4ht:ref: tab:bilder_ueberblick  --></a> zeigen den
+Unterschied zwischen Amplituden- und Phasenanteilen eines Qubits. </p><div class='table'>
+                                                                                       
+                                                                                       
+<!-- l. 59 --><p class='indent'>   </p><figure class='float' id='x1-8001r1'><span id='uberblick-amplituden-und-phasenanteile-eines-qubits'></span>
+                                                                                       
+                                                                                       
+
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Tabelle 1: </span></span><span class='content'><span class='rm-lmr-10'>Überblick Amplituden- und Phasenanteile eines Qubits</span>                                </span></figcaption><!-- tex4ht:label?: x1-8001r1  -->
+<div class='tabular'> <table class='tabular' id='TBL-1'><colgroup id='TBL-1-1g'><col id='TBL-1-1' /></colgroup><colgroup id='TBL-1-2g'><col id='TBL-1-2' /></colgroup><tr class='hline'><td></td><td></td></tr><tr id='TBL-1-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-1-1-1' style='white-space:nowrap; text-align:center;'><div class='minipage'><img alt='PIC' height='63' src='images/phase_alpha_1.png' width='63' /><br />
+<span class='lmsy9-'>|</span><span class='lmmi-9'>α</span><span class='lmsy9-'>|</span><sup><span class='rm-lmr-6'>2</span></sup> <span class='rm-lmr-9'>= 0</span><span class='lmmi-9'>.</span><span class='rm-lmr-9'>7 </span><span class='lmsy9-'>→ </span><span class='rm-lmr-9'>70 % Wahrscheinlichkeit
+für Zustand 0</span><br />
+<span class='rm-lmr-9'>Phase </span><span class='lmmi-9'>φ</span><sub><span class='lmmi-6'>α</span></sub> <span class='rm-lmr-9'>= 45</span><sup><span class='lmsy6-'>∘</span></sup><br />                      </div></td><td class='td11' id='TBL-1-1-2' style='white-space:nowrap; text-align:center;'><div class='minipage'><img alt='PIC' height='63' src='images/phase_beta_1.png' width='63' /><br />
+<span class='lmsy9-'>|</span><span class='lmmi-9'>β</span><span class='lmsy9-'>|</span><sup><span class='rm-lmr-6'>2</span></sup> <span class='rm-lmr-9'>= 0</span><span class='lmmi-9'>.</span><span class='rm-lmr-9'>3 </span><span class='lmsy9-'>→ </span><span class='rm-lmr-9'>30 % Wahrscheinlichkeit
+für Zustand 1</span><br />
+<span class='rm-lmr-9'>Phase </span><span class='lmmi-9'>φ</span><sub><span class='lmmi-6'>β</span></sub> <span class='rm-lmr-9'>= 135</span><sup><span class='lmsy6-'>∘</span></sup><br />                     </div></td>
+</tr><tr class='hline'><td></td><td></td></tr><tr id='TBL-1-2-' style='vertical-align:baseline;'><td class='td11' id='TBL-1-2-1' style='white-space:nowrap; text-align:center;'><div class='minipage'><img alt='PIC' height='63' src='images/phase_alpha_2.png' width='63' /><br />
+<span class='lmsy9-'>|</span><span class='lmmi-9'>α</span><span class='lmsy9-'>|</span><sup><span class='rm-lmr-6'>2</span></sup> <span class='rm-lmr-9'>= 0</span><span class='lmmi-9'>.</span><span class='rm-lmr-9'>7 </span><span class='lmsy9-'>→ </span><span class='rm-lmr-9'>70 % Wahrscheinlichkeit
+für Zustand 0</span><br />
+<span class='rm-lmr-9'>Phase </span><span class='lmmi-9'>φ</span><sub><span class='lmmi-6'>α</span></sub> <span class='rm-lmr-9'>= 0</span><sup><span class='lmsy6-'>∘</span></sup><br />                       </div></td><td class='td11' id='TBL-1-2-2' style='white-space:nowrap; text-align:center;'><div class='minipage'><img alt='PIC' height='63' src='images/phase_beta_2.png' width='63' /><br />
+<span class='lmsy9-'>|</span><span class='lmmi-9'>β</span><span class='lmsy9-'>|</span><sup><span class='rm-lmr-6'>2</span></sup> <span class='rm-lmr-9'>= 0</span><span class='lmmi-9'>.</span><span class='rm-lmr-9'>3 </span><span class='lmsy9-'>→ </span><span class='rm-lmr-9'>30 % Wahrscheinlichkeit
+für Zustand 1</span><br />
+<span class='rm-lmr-9'>Phase </span><span class='lmmi-9'>φ</span><sub><span class='lmmi-6'>β</span></sub> <span class='rm-lmr-9'>= 135</span><sup><span class='lmsy6-'>∘</span></sup><span class='lmsy9-'>−</span><span class='rm-lmr-9'>45</span><sup><span class='lmsy6-'>∘</span></sup> <span class='rm-lmr-9'>= 90</span><sup><span class='lmsy6-'>∘</span></sup><br />         </div></td>
+</tr><tr class='hline'><td></td><td></td></tr></table>                                                      </div>
+                                                                                       
+                                                                                       
+   </figure>
+   </div>
+
+<!-- l. 116 --><p class='indent'>   Um nur die relative Phase zu berücksichtigen, werden beide Seiten der Gleichung mit dem Faktor
+<span class='lmmi-10x-x-109'>e</span><sup><span class='lmsy8-'>−</span><span class='lmmi-8'>i</span><span class='lmsy8-'>∗</span><span class='lmmi-8'>φ</span><sub><span class='lmmi-6'>α</span></sub></sup> multipliziert:
+</p>
+   <table class='equation-star'><tr><td>
+   <div class='math-display'>
+<img alt='                  i∗(φ −φ )
+|ψ⟩ ≡ rα|0⟩ + rβ ∗ e  β  α |1⟩
+' class='math-display' src='main3x.png' /></div>
+   </td></tr></table>
+<!-- l. 119 --><p class='nopar'><br class='newline' /><span class='lmmi-10x-x-109'>φ </span>wird definiert als <span class='lmmi-10x-x-109'>φ</span><sub><span class='lmmi-8'>β</span></sub> <span class='lmsy-10x-x-109'>− </span><span class='lmmi-10x-x-109'>φ</span><sub><span class='lmmi-8'>α</span></sub><br class='newline' /><span class='lmmi-10x-x-109'>φ </span><span class='lmsy-10x-x-109'>∈</span><span class='msbm-10x-x-109'>ℝ</span>[0<span class='lmmi-10x-x-109'>,</span>2<span class='lmmi-10x-x-109'>π</span>]<br class='newline' />Somit ergibt sich die vereinfachte Darstellung [<a id='x1-8002'></a><a id='page.8'></a><a href='main.html#X0-youtube2024quantencomputing'>5</a>]:
+</p>
+   <table class='equation-star'><tr><td>
+   <div class='math-display'>
+<img alt='|ψ⟩ = rα|0⟩+ rβ ∗ ei∗(φ)|1⟩
+' class='math-display' src='main4x.png' /></div>
+   </td></tr></table>
+<!-- l. 126 --><p class='nopar'>Da <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>α</span></sub> und <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>β</span></sub> die Beträge der <a href='#komplexe-zahlen-def'>komplexe Zahlen</a> <span class='lmmi-10x-x-109'>α </span>und <span class='lmmi-10x-x-109'>β </span>sind, gilt weiterhin: <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>α</span></sub><sup><span class='rm-lmr-8'>2</span></sup> + <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>β</span></sub><sup><span class='rm-lmr-8'>2</span></sup> = 1. Dadurch
+lassen sich <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>α</span></sub> und <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>β</span></sub> als Längen in einem Einheitskreis darstellen (siehe Abbildung <a href='#trigonometrische-visualisierung-von-r-und-r-'>1<!-- tex4ht:ref: fig:einheitskreis_trigonometrie  --></a>) [<a id='x1-8003'></a><a href='main.html#X0-youtube2020blochkugel'>6</a>].
+</p><figure class='figure'> 
+
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+<!-- l. 131 --><p class='noindent' id='trigonometrische-visualisierung-von-r-und-r-'><img alt='PIC' height='113' src='images/trigonometric_visualization_alpha_beta.png' width='113' /> <a id='x1-8004r1'></a>
+</p>
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 1: </span></span><span class='content'><span class='rm-lmr-10'>Trigonometrische Visualisierung von </span><span class='lmmi-10'>r</span><sub><span class='lmmi-7'>α</span></sub> <span class='rm-lmr-10'>und </span><span class='lmmi-10'>r</span><sub><span class='lmmi-7'>β</span></sub>                                    </span></figcaption><!-- tex4ht:label?: x1-8004r1  -->
+                                                                                       
+                                                                                       
+   </figure>
+<!-- l. 137 --><p class='indent'>   <span class='lmmi-10x-x-109'>𝜃 </span><span class='lmsy-10x-x-109'>∈</span><span class='msbm-10x-x-109'>ℝ</span><img align='middle' alt='[0,π ]' class='left' src='main5x.png' /> ist der Winkel im Einheitskreis, welcher sich aus dem Verhältnis von <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>α</span></sub> und <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>β</span></sub> ergibt.
+Somit gilt: <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>α</span></sub> = <span class='lmmi-10x-x-109'>cos</span>(<img align='middle' alt='𝜃
+2' class='frac' src='main6x.png' />) und <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>β</span></sub> = <span class='lmmi-10x-x-109'>sin</span>(<img align='middle' alt='𝜃
+2' class='frac' src='main7x.png' />)<br class='newline' /><br class='newline' />Mit Hilfe der Trigonometrie lässt sich dies auch wie folgt darstellen:<br class='newline' />
+</p>
+   <table class='equation-star'><tr><td>
+   <div class='math-display'>
+<img alt='|ψ ⟩ = cos(𝜃-)|0⟩+  sin(𝜃-)∗ ei∗φ|1⟩
+         2          2
+' class='math-display' src='main8x.png' /></div>
+   </td></tr></table>
+<!-- l. 143 --><p class='nopar'>Wobei <span class='lmmi-10x-x-109'>𝜃 </span>der Winkel zwischen dem Zustand <span class='lmsy-10x-x-109'>|</span>0<span class='lmsy-10x-x-109'>⟩ </span>und dem Zustand <span class='lmsy-10x-x-109'>|</span><span class='lmmi-10x-x-109'>ψ</span><span class='lmsy-10x-x-109'>⟩ </span>ist. Dies lässt sich, wie unten
+skizziert auch auf der Bloch-Kugel visualisieren [<a id='x1-8005'></a><a id='page.11'></a><a href='main.html#X0-youtube2024quantencomputing'>5</a>]. </p><figure class='figure'> 
+
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+<!-- l. 148 --><p class='noindent' id='blochkugel-wikiblochsphere'><img alt='PIC' height='159' src='images/bloch_sphere.png' width='159' /> <a id='x1-8006r2'></a>
+</p>
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 2: </span></span><span class='content'><span class='rm-lmr-10'>Bloch-Kugel [</span><a href='main.html#X0-wiki2024blochsphere'><span class='rm-lmr-10'>7</span></a><span class='rm-lmr-10'>]</span>                                                              </span></figcaption><!-- tex4ht:label?: x1-8006r2  -->
+                                                                                       
+                                                                                       
+   </figure>
+<!-- l. 153 --><p class='indent'>
+                                                                                       
+                                                                                       
+</p>
+   <h4 class='subsectionHead' id='verschrankung'><span class='titlemark'>2.1.2   </span> <a id='x1-90002.1.2'></a>Verschränkung</h4>
+<!-- l. 155 --><p class='noindent'>Ein weiteres Prinzip der Quantenphysik ist die Verschränkung. Sind zwei Qubits verschränkt, ist der
+Zustand des einen Qubits untrennbar mit dem Zustand des anderen verbunden. Durch die Messung
+eines Qubits entscheidet sich dieses für einen eindeutigen binären Zustand (0 oder 1) und die
+Superposition kollabiert. Die Wahrscheinlichkeit für den Zustand 0 beträgt <span class='lmsy-10x-x-109'>|</span><span class='lmmi-10x-x-109'>α</span><span class='lmsy-10x-x-109'>|</span><sup><span class='rm-lmr-8'>2</span></sup> und für den Zustand 1
+beträgt sie <span class='lmsy-10x-x-109'>|</span><span class='lmmi-10x-x-109'>β</span><span class='lmsy-10x-x-109'>|</span><sup><span class='rm-lmr-8'>2</span></sup>. Das andere Qubit nimmt sofort den korrespondierenden Zustand an, unabhängig von
+der Entfernung zwischen den beiden Qubits. Warum dies so ist, ist bis heute nicht vollständig geklärt
+[<a id='x1-9001'></a><a id='page.15'></a><a href='main.html#X0-bashiri2025quantencomputing'>4</a>].
+</p><!-- l. 162 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead' id='quantengatter'><span class='titlemark'>2.2   </span> <a id='x1-100002.2'></a>Quantengatter</h3>
+<!-- l. 163 --><p class='noindent'>Quantencomputer können im Gegensatz zu klassischen Computern keine Variablen deklarieren und
+Funktionen oder Schleifen erstellen. Stattdessen werden die Qubits durch Quantengatter manipuliert
+analog zu logischen Gattern in klassischen Computern [<a id='x1-10001'></a><a href='main.html#X0-ct2020quantengatter'>8</a>]. Wie bei <a href='#fpga-def'>Field-Programmable Gate
+Array-Schaltungen</a> (FPGA-Schaltungen) werden die Qubits durch eine Abfolge von Quantengattern
+geführt, um Berechnungen durchzuführen. Bei klassischen Computern sind nicht alle Gatter
+invertierbar, d.h., bei einem <a href='#xor-gate-def'>XOR-Gatter</a> lässt sich anhand des Ausgangs nicht bestimmen, welche Bits
+am Eingang anliegen. Bei Quantencomputern hingegen sind alle Quantengatter invertierbar [<a id='x1-10002'></a><a href='main.html#X0-ct2022quantencomputer'>9</a>].
+<br class='newline' />Nachfolgend sind die wichtigsten Quantengatter aufgeführt: </p>
+     <ul class='itemize1'>
+     <li class='itemize'>
+     <!-- l. 171 --><p class='noindent'>Pauli-Gatter (X, Y, Z): Ein Pauli-Gatter dreht den Zustand eines Qubits um die x-, y-
+     oder z-Achse der Bloch-Kugel [<a href='main.html#X0-bashiri2025quantencomputing'>4</a>].
+</p>
+     <div class='table'>
+     <!-- l. 173 --><p class='noindent'></p><figure class='float' id='x1-10003r2'><span id='pauligatter-darstellung'></span> 
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Tabelle 2: </span></span><span class='content'><span class='rm-lmr-10'>Pauli-Gatter Darstellung</span>                                                         </span></figcaption><!-- tex4ht:label?: x1-10003r2  -->
+     <div class='tabular'> <table class='tabular' id='TBL-2'><colgroup id='TBL-2-1g'><col id='TBL-2-1' /></colgroup><colgroup id='TBL-2-2g'><col id='TBL-2-2' /></colgroup><colgroup id='TBL-2-3g'><col id='TBL-2-3' /></colgroup><tr class='hline'><td></td><td></td><td></td></tr><tr id='TBL-2-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-1-1' style='white-space:nowrap; text-align:center;'>X </td><td class='td11' id='TBL-2-1-2' style='white-space:nowrap; text-align:center;'><img alt='PIC' height='100' src='images/PauliX_gate0.png' width='100' /></td><td class='td11' id='TBL-2-1-3' style='white-space:nowrap; text-align:center;'><img alt='PIC' height='100' src='images/PauliX_gate1.png' width='100' /></td>
+</tr><tr class='hline'><td></td><td></td><td></td></tr><tr class='vspace' style='font-size:10.0pt'><td> </td><td> </td><td> </td></tr><tr id='TBL-2-2-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-2-1' style='white-space:nowrap; text-align:center;'> Y </td><td class='td11' id='TBL-2-2-2' style='white-space:nowrap; text-align:center;'><img alt='PIC' height='100' src='images/PauliY_gate0.png' width='100' /></td><td class='td11' id='TBL-2-2-3' style='white-space:nowrap; text-align:center;'><img alt='PIC' height='100' src='images/PauliY_gate1.png' width='100' /></td>
+</tr><tr class='hline'><td></td><td></td><td></td></tr><tr class='vspace' style='font-size:10.0pt'><td> </td><td> </td><td> </td></tr><tr id='TBL-2-3-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-3-1' style='white-space:nowrap; text-align:center;'> Z  </td><td class='td11' id='TBL-2-3-2' style='white-space:nowrap; text-align:center;'><img alt='PIC' height='100' src='images/PauliZ_gate0.png' width='100' /></td><td class='td11' id='TBL-2-3-3' style='white-space:nowrap; text-align:center;'><img alt='PIC' height='100' src='images/PauliZ_gate1.png' width='100' /></td>
+</tr><tr class='hline'><td></td><td></td><td></td></tr><tr class='vspace' style='font-size:10.0pt'><td> </td><td> </td><td> </td></tr></table>                                                                           </div>
+     </figure>
+     </div>
+                                                                                       
+                                                                                       
+     </li>
+     <li class='itemize'>
+     <!-- l. 191 --><p class='noindent'>Hadamard-Gatter (H-Gatter): Ein Hadamard-Gatter erzeugt Superpositionen. Dies wird wie
+     folgt dargestellt: <span class='lmsy-10x-x-109'>|</span>0<span class='lmsy-10x-x-109'>⟩→</span><img align='middle' alt='√1-
+ 2' class='frac' src='main9x.png' />(<span class='lmsy-10x-x-109'>|</span>0<span class='lmsy-10x-x-109'>⟩ </span>+ <span class='lmsy-10x-x-109'>|</span>1<span class='lmsy-10x-x-109'>⟩</span>).<br class='newline' />Jedes Quantengatter ist umkehrbar. Das spezielle beim Hadamard-Gatter ist, dass es in den
+     Ursprungszustand zurückführt: <img align='middle' alt='1
+√2-' class='frac' src='main10x.png' />(<span class='lmsy-10x-x-109'>|</span>0<span class='lmsy-10x-x-109'>⟩ </span>+ <span class='lmsy-10x-x-109'>|</span>1<span class='lmsy-10x-x-109'>⟩</span>) <span class='lmsy-10x-x-109'>→|</span>0<span class='lmsy-10x-x-109'>⟩ </span>[<a id='x1-10004'></a><a id='page.16'></a><a href='main.html#X0-ct2020quantengatter'>8</a>].
+</p>
+     <div class='table'>
+     <!-- l. 196 --><p class='noindent'></p><figure class='float' id='x1-10005r3'><span id='hadamardgatter-darstellung'></span> 
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Tabelle 3: </span></span><span class='content'><span class='rm-lmr-10'>Hadamard-Gatter Darstellung</span>                                                    </span></figcaption><!-- tex4ht:label?: x1-10005r3  -->
+     <div class='tabular'> <table class='tabular' id='TBL-3'><colgroup id='TBL-3-1g'><col id='TBL-3-1' /></colgroup><colgroup id='TBL-3-2g'><col id='TBL-3-2' /></colgroup><tr class='hline'><td></td><td></td></tr><tr id='TBL-3-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-3-1-1' style='white-space:nowrap; text-align:center;'><img alt='PIC' height='136' src='images/Hadamard_gate0.png' width='136' /></td><td class='td11' id='TBL-3-1-2' style='white-space:nowrap; text-align:center;'><img alt='PIC' height='136' src='images/Hadamard_gate1.png' width='136' /></td></tr><tr class='hline'><td></td><td></td></tr></table>                                                                    </div>
+     </figure>
+     </div>
+     </li>
+     <li class='itemize'>
+     <!-- l. 208 --><p class='noindent'>CNOT-Gatter: Ein CNOT-Gatter ist ein zwei-Qubit-Gatter, das den Zustand des zweiten Qubits
+     ändert, wenn das erste Qubit im Zustand <span class='lmsy-10x-x-109'>|</span>1<span class='lmsy-10x-x-109'>⟩ </span>ist [<a href='main.html#X0-ct2020quantengatter'>8</a>]. </p><div class='table'>
+     <!-- l. 209 --><p class='noindent'></p><figure class='float' id='x1-10006r4'><span id='cnotgatter-darstellung'></span> 
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Tabelle 4: </span></span><span class='content'><span class='rm-lmr-10'>CNOT-Gatter Darstellung</span>                                                       </span></figcaption><!-- tex4ht:label?: x1-10006r4  -->
+     <div class='tabular'> <table class='tabular' id='TBL-4'><colgroup id='TBL-4-1g'><col id='TBL-4-1' /></colgroup><colgroup id='TBL-4-2g'><col id='TBL-4-2' /></colgroup><tr class='hline'><td></td><td></td></tr><tr id='TBL-4-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-4-1-1' style='white-space:nowrap; text-align:center;'><span class='rm-lmbx-10x-x-109'>Qubit 1</span></td><td class='td11' id='TBL-4-1-2' style='white-space:nowrap; text-align:center;'><span class='rm-lmbx-10x-x-109'>Qubit 2</span></td>
+</tr><tr class='hline'><td></td><td></td></tr><tr id='TBL-4-2-' style='vertical-align:baseline;'><td class='td11' id='TBL-4-2-1' style='white-space:nowrap; text-align:center;'>  <img alt='PIC' height='136' src='images/Hadamard_gate0.png' width='136' />    </td><td class='td11' id='TBL-4-2-2' style='white-space:nowrap; text-align:center;'>  <img alt='PIC' height='136' src='images/PauliX_gate0.png' width='136' />   </td></tr><tr class='hline'><td></td><td></td></tr><tr class='vspace' style='font-size:5.0pt'><td> </td><td> </td></tr><tr id='TBL-4-3-' style='vertical-align:baseline;'><td class='td11' id='TBL-4-3-1' style='white-space:nowrap; text-align:center;'> <img alt='PIC' height='136' src='images/gate_ket1.png' width='136' /> </td> <td class='td11' id='TBL-4-3-2' style='white-space:nowrap; text-align:center;'> <img alt='PIC' height='136' src='images/PauliX_gate1.png' width='136' /></td>
+</tr><tr class='hline'><td></td><td></td></tr></table>                                                                     </div>
+     </figure>
+     </div>
+     </li>
+     <li class='itemize'>Phasengatter: Das Phasengatter ändert die Phase eines Qubits ohne dessen Amplitude zu
+     beeinflussen [<a href='main.html#X0-ct2020quantengatter'>8</a>].
+     </li>
+     <li class='itemize'>CCNOT-Gatter (Toffoli-Gatter): Das CCNOT-Gatter ist ein Drei-Qubit-Gatter, das den
+     Zustand des dritten Qubits ändert, wenn die ersten beiden Qubits im Zustand <span class='lmsy-10x-x-109'>|</span>1<span class='lmsy-10x-x-109'>⟩ </span>sind
+     [<a id='x1-10007'></a><a href='main.html#X0-bashiri2025quantencomputing'>4</a>].
+     </li>
+     <li class='itemize'>SWAP-Gatter: Das SWAP-Gatter vertauscht die Zustände von zwei Qubits [<a href='main.html#X0-bashiri2025quantencomputing'>4</a>].
+     </li>
+     <li class='itemize'><span class='lmmi-10x-x-109'>R</span><sub><span class='lmmi-8'>k</span></sub>-Gatter: Das <span class='lmmi-10x-x-109'>R</span><sub><span class='lmmi-8'>k</span></sub>-Gatter rotiert den Zustand eines Qubits um einen Winkel von <img align='middle' alt='22πk' class='frac' src='main11x.png' /> um die
+     Z-Achse der Bloch-Kugel [<a href='main.html#X0-bashiri2025quantencomputing'>4</a>].</li></ul>
+                                                                                       
+                                                                                       
+<!-- l. 231 --><p class='indent'>
+                                                                                       
+                                                                                       
+</p>
+   <h3 class='sectionHead' id='rechengeschwindigkeit'><span class='titlemark'>2.3   </span> <a id='x1-110002.3'></a>Rechengeschwindigkeit</h3>
+<!-- l. 233 --><p class='noindent'>Quantencomputer haben das Potenzial, bestimmte Rechenprobleme, für die klassische Computer Jahre
+oder Jahrzehnte benötigen, in Sekunden oder Minuten zu lösen. Dies liegt an ihrer Fähigkeit, die
+Prinzipien der Quantenmechanik wie Superposition und Verschränkung zu nutzen, um Berechnungen
+parallel durchzuführen [<a id='x1-11001'></a><a id='page.18'></a><a href='main.html#X0-eth2023quantencomputer'>10</a>]. <br class='newline' />Während klassische Computer Informationen sequenziell verarbeiten, können Quantencomputer durch
+die gleichzeitige Verarbeitung vieler Zustände eine erhebliche Beschleunigung bei spezifischen
+Problemen erreichen. Ein Beispiel hierfür ist der Shor-Algorithmus (siehe Kapitel <a href='#shoralgorithmus'>3.2.2<!-- tex4ht:ref: sec:Shor-Algorithmus  --></a>),
+der die Faktorisierung grosser Zahlen, ein nahezu exponentiell wachsendes Problem, in
+<a href='#polynomialtime'>Polynomzeit</a> ermöglicht [<a id='x1-11002'></a><a href='main.html#X0-bashiri2025quantencomputing'>4</a>]. Die Abbildung <a href='#vergleich-polynomielle-und-exponentielle-wachstumsraten'>3<!-- tex4ht:ref: fig:vergleich_polynom_exponentiel  --></a> zeigt einen Vergleich der Wachstumsraten.
+</p><figure class='figure'> 
+
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+<!-- l. 241 --><p class='noindent' id='vergleich-polynomielle-und-exponentielle-wachstumsraten'><img alt='PIC' height='182' src='images/Comparison_polynomiel_exponentiel.png' width='182' /> <a id='x1-11003r3'></a>
+</p>
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 3: </span></span><span class='content'><span class='rm-lmr-10'>Vergleich Polynomielle und Exponentielle Wachstumsraten</span>                          </span></figcaption><!-- tex4ht:label?: x1-11003r3  -->
+                                                                                       
+                                                                                       
+   </figure>
+<!-- l. 245 --><p class='indent'>   Ein weiterer bedeutender Algorithmus ist der Grover-Algorithmus, der für die Suche in unsortierten
+Datenbanken verwendet wird. Ein klassischer Algorithmus benötigt im Durchschnitt <img align='middle' alt='N-
+ 2' class='frac' src='main12x.png' /> Schritte,
+um ein Element in einer unsortierten Datenbank mit <span class='lmmi-10x-x-109'>N </span>Einträgen zu finden [<a id='x1-11004'></a><a id='page.21'></a><a href='main.html#X0-3blue1brownGrover'>11</a>]. Mit der
+<a id='landau-notation-def'></a>Landau-Notation wird dies ausgedrückt durch <span class='lmmi-10x-x-109'>O</span>(<span class='lmmi-10x-x-109'>N</span>), <span class='lmmi-10x-x-109'>O </span>steht hierbei für die Konstante und <span class='lmmi-10x-x-109'>N </span>für die
+Eingangsgrösse [<a id='x1-11005'></a><a href='main.html#X0-landauNotation'>12</a>]. Der Grover-Algorithmus hingegen reduziert die Anzahl der benötigten
+Schritte auf etwa <span class='lmmi-10x-x-109'>O</span>(<img alt='√ --
+  N' class='sqrt' src='main13x.png' />) [<a href='main.html#X0-3blue1brownGrover'>11</a>]. Die Abbildung <a href='#vergleich-lineare-und-sublineare-wachstumsraten'>4<!-- tex4ht:ref: fig:vergleich_linear_sqrt  --></a> zeigt einen Vergleich der Wachstumsraten.
+</p><figure class='figure'> 
+
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+<!-- l. 252 --><p class='noindent' id='vergleich-lineare-und-sublineare-wachstumsraten'><img alt='PIC' height='182' src='images/Comparison_linear_sqrt.png' width='182' /> <a id='x1-11006r4'></a>
+</p>
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 4: </span></span><span class='content'><span class='rm-lmr-10'>Vergleich Lineare und Sublineare Wachstumsraten</span>                                 </span></figcaption><!-- tex4ht:label?: x1-11006r4  -->
+                                                                                       
+                                                                                       
+   </figure>
+<!-- l. 256 --><p class='indent'>   Es ist jedoch wichtig zu betonen, dass Quantencomputer keine universelle Beschleunigung für alle
+Probleme bieten. Viele Probleme, die auf klassischen Computern exponentiell wachsen, können auch
+auf Quantencomputern noch nicht effizient gelöst werden. Dazu wurden noch keine Algorithmen
+entwickelt. <br class='newline' />Klassische Computer können exponentiell wachsende Probleme nur schwer bewältigen.
+Quantenalgorithmen wie der Shor- und Grover-Algorithmus ermöglichen eine signifikante Reduktion
+der Rechenzeit [<a id='x1-11007'></a><a id='page.24'></a><a href='main.html#X0-eth2023quantencomputer'>10</a>].
+</p><!-- l. 263 --><p class='indent'>
+                                                                                       
+                                                                                       
+</p>
+   <h3 class='sectionHead' id='aktueller-stand-der-entwicklung'><span class='titlemark'>2.4   </span> <a id='x1-120002.4'></a>Aktueller Stand der Entwicklung</h3>
+<!-- l. 267 --><p class='noindent'>Der aktuelle Einsatz von Quantencomputern findet vor allem in Forschung und Entwicklung statt,
+insbesondere an Universitäten, in Forschungseinrichtungen und in industriellen Pilotprojekten [<a id='x1-12001'></a><a id='page.25'></a><a href='main.html#X0-eth2023quantencomputer'>10</a>].
+Mögliche zukünftige Anwendungsfelder liegen unter anderem in Optimierungsproblemen,
+Materialforschung und spezifischen Simulationsaufgaben. Breit verfügbare, wirtschaftlich
+skalierbare Praxisanwendungen sind zum aktuellen Zeitpunkt jedoch weiterhin begrenzt
+[<a id='x1-12002'></a><a href='main.html#X0-weekly2025herausforderungen'>13</a>].
+</p><!-- l. 271 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead' id='herausforderungen'><span class='titlemark'>2.4.1   </span> <a id='x1-130002.4.1'></a>Herausforderungen</h4>
+<!-- l. 272 --><p class='noindent'>Es gibt noch einige Herausforderungen bei der Entwicklung von Quantencomputern, die überwunden
+werden müssen, bevor sie weit verbreitet eingesetzt werden können. Generell sind Qubits sehr anfällig
+für Störungen aus der Umwelt, wie thermisches Rauschen, elektromagnetische Felder oder Vibrationen,
+was zu Fehlern in Berechnungen führen kann. Aktuell haben Quantencomputer nur eine begrenzte
+Anzahl von Qubits, was ihre Leistungsfähigkeit einschränkt. Es gibt verschiedene physikalische
+Realisierungen von Qubits, wobei jede Technologie eigene Herausforderungen in Bezug auf Stabilität,
+Skalierbarkeit und Fehleranfälligkeit mit sich bringt. Supraleitende Qubits, wie sie bei den
+Quantencomputern von IBM (siehe Abbildung <a href='#ibm-quantum-system-one-spiegelibmquantum'>5<!-- tex4ht:ref: fig:ibm_quantum_one  --></a>) und Google zum Einsatz kommen, erfordern
+Temperaturen nahe dem absoluten Nullpunkt (-273,15 <span class='ts1-lmr10-x-x-109'>°</span>C = 0K), was einen erheblichen technischen
+Aufwand bedeutet [<a href='main.html#X0-weekly2025herausforderungen'>13</a>]. </p><figure class='figure'> 
+
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+<!-- l. 279 --><p class='noindent' id='ibm-quantum-system-one-spiegelibmquantum'><img alt='PIC' height='113' src='images/IBM_quanutm_one.jpg' width='113' /> <a id='x1-13001r5'></a>
+</p>
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 5: </span></span><span class='content'><span class='rm-lmr-10'>IBM Quantum System One [</span><a href='main.html#X0-spiegelIBMQuantum2021'><span class='rm-lmr-10'>14</span></a><span class='rm-lmr-10'>].</span>                                                </span></figcaption><!-- tex4ht:label?: x1-13001r5  -->
+                                                                                       
+                                                                                       
+   </figure>
+<!-- l. 284 --><p class='noindent'>Einige Qubit-Technologien wie photonische Ansätze haben im Vergleich zu supraleitenden Systemen
+andere technische Randbedingungen, etwa beim Temperaturbedarf. Unabhängig von der Technologie
+bleiben jedoch zentrale Herausforderungen wie Fehleranfälligkeit, Skalierbarkeit und stabile
+Informationsübertragung bestehen [<a id='x1-13003'></a><a id='page.28'></a><a href='main.html#X0-weekly2025herausforderungen'>13</a>]. <br class='newline' />Um diese Herausforderungen zu bewältigen, werden verschiedene Ansätze verfolgt, darunter die
+Entwicklung von Quantenfehlerkorrekturmethoden und die Erforschung neuer Materialien für
+Qubits. Für ein logisches Qubit werden viele physikalische Qubits benötigt, um Fehler zu
+korrigieren. Bis zum Jahr 2023 ging man davon aus, dass für ein logisches Qubit etwa 1000 bis
+10’000 physikalische Qubits benötigt werden. Dann konnte ein Forschungsteam aus den
+USA einen fehlerkorrigierten Quantenalgorithmus auf 48 logischen Qubits ausführen [<a id='x1-13004'></a><a href='main.html#X0-spektrum2023quantenfehlerkorrektur'>15</a>].
+                                                                                       
+                                                                                       
+</p>
+   <h4 class='subsectionHead' id='dauer-bis-marktreife'><span class='titlemark'>2.4.2   </span> <a id='x1-140002.4.2'></a>Dauer bis Marktreife</h4>
+<!-- l. 294 --><p class='noindent'>Q-Day ist ein Begriff, der den Zeitpunkt beschreibt, an dem Quantencomputer in der Lage sein
+werden, praktische Probleme zu lösen, die für klassische Computer in akzeptabler Zeit unlösbar sind.
+<br class='newline' />Gemäss der Roadmap der Quantenabteilung von IBM soll bis 2029 ein erster fehlertoleranter
+Quantencomputer mit 200 logischen Qubits präsentiert werden. Bis 2033 sollen es dann 2000 logische
+Qubits sein [<a id='x1-14001'></a><a id='page.29'></a><a href='main.html#X0-ct2025verschluesselung'>1</a>]. Um eine RSA-Verschlüsselung zu brechen, braucht es jedoch etwa 4000 logische Qubits
+[<a id='x1-14002'></a><a href='main.html#X0-qday2030'>16</a>]. <br class='newline' />Das deutsche Bundesamt für Sicherheit in der Informationstechnik (BSI) hält einen Zeitpunkt in 10–16
+Jahren (Stand 2025) realistisch, bis ein Quantencomputer mit 2000 logischen Qubits veröffentlicht wird
+[<a href='main.html#X0-ct2025verschluesselung'>1</a>]. Je nach technischer Annahme und Bewertungsgrundlage variieren Prognosen zum Q-Day jedoch
+deutlich. Selbst Expertinnen und Experten sind sich daher uneinig, wann Quantencomputer marktreif
+sein werden. <br class='newline' />Gemäss dem BSI dürfte es sich für die meisten Firmen jedoch nicht lohnen, einen Quantencomputer
+mit mehr als 2000 logischen Qubits zu entwickeln, da diese Anzahl von logischen Qubits für
+Anwendungen in der Industrie oder Forschung ausreicht [<a href='main.html#X0-ct2025verschluesselung'>1</a>].
+<a id='x1-14003r3'></a>
+                                                                                       
+                                                                                       
+</p>
+   <h2 class='likechapterHead' id='datenverschlusselung'><a id='x1-15000'></a>3. Datenverschlüsselung</h2>
+<p id='datenverschlusselung1'><a id='Q1-1-27'></a>
+<!-- l. 8 --></p><p class='noindent'>Dieses Kapitel erläutert die Grundlagen und die Bedeutung moderner kryptografischer
+Verschlüsselungsverfahren, die für die Sicherheit der heutigen digitalen Infrastruktur von zentraler
+Bedeutung sind. Zunächst wird die Funktionsweise von symmetrischen und asymmetrischen
+Verschlüsselungsverfahren beschrieben sowie die Funktionsweise der RSA-Verschlüsselung erklärt und
+deren Anwendungsgebiete aufgezeigt. Anschliessend werden Methoden der Entschlüsselung erläutert,
+insbesondere der Brute-Force-Angriff. Des Weiteren wird der Shor-Algorithmus und dessen
+Zusammenhang mit dem Quantencomputer erklärt. Abschliessend wird die aktuelle Sicherheitslage
+heutiger Verschlüsselungsverfahren beurteilt und die Problematik der langfristigen Datensicherheit
+aufgezeigt.
+</p>
+   <h3 class='sectionHead' id='funktionsweise-moderner-verschlusselung'><span class='titlemark'>3.1   </span> <a id='x1-160003.1'></a>Funktionsweise moderner Verschlüsselung</h3>
+<!-- l. 15 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead' id='symmetrische-verschlusselung'><span class='titlemark'>3.1.1   </span> <a id='x1-170003.1.1'></a>Symmetrische Verschlüsselung</h4>
+<!-- l. 16 --><p class='noindent'>Die symmetrische Verschlüsselung ist ein Kryptografieverfahren, bei dem derselbe geheime Schlüssel
+sowohl zum Verschlüsseln als auch zum Entschlüsseln von Daten verwendet wird. Auf dem Weg vom
+Sender zum Empfänger muss dieser Schlüssel sicher übertragen werden (siehe Abbildung <a href='#funktionsweise-der-symmetrischen-verschlusselung'>6<!-- tex4ht:ref: fig:verschluesselung-symmetrisch  --></a>).
+</p><figure class='figure'> 
+
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+<!-- l. 20 --><p class='noindent' id='funktionsweise-der-symmetrischen-verschlusselung'><img alt='PIC' height='113' src='images/Symmetrische_Verschluesselung.png' width='113' /> <a id='x1-17001r6'></a>
+</p>
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 6: </span></span><span class='content'><span class='rm-lmr-10'>Funktionsweise der symmetrischen Verschlüsselung</span>                                 </span></figcaption><!-- tex4ht:label?: x1-17001r6  -->
+                                                                                       
+                                                                                       
+   </figure>
+<!-- l. 24 --><p class='indent'>   Sobald dieser Schlüssel in die Hände eines Angreifers gelangt, sind alle Daten, die mit
+diesem Schlüssel geschützt sind, für den Angreifer lesbar [<a id='x1-17002'></a><a id='page.33'></a><a href='main.html#X0-nist800175b'>17</a>]. Ein historisches Beispiel der
+symmetrischen Verschlüsselung war die Enigma-Maschine im Zweiten Weltkrieg, welche zur
+Übertragung von militärischen Nachrichten und Informationen verwendet wurde. Genau wie bei
+einer symmetrischen Verschlüsselung besass diese Maschine einen Schlüssel, mit dem man
+diese Nachrichten entschlüsseln konnte. Als die Engländer die Enigma-Maschine knackten,
+konnten sie alle Nachrichten entschlüsseln und auslesen, welche das deutsche Militär sendete.
+Daran zeigt sich das grundlegende Problem der symmetrischen Verschlüsselung: Durch
+das einmalige Erhalten des Schlüssels, ist es ein Leichtes die Verschlüsselung auszulesen
+[<a id='x1-17003'></a><a href='main.html#X0-singh1999codebook'>18</a>].
+</p>
+   <h4 class='subsectionHead' id='asymmetrische-verschlusselung'><span class='titlemark'>3.1.2   </span> <a id='x1-180003.1.2'></a>Asymmetrische Verschlüsselung</h4>
+<!-- l. 33 --><p class='noindent'>Asymmetrische Verschlüsselung wird auch Public-Key-Kryptografie genannt und verwendet
+ein Schlüsselpaar aus einem öffentlichen und einem privaten Schlüssel. Asymmetrische
+Verschlüsselungsverfahren werden insbesondere eingesetzt, um einen sicheren Schlüsselaustausch
+in einem unsicheren Netzwerk zu ermöglichen. Zusätzlich kann durch die asymmetrische
+Verschlüsselung eine digitale Signatur erstellt werden, wodurch die Authentizität und Integrität einer
+Nachricht überprüft werden kann [<a href='main.html#X0-nist800175b'>17</a>]. Durch die mathematische Verknüpfung der beiden
+Schlüssel ist es möglich, dass eine Nachricht, die mit dem öffentlichen Schlüssel verschlüsselt
+wurde, nur mit dem privaten Schlüssel entschlüsselt werden kann. Der öffentliche Schlüssel
+kann daher öffentlich verteilt werden, während der private Schlüssel geheim gehalten wird
+(siehe Abbildung <a href='#funktionsweise-der-asymmetrischen-verschlusselung'>7<!-- tex4ht:ref: fig:verschluesselung-asymmetrisch  --></a>). Die asymmetrische Verschlüsselungsverfahren werden insbesondere
+eingesetzt, um einen sicheren Schlüsselaustausch in einem unsicheren Netzwerk zu ermöglichen.
+</p><figure class='figure'> 
+
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+<!-- l. 40 --><p class='noindent' id='funktionsweise-der-asymmetrischen-verschlusselung'><img alt='PIC' height='113' src='images/Asymmetrische_Verschluesselung.png' width='113' /> <a id='x1-18001r7'></a>
+</p>
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 7: </span></span><span class='content'><span class='rm-lmr-10'>Funktionsweise der asymmetrischen Verschlüsselung</span>                                </span></figcaption><!-- tex4ht:label?: x1-18001r7  -->
+                                                                                       
+                                                                                       
+   </figure>
+<!-- l. 44 --><p class='indent'>   Die asymmetrische Verschlüsselung verursacht im Vergleich zur symmetrischen Verschlüsselung
+einen deutlich höheren Rechenaufwand. Deshalb wird in der Praxis häufig nur die asymmetrische
+Verschlüsselung zur Übertragung von Sitzungsschlüsseln, also temporären, symmetrischen Schlüsseln,
+für eine Kommunikationssitzung verwendet. Zusätzlich kann durch die asymmetrische Verschlüsselung
+eine digitale Signatur erstellt werden, wodurch die Authentizität und Integrität einer Nachricht
+überprüft werden kann [<a id='x1-18002'></a><a id='page.36'></a><a href='main.html#X0-nist800175b'>17</a>].
+</p>
+   <h4 class='subsectionHead' id='rsaverschlusselungsverfahren'><span class='titlemark'>3.1.3   </span> <a id='x1-190003.1.3'></a>RSA-Verschlüsselungsverfahren</h4>
+<!-- l. 49 --><p class='noindent'>Das Rivest-Shamir-Adleman-Verschlüsselungsverfahren (RSA) ist eines der bekanntesten und am
+weitesten verbreiteten asymmetrischen Verschlüsselungsverfahren. Es verwendet ein Schlüsselpaar aus
+einem öffentlichen und einem privaten Schlüssel. Der öffentliche Schlüssel dient zur Verschlüsselung von
+Daten und Nachrichten, während der private Schlüssel zur Entschlüsselung verwendet wird. Die
+Sicherheit des RSA-Verfahrens beruht auf der Schwierigkeit, extrem grosse Zahlen in ihre Primfaktoren
+zu zerlegen [<a id='x1-19001'></a><a href='main.html#X0-nist80056b'>19</a>]. <br class='newline' />Heute wird das RSA-Verfahren vor allem in digitalen Signaturen, Authentifizierungsmechanismen
+sowie beim sicheren Austausch symmetrischer Schlüssel eingesetzt. Aufgrund des hohen
+Rechenaufwands wird es nicht für die Verschlüsselung grosser Datenmengen verwendet. Das
+National Institute of Standards and Technology (NIST) empfiehlt für RSA-Verfahren eine
+Mindestschlüssellänge von 2048 Bit, um eine ausreichende Sicherheit zu gewährleisten [<a href='main.html#X0-nist80056b'>19</a>].
+                                                                                       
+                                                                                       
+</p>
+   <h3 class='sectionHead' id='methoden-der-entschlusselung'><span class='titlemark'>3.2   </span> <a id='x1-200003.2'></a>Methoden der Entschlüsselung</h3>
+<!-- l. 58 --><p class='noindent'>Ein Algorithmus ist eine klare Schritt-für-Schritt-Anleitung, um ein Problem oder eine Aufgabe zu
+lösen, ähnlich wie ein Kochrezept. Somit sagt er aus, welche nächsten Schritte zur Lösung eines
+Problems zu führen. Da für die meisten Probleme verschiedene Algorithmen existieren, misst man diese
+typischerweise anhand des Ressourcenbedarfs, die sie benötigen, um das Problem zu lösen z.B. der
+Laufzeit oder des Speicherbedarfs.
+</p><!-- l. 63 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead' id='bruteforce-angriff'><span class='titlemark'>3.2.1   </span> <a id='x1-210003.2.1'></a>Brute-Force Angriff</h4>
+<!-- l. 64 --><p class='noindent'>Ein Brute-Force-Angriff ist eine Methode in der Informatik und Kryptografie, bei dem eine grosse
+Menge an verschiedenen Passwörtern nahezu gleichzeitig ausprobiert werden, um das gesuchte
+Passwort oder den Verschlüsselungscode zu knacken (siehe Abbildung <a href='#funktionsweise-des-bruteforceangriffs'>8<!-- tex4ht:ref: fig:brute_force_angriff  --></a>). Es wird keinerlei Vorwissen
+oder ein Schlüssel benötigt, sondern eine riesige Menge unterschiedlicher Kombinationen ausprobiert,
+bis die richtige gefunden wurde [<a id='x1-21001'></a><a id='page.37'></a><a href='main.html#X0-owaspBruteForce'>20</a>]. </p><figure class='figure'> 
+
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+<!-- l. 71 --><p class='noindent' id='funktionsweise-des-bruteforceangriffs'><img alt='PIC' height='113' src='images/Brute_Force_Attack.png' width='113' /> <a id='x1-21002r8'></a>
+</p>
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 8: </span></span><span class='content'><span class='rm-lmr-10'>Funktionsweise des Brute-Force-Angriffs</span>                                         </span></figcaption><!-- tex4ht:label?: x1-21002r8  -->
+                                                                                       
+                                                                                       
+   </figure>
+<!-- l. 76 --><p class='indent'>   Die Dauer eines sogenannten Brute-Force-Angriffs hängt von verschiedenen Faktoren ab, wie
+beispielsweise der Schlüssellänge, der Komplexität, des Zeichensatzes oder auch der Rechenleistung des
+Angreifers. Kurze oder einfache Passwörter können dadurch innerhalb kurzer Zeit geknackt werden,
+während lange und komplexe Passwörter selbst mit der modernsten Hardware praktisch nicht mehr
+innerhalb einer realistischen Zeit entschlüsselbar sind. Somit lohnt es nicht mehr, diese mit einem
+Brute-Force anzugreifen [<a id='x1-21003'></a><a id='page.40'></a><a href='main.html#X0-nist80063b'>21</a>]. Um die Brute-Force-Angriffe zu verhindern, setzen heutige Systeme auf
+Schutzmechanismen wie eine Mindestlänge des Passworts, die Kombinationen aus Klein- und
+Grossbuchstaben, Zahlen und Zeichen, Sperrmechanismen nach Fehlversuchen sowie das <a href='#hashen-def'>Hashen</a> von
+Passwörtern [<a href='main.html#X0-nist80063b'>21</a>] [<a id='x1-21004'></a><a href='main.html#X0-menezes1996handbook'>22</a>]. Der LinkedIn-Vorfall im Jahr 2012 zeigt, wie wichtig es ist, sich vor solchen
+Angriffen zu schützen und lange und komplexe Passwörter zu verwenden. Hacker hatten
+damals 6,5 Millionen Passwörter von LinkedIn-Nutzern gehashed und veröffentlicht [<a id='x1-21005'></a><a href='main.html#X0-linkedinBreach'>23</a>].
+<br class='newline' />Das folgende Beispiel zeigt den Schutzmechanismus gegen einen Brute-Force-Angriff auf: Ein 8-stelliges
+Passwort aus Kleinbuchstaben hat 26<sup><span class='rm-lmr-8'>8</span></sup> = 2<span class='lmmi-10x-x-109'>,</span>1 <span class='lmsy-10x-x-109'>∗ </span>10<sup><span class='rm-lmr-8'>11</span></sup> mögliche Variationen. Mit einer Rechenleistung von
+1 Milliarde Versuchen pro Sekunde würde ein Brute-Force-Angriff etwa 208 Sekunden dauern. Bei
+einem 12-stelligen Passwort aus Gross- und Kleinbuchstaben sowie Zahlen und Sonderzeichen
+(ca. 72<sup><span class='rm-lmr-8'>12</span></sup> = 1<span class='lmmi-10x-x-109'>,</span>94 <span class='lmsy-10x-x-109'>∗ </span>10<sup><span class='rm-lmr-8'>22</span></sup> Variationen) würde derselbe Angriff etwa 615’000 Jahre dauern
+[<a id='x1-21006'></a><a href='main.html#X0-wikipedia_bruteforce_passwords'>24</a>].
+</p><!-- l. 99 --><p class='indent'>
+                                                                                       
+                                                                                       
+</p>
+   <h4 class='subsectionHead' id='shoralgorithmus'><span class='titlemark'>3.2.2   </span> <a id='x1-220003.2.2'></a>Shor-Algorithmus</h4>
+<!-- l. 102 --><p class='noindent'><a id='shor_algorithm'></a> Der Shor-Algorithmus wurde 1994 von Peter W. Shor entwickelt und gilt als einer der bekanntesten
+Quantenalgorithmen. Er löst zwei zentrale mathematische Probleme in <a href='#polynomialtime'>Polynomzeit</a>: die Zerlegung
+sehr grosser Zahlen in ihre Primfaktoren sowie das Berechnen des ganzzahligen Logarithmuses. Ein
+normaler Algorithmus benötigt für diese Probleme eine exponentielle Zeit, was sie für grosse
+Zahlen praktisch unlösbar macht [<a id='x1-22001'></a><a id='page.41'></a><a href='main.html#X0-mandrysch2016'>25</a>]. Den Ablauf des Shor-Algorithmuses zeigt Abbildung <a href='#funktionsweise-des-shoralgorithmus-quelle-mandrysch-teilweise-modifiziert'>9<!-- tex4ht:ref: fig:shor_algorithmus_sequence  --></a>.
+</p><figure class='figure'> 
+
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+<!-- l. 109 --><p class='noindent' id='funktionsweise-des-shoralgorithmus-quelle-mandrysch-teilweise-modifiziert'><img alt='PIC' height='172' src='images/Shor_Algorithm_Sequence.png' width='173' /> <a id='x1-22002r9'></a>
+</p>
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 9: </span></span><span class='content'><span class='rm-lmr-10'>Funktionsweise des Shor-Algorithmus, (Quelle: [</span><a href='main.html#X0-mandrysch2016'><span class='rm-lmr-10'>25</span></a><span class='rm-lmr-10'>] - teilweise modifiziert).</span>             </span></figcaption><!-- tex4ht:label?: x1-22002r9  -->
+                                                                                       
+                                                                                       
+   </figure>
+<!-- l. 113 --><p class='indent'>   Der Shor-Algorithmus wird im Quantencomputer durch Quantengatter (siehe Kapitel 2.2)
+umgesetzt. Diese bilden die Bausteine, mit denen der Algorithmus physikalisch realisiert wird.
+<br class='newline' />Zu Beginn des Algorithmus werden Hadamard-Gatter auf mehrere Qubits angewendet. Sie erzeugen
+eine Superposition, sodass der Quantencomputer viele mögliche Rechenwege gleichzeitig verfolgen
+kann. Während ein klassischer Computer jeden Wert einzeln ausprobieren müsste, kann der
+Quantencomputer diese Berechnungen parallel durchführen. <br class='newline' />Anschliessend kommen kontrollierte Quantengatter wie CNOT- und kontrollierte Phasengatter zum
+Einsatz. Sie verschränken die Qubits miteinander, sodass ihre Zustände voneinander abhängen. In
+diesem Schritt wird die folgende Funktion ausgewertet:
+</p>
+   <table class='equation-star'><tr><td>
+   <div class='math-display'>
+<img alt='f(x) = ax mod N
+' class='math-display' src='main14x.png' /></div>
+   </td></tr></table>
+<!-- l. 125 --><p class='nopar'>Dabei werden Potenzen von <span class='lmmi-10x-x-109'>a </span>berechnet und jeweils nur der Teilerrest (auch <a href='#modulo-def'>Modulo</a> genannt) von <img align='middle' alt='ax
+N' class='frac' src='main15x.png' />
+betrachtet. Die so entstehenden Werte wiederholen sich nach einer gewissen Anzahl Schritte, diese
+Wiederholung nennt man Periode. Der Quantencomputer speichert diese Periodeninformation nicht als
+klassische Zahl, sondern repräsentiert sie in den relativen Phasen (Winkel <img alt='φ  ' class='math' src='main16x.png' /> der Bloch-Kugel) der
+Qubits. <br class='newline' />Der wichtigste quantenmechanische Schritt ist anschliessend die Quanten-<a href='#fourier-transform-def'>Fourier-Transformation</a>
+(QFT). Sie besteht aus einer Abfolge von Hadamard-Gattern und kontrollierten Rotationsgattern
+<img alt='Rk  ' class='math' src='main17x.png' />, welche die Phasen der Qubits gezielt verändern. Dadurch wird die zuvor versteckte
+Periodeninformation so umgeformt, dass sie bei der anschliessenden Messung sichtbar wird. Zum
+Schluss korrigieren SWAP-Gatter die Reihenfolge der Qubits, da die QFT die Resultate in
+umgekehrter Bitreihenfolge liefert. Kennt man die Periode, lassen sich daraus mit klassischen
+Rechenschritten die Primfaktoren der ursprünglichen Zahl bestimmen [<a id='x1-22004'></a><a id='page.44'></a><a href='main.html#X0-mandrysch2016'>25</a>]. Abbildung <a href='#ablauf-des-shoralgorithmus-quelle-bashiriquantencomputing-teilweise-modifiziert'>10<!-- tex4ht:ref: fig:shor_algorithm_symbolic  --></a>
+zeigt eine vereinfachte Darstellung des Quantenschaltkreises für den Shor-Algorithmus.
+<br class='newline' /></p><figure class='figure'> 
+
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+<!-- l. 139 --><p class='noindent' id='ablauf-des-shoralgorithmus-quelle-bashiriquantencomputing-teilweise-modifiziert'><img alt='PIC' height='341' src='images/Shor_Algorithm_quantum_circuit.png' width='341' /> <a id='x1-22005r10'></a>
+</p>
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 10: </span></span><span class='content'><span class='rm-lmr-10'>Ablauf des Shor-Algorithmus (Quelle: [</span><a href='main.html#X0-bashiri2025quantencomputing'><span class='rm-lmr-10'>4</span></a><span class='rm-lmr-10'>] - teilweise modifiziert).</span>                    </span></figcaption><!-- tex4ht:label?: x1-22005r10  -->
+                                                                                       
+                                                                                       
+   </figure>
+
+<!-- l. 144 --><p class='indent'>   Wird beispielsweise der RSA-Algorithmus mit einer Schlüssellänge von 2048 Bit und einer
+Sicherheitsstufe von 112 Bit verwendet, dann würde ein herkömmlicher Algorithmus mehrere
+Milliarden Jahre benötigen, um den zugehörigen privaten Schlüssel durch Primfaktorzerlegung zu
+berechnen. Durch den Shor-Algorithmus könnte dieser Schlüssel mit einem ausreichend
+leistungsfähigen Quantencomputer innerhalb von Stunden bestimmt werden. Konkret bedeutet das,
+dass ein klassischer Algorithmus ca. 5 <span class='lmsy-10x-x-109'>∗ </span>10<sup><span class='rm-lmr-8'>33</span></sup> Rechenschritte benötigt, um den Schlüssel zu
+berechnen, während der Shor-Algorithmus lediglich 9 <span class='lmsy-10x-x-109'>∗ </span>10<sup><span class='rm-lmr-8'>9</span></sup> Rechenschritte benötigen würde [<a id='x1-22007'></a><a id='page.47'></a><a href='main.html#X0-mandrysch2016'>25</a>].
+<br class='newline' />Der aktuelle Rekord (Stand 2019) für die Faktorisierung mit dem Shor-Algorithmus liegt bei 65531,
+welche in die Primfaktoren 19 und 3449 zerlegt wurde [<a id='x1-22008'></a><a href='main.html#X0-fzJuelichShor'>26</a>]. Dies ist weit davon entfernt, die
+Verschlüsselungstechnik zu revolutionieren. Heutige Verschlüsselungsverfahren nutzen semiprime
+Zahlen (also Zahlen mit genau zwei Primfaktoren) mit mehreren hundert Stellen [<a id='x1-22009'></a><a href='main.html#X0-srfEinsteinQuantencomputer'>27</a>]. Dabei steigt der
+Bedarf an Qubits linear mit der Bitlänge der Zahl an, was die Faktorisierung grosser Zahlen (z.B. 2048
+Bit) aktuell unmöglich macht [<a href='main.html#X0-fzJuelichShor'>26</a>].
+</p><!-- l. 155 --><p class='indent'>
+                                                                                       
+                                                                                       
+</p>
+   <h3 class='sectionHead' id='beurteilung-der-aktuellen-sicherheit'><span class='titlemark'>3.3   </span> <a id='x1-230003.3'></a>Beurteilung der aktuellen Sicherheit</h3>
+<!-- l. 157 --><p class='noindent'>Verschlüsselungsverfahren sind heute in nahezu allen digitalen Bereichen unverzichtbar.
+Sie stellen sicher, dass digitale Informationen vertraulich, unverändert, authentisch und
+verbindlich bleiben [<a id='x1-23001'></a><a id='page.48'></a><a href='main.html#X0-menezes1996handbook'>22</a>]. Aktuell gelten die gängigsten Verschlüsselungsverfahren als praktisch
+sicher, da ihre Entschlüsselung in einer realistischen Zeit mit heutigen Computern und deren
+Rechenleistung nicht möglich ist [<a id='x1-23002'></a><a href='main.html#X0-nist80063b'>21</a>]. Allerdings würde die Entwicklung von Quantencomputern und
+deren Algorithmen die Sicherheit der heutigen Verschlüsselungsverfahren infrage stellen [<a id='x1-23003'></a><a href='main.html#X0-mandrysch2016'>25</a>].
+Vergleich der Sicherheitsniveaus verschiedener Verschlüsselungsverfahren siehe Abbildung <a href='#sicherheitsbeurteilung-verschiedener-verschlusselungsverfahren-quelle-qday-teilweise-modifiziert'>11<!-- tex4ht:ref: fig:encryption_security_level  --></a>.
+</p><figure class='figure'> 
+
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+<!-- l. 170 --><p class='noindent' id='sicherheitsbeurteilung-verschiedener-verschlusselungsverfahren-quelle-qday-teilweise-modifiziert'><img alt='PIC' height='455' src='images/Auswirkungen_Kryptografie.png' width='455' /> <a id='x1-23004r11'></a>
+</p>
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 11: </span></span><span class='content'><span class='rm-lmr-10'>Sicherheitsbeurteilung verschiedener Verschlüsselungsverfahren. (Quelle: [</span><a href='main.html#X0-qday2030'><span class='rm-lmr-10'>16</span></a><span class='rm-lmr-10'>] - teilweise
+modifiziert).</span>                                                                            </span></figcaption><!-- tex4ht:label?: x1-23004r11  -->
+                                                                                       
+                                                                                       
+   </figure>
+   <h4 class='subsectionHead' id='grenzen-der-sicherheit'><span class='titlemark'>3.3.1   </span> <a id='x1-240003.3.1'></a>Grenzen der Sicherheit</h4>
+<!-- l. 176 --><p class='noindent'>Moderne Informationssysteme sind heute stark von einer funktionierenden Verschlüsselung abhängig.
+Es fällt nicht nur der Finanzsektor darunter, sondern die gesamte digitale Infrastruktur weltweit, das
+heisst auch staatliche Verwaltungen, das Gesundheitswesen, industrielle Unternehmen sowie private
+Kommunikation [<a id='x1-24001'></a><a id='page.51'></a><a href='main.html#X0-menezes1996handbook'>22</a>]. Gemäss Christian Weber setzen Anwendungen wie Online-Banking,
+E-Mail-Dienste, Cloud-Speicher oder auch die elektronische Identität (E-ID) auf sichere
+Verschlüsselung ihrer Daten, um langfristig zuverlässig sein zu können. Ein Versagen von genau diesen
+derzeit sicheren Verschlüsselungsverfahren würde somit nicht nur technische Probleme verursachen,
+sondern auch wirtschaftliche und gesellschaftliche Konsequenzen nach sich ziehen <a href='#dependency_cryptography'>(siehe Interview im
+Anhang)</a>. <br class='newline' />Die heutige Sicherheit der Verschlüsselungsverfahren basiert primär auf der Annahme einer
+begrenzten Rechenleistung der klassischen Computer. Asymmetrische Verfahren wie zum
+Beispiel RSA gelten als sicher, solange keine praktikable Möglichkeit besteht, die zugrunde
+liegenden mathematischen Probleme effizient zu lösen [<a href='main.html#X0-menezes1996handbook'>22</a>]. Quantencomputer würden genau
+diese grundlegende Ausgangslage verändern, da der Shor-Algorithmus die Faktorisierung
+grosser Zahlen in realistischer Zeit ermöglichen kann [<a id='x1-24002'></a><a href='main.html#X0-mandrysch2016'>25</a>]. Christian Weber bestätigt, die
+besten heutigen Verschlüsselungsverfahren wären nicht mehr sicher <a href='#dependency_cryptography'>(siehe Interview im
+Anhang)</a>.
+</p><!-- l. 193 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead' id='harvest-now-decrypt-later'><span class='titlemark'>3.3.2   </span> <a id='x1-250003.3.2'></a>Harvest now, decrypt later</h4>
+<!-- l. 194 --><p class='noindent'>Gemäss Christian Weber liegt ein zentrales Problem in der langfristigen Datensicherheit.
+Daten, die heute verschlüsselt gespeichert werden, können zu einem späteren Zeitpunkt, bei
+Marktreife eines Quantencomputers, entschlüsselt werden. Dies wird <span class='rm-lmri-10x-x-109'>Harvest now, decrypt
+later</span>-Angriff (heute sammeln, später entschlüsseln) genannt <a href='#longterm_security'>(siehe Interview im Anhang)</a>.
+<br class='newline' />Besonders kritische Daten wie staatliche Geheimnisse, Gesundheitsdaten oder auch Finanzdaten sind
+davon betroffen. Auch wenn die Daten momentan als sicher gelten, können diese zu einem späteren
+Zeitpunkt entschlüsselt und kompromittiert werden [<a href='main.html#X0-mandrysch2016'>25</a>]. <br class='newline' />Trotz der bekannten Risiken, die durch die Entwicklung höherer Rechenleistung durch
+Quantencomputer entstehen, so Christian Weber, werden momentan nur wenige flächendeckende
+Massnahmen zur Entwicklung quantensicherer Verfahren getroffen. Viele Firmen und Institute sind
+sich der Problematik nicht bewusst oder schätzen die Risiken zu gering ein (siehe Interview im
+Anhang).
+</p><!-- l. 209 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead' id='gesamtbewertung'><span class='titlemark'>3.3.3   </span> <a id='x1-260003.3.3'></a>Gesamtbewertung</h4>
+                                                                                       
+                                                                                       
+<!-- l. 210 --><p class='noindent'>Die aktuelle Sicherheitslage ist stark von der Annahme eines stagnierenden Fortschritts
+in der Entwicklung der Quantencomputer abhängig [<a href='main.html#X0-mandrysch2016'>25</a>]. Sollte gemäss diese Annahme
+nicht eintreffen, wären die heutigen Verschlüsselungsverfahren in ihrer Sicherheit stark
+gefährdet. Zusammenfassend lässt sich sagen, dass die heutige Sicherheitslage als funktional
+gilt, allerdings nicht zukunftssicher ist <a href='#overall_security'>(siehe Interview mit Christian Weber im Anhang).</a>
+                                                                                       
+                                                                                       
+</p>
+   <h3 class='sectionHead' id='zukunftsaussichten'><span class='titlemark'>3.4   </span> <a id='x1-270003.4'></a>Zukunftsaussichten</h3>
+<!-- l. 219 --><p class='noindent'>Angesichts der drohenden Gefahr durch Quantencomputer arbeiten Forschungseinrichtungen und
+Standardisierungsgremien weltweit an der Entwicklung quantensicherer Verschlüsselungsverfahren. Das
+NIST hat bereits erste Standards für Post-Quanten-Kryptografie (PQC) Verfahren erarbeitet und im
+Jahr 2024 veröffentlicht [<a id='x1-27001'></a><a id='page.53'></a><a href='main.html#X0-nistpqc'>28</a>]. PQC-Algorithmen sind so konzipiert, dass sie auf klassischen
+Computern laufen, aber gleichzeitig gegen Angriffe von Quantencomputern resistent sind [<a id='x1-27002'></a><a href='main.html#X0-srfEinsteinQuantencomputer'>27</a>].
+<br class='newline' />Gemäss Christian Weber stellt die Umstellung auf PQC jedoch eine enorme Herausforderung dar.
+Bestehende Systeme, Protokolle und Infrastrukturen müssen grundlegend überarbeitet werden, was
+erhebliche Investitionen erfordert. Zudem fehlt es derzeit an koordinierten Umsetzungsplänen auf
+staatlicher und internationaler Ebene, was eine flächendeckende Migration erschwert <a href='#pqc_migration'>(siehe Interview
+im Anhang)</a>. <br class='newline' />Ein weiteres Problem ist die begrenzte Rechenleistung und Speicherkapazität bestehender Systeme.
+PQC-Algorithmen benötigen oft grössere Schlüssel und mehr Rechenressourcen als herkömmliche
+Verfahren, was insbesondere bei älteren oder eingebetteten Systemen zu Kompatibilitätsproblemen
+führen kann [<a id='x1-27003'></a><a href='main.html#X0-fraunhoferPQC'>29</a>]. <br class='newline' />Gemäss Christian Weber ist trotz dieser Herausforderungen die frühzeitige Vorbereitung auf die
+Post-Quanten-Ära unerlässlich. Experten empfehlen, bereits heute mit der Planung und schrittweisen
+Implementierung quantensicherer Verfahren zu beginnen, um für den Zeitpunkt gewappnet zu sein,
+an dem leistungsfähige Quantencomputer verfügbar werden <a href='#pqc_migration'>(siehe Interview im Anhang)</a>.
+<br class='newline' />Grundsätzlich zielt Verschlüsselung nicht auf ewige Sicherheit ab, sondern nur darauf, Daten so lange
+zu schützen, bis sie ihren Wert verlieren wie z.B. Patente deren Schutz nach einigen Jahren abläuft
+<a href='#pqc_security'>(siehe Interview mit Christian Weber im Anhang)</a>.
+<a id='x1-27004r4'></a>
+                                                                                       
+                                                                                       
+</p>
+   <h2 class='likechapterHead' id='fazit'><a id='x1-28000'></a>4. Fazit</h2>
+<p id='fazit-ausblick'><a id='Q1-1-47'></a>
+   </p><h3 class='sectionHead' id='zusammenfassung'><span class='titlemark'>4.1   </span> <a id='x1-290004.1'></a>Zusammenfassung</h3>
+<!-- l. 9 --><p class='noindent'>Diese Arbeit hat gezeigt, dass Quantencomputer eine erhebliche Bedrohung für die Sicherheit aktueller
+Verschlüsselungsverfahren darstellen. Solange die praktische Entwicklung von Quantencomputern unter
+der kritischen Grenze von etwa 4000 logischen Qubits verbleibt, bleibt der RSA grundsätzlich sicher.
+Allerdings zeigt die aktuelle Roadmap von IBM, dass diese Grenze in den 2030er Jahren erreicht
+werden könnte. Die entscheidende Erkenntnis ist jedoch: Der Handlungsbedarf besteht
+bereits heute, nicht erst bei Marktreife. Besonders kritisch sind dabei langfristig vertrauliche
+Daten, die heute gesammelt und gespeichert werden, um sie in der Zukunft zu entschlüsseln.
+<br class='newline' />Die vom NIST standardisierten PQC-Verfahren bieten einen bewährten Rahmen für diese Transition.
+Besonders wichtig ist, dass diese Algorithmen bereits heute in kritischen Infrastrukturen wie
+Bankensystemen, Gesundheitswesen und Regierungskommunikation implementiert werden müssen.
+Harvest now, decrypt later–Angriffe unterstreichen die Dringlichkeit, da Daten, die heute mit
+RSA verschlüsselt werden, mit einem zukünftigen Quantencomputer mit 4000 logischen
+Qubits ausgelesen werden können. Daher müssen PQC-Lösungen schon jetzt eingeführt
+werden.
+</p><!-- l. 20 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead' id='beantwortung-der-fragestellung'><span class='titlemark'>4.2   </span> <a id='x1-300004.2'></a>Beantwortung der Fragestellung</h3>
+<!-- l. 21 --><p class='noindent'>Die in dieser Arbeit untersuchte Fragestellung lautete: <span class='rm-lmri-10x-x-109'>„Welche Bedrohung stellen Quantencomputer
+für die Sicherheit aktueller Verschlüsselungsverfahren dar, und inwiefern wären dadurch Daten
+gefährdet, wenn morgen ein Quantencomputer marktreif wäre?” </span><br class='newline' />Ein Quantencomputer mit über 4000 logischen Qubits würde die mathematischen Grundlagen der
+heute verwendeten asymmetrischen Verschlüsselungsverfahren vollständig aufheben. Dadurch
+wäre es möglich, alle damit verschlüsselten Daten innerhalb kurzer Zeit zu entschlüsseln.
+<br class='newline' />Bei Quantencomputer mit 2000 logischen Qubits, welcher für Forschungs- und Industriezwecke
+ausreichen sollte, wäre die gängigsten Verschlüsselungsverfahren noch sicher. Allerdings könnten
+gezielte Angriffe auf schwächere Systeme oder Protokolle möglich sein, was die Notwendigkeit
+unterstreicht, frühzeitig auf quantensichere Algorithmen umzustellen.
+                                                                                       
+                                                                                       
+</p><!-- l. 30 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead' id='kritische-reflexion'><span class='titlemark'>4.3   </span> <a id='x1-310004.3'></a>Kritische Reflexion</h3>
+<!-- l. 31 --><p class='noindent'>Wie jede technologische Entwicklung haben auch Quantencomputer Chancen und Risiken. Während
+sie die Sicherheit bestehender Verschlüsselungsverfahren bedrohen, bieten sie gleichzeitig die
+Möglichkeit, für mathematische Beweise und effiziente Algorithmen für komplexe Probleme. Der
+Zeitpunkt des Q-Day ist ungewiss. Damit bleiben viele Fragen offen. Auch können technologische
+Durchbrüche die Entwicklung beschleunigen, staatliche Regulierungen beispielsweise könnten sie
+hingegen verzögern. <br class='newline' />Selbst Fachpersonen verstehen noch nicht alle Verhaltensmerkmale der quantenphysikalischen Welt.
+Viel Wissen und Fachpersonen mit diesem Wissen müssen aufgebaut werden. Der vorgegebene Umfang
+dieser Berufsmaturitätsarbeit erlaubte nur einen kleinen Einblick in die komplexe Thematik der
+Quantencomputer und deren Auswirkungen auf die Datensicherheit.
+<a id='x1-31001r5'></a>
+                                                                                       
+                                                                                       
+</p>
+   <h2 class='likechapterHead' id='anhang'><a id='x1-32000'></a>5. Anhang</h2>
+<p id='anhang1'><a id='Q1-1-52'></a>
+   </p><h3 class='sectionHead' id='glossar'><span class='titlemark'>5.1   </span> <a id='x1-330005.1'></a>Glossar</h3>
+     <dl class='description'><dt class='description'>
+<a id='bra-ket-def'></a><span class='rm-lmbx-10x-x-109'>Bra-Ket-Schreibweise</span> </dt><dd class='description'>
+     <!-- l. 12 --><p class='noindent'>  Notation  zur  Darstellung  von  Quantenzuständen,  z.B.  <img alt='|0⟩ ' class='math' src='main18x.png' /> und  <img alt='|1⟩ ' class='math' src='main19x.png' /> für  die
+     Basiszustände eines Qubits. Diese repräsentieren einen Vektor in einem zweidimensionalen
+     komplexen Vektorraum. Ket <img alt='      ( )
+|ψ ⟩ =  α
+       β ' class='math' src='main20x.png' /> steht für einen Spaltenvektor, während Bra
+     <img alt='      (     )
+⟨ψ | = α  β ' class='math' src='main21x.png' /> für den Zeilenvektor steht. <br class='newline' /><span class='lmsy-10x-x-109'>|</span>0<span class='lmsy-10x-x-109'>⟩ </span>steht für den zugehörigen Spaltenvektor <img align='middle' alt='(  )
+  1
+  0' class='left' src='main22x.png' /> und <span class='lmsy-10x-x-109'>|</span>1<span class='lmsy-10x-x-109'>⟩ </span>entspricht <img align='middle' alt='(  )
+  0
+  1' class='left' src='main23x.png' /> [<a id='x1-33001'></a><a id='page.56'></a><a href='main.html#X0-bashiri2025quantencomputing'>4</a>].
+     </p></dd><dt class='description'>
+<a id='fpga-def'></a><span class='rm-lmbx-10x-x-109'>Field-Programmable Gate Array-Schaltungen (feldprogrammierbare Gatter-Anordnung)</span> </dt><dd class='description'>
+     <!-- l. 17 --><p class='noindent'> Integrierte Schaltkreise, die nach der Herstellung vom Benutzer programmiert werden
+     können, um verschiedene logische Funktionen zu erfüllen. Sie bestehen aus einer Matrix
+     von konfigurierbaren Logikblöcken und programmierbaren Verbindungsnetzwerken, die es
+     ermöglichen, komplexe digitale Schaltungen zu erstellen.
+     </p></dd><dt class='description'>
+<a id='fourier-transform-def'></a><span class='rm-lmbx-10x-x-109'>Fourier-Transformation</span> </dt><dd class='description'>
+     <!-- l. 21 --><p class='noindent'> Eine mathematische Methode zur Zerlegung eines Signals in seine
+     Frequenzkomponenten. Sie wandelt ein zeitabhängiges Signal in ein frequenzabhängiges
+     Signal um, indem sie das Signal als Summe von Sinusfunktionen unterschiedlicher
+     Frequenzen und Amplitudendarstellt [<a id='x1-33002'></a><a href='main.html#X0-fourierTransform'>30</a>]. </p><figure class='figure' id='x1-33003r12'><span id='fouriertransformation-fouriertransform'></span> 
+ <img alt='PIC' height='182' src='images/fourier_transformation.png' width='182' /> 
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 12: </span></span><span class='content'><span class='rm-lmr-10'>Fourier-Transformation [</span><a href='main.html#X0-fourierTransform'><span class='rm-lmr-10'>30</span></a><span class='rm-lmr-10'>].</span>                                                  </span></figcaption><!-- tex4ht:label?: x1-33003r12  -->
+     </figure>
+     </dd><dt class='description'>
+<a id='hashen-def'></a><span class='rm-lmbx-10x-x-109'>Hashen</span> </dt><dd class='description'>
+     <!-- l. 31 --><p class='noindent'> Eine Einwegfunktion zum Verschlüsseln von Daten. Sie nimmt einen lesbaren Text und
+     verwandelt ihn in eine völlig andere Zeichenkette mit einer bestimmten Länge. Im Gegensatz zu
+                                                                                       
+                                                                                       
+     anderen Verschlüsselungsalgorithmen, die Daten umwandeln, ist Hashing jedoch fast unmöglich
+     rückgängig zu machen [<a id='x1-33004'></a><a href='main.html#X0-dashlaneHashen'>31</a>].
+                                                                                       
+                                                                                       
+     </p></dd><dt class='description'>
+<a id='komplexe-zahlen-def'></a><span class='rm-lmbx-10x-x-109'>Komplexe Zahlen</span> </dt><dd class='description'>
+     <!-- l. 35 --><p class='noindent'> Da die <img alt='√ ---
+  − 1' class='sqrt' src='main24x.png' /> nicht als reelle Zahl definiert ist, wurde die imaginäre Zahl <img alt='i  ' class='math' src='main25x.png' /> eingeführt,
+     wobei <img alt='i2 = − 1  ' class='math' src='main26x.png' />. Komplexe Zahlen sind zusammengesetzt aus Real- und Imaginärteil.
+     Sie werden ausgedrückt als <span class='lmmi-10x-x-109'>α </span>= <span class='lmmi-10x-x-109'>Re</span>(<span class='lmmi-10x-x-109'>α</span>) + <span class='lmmi-10x-x-109'>Im</span>(<span class='lmmi-10x-x-109'>α</span>)<span class='lmmi-10x-x-109'>i</span>, wobei <img alt='Re(α)  ' class='math' src='main27x.png' /> der Realteil und
+     <img alt='Im (α )  ' class='math' src='main28x.png' /> der Imaginärteil ist. Komplexe Zahlen können aber auch mit Polarkoordinaten
+     dargestellt werden, also mit Betrag (<span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>α</span></sub>) und Winkel (<span class='lmmi-10x-x-109'>φ</span><sub><span class='lmmi-8'>α</span></sub>). </p><figure class='figure' id='x1-33005r13'><span id='darstellung-komplexer-zahlen-in-der-komplexen-ebene'></span> 
+ <img alt='PIC' height='182' src='images/explanation_complex_numbers.png' width='182' /> 
+<figcaption class='caption'><span class='id'><span class='rm-lmr-10'>Abbildung 13: </span></span><span class='content'><span class='rm-lmr-10'>Darstellung komplexer Zahlen in der komplexen Ebene.</span>                            </span></figcaption><!-- tex4ht:label?: x1-33005r13  -->
+     </figure>
+     </dd><dt class='description'>
+<a id='landau-notation-def'></a><span class='rm-lmbx-10x-x-109'>Landau-Notation</span> </dt><dd class='description'>
+     <!-- l. 46 --><p class='noindent'> Eine mathematische Notation zur Analyse der Laufzeit von Algorithmen. Sie gibt an, wie schnell
+     eine Funktion wächst, wenn die Eingabegrösse gegen unendlich geht. Zum Beispiel bedeutet
+     <img alt='O (n2)  ' class='math' src='main29x.png' />, dass die Laufzeit eines Algorithmus im schlimmsten Fall proportional zum Quadrat der
+     Eingabegrösse <img alt='n  ' class='math' src='main30x.png' /> wächst [<a id='x1-33006'></a><a id='page.58'></a><a href='main.html#X0-landauNotation'>12</a>].
+     </p></dd><dt class='description'>
+<a id='modulo-def'></a><span class='rm-lmbx-10x-x-109'>Modulo</span> </dt><dd class='description'>
+     <!-- l. 51 --><p class='noindent'> Eine mathematische Operation, die den Rest einer Division zweier Zahlen angibt. Zum Beispiel
+     ist <img alt='7  mod 3 = 1  ' class='math' src='main31x.png' /> (oder auch geschrieben 7 % 3 = 1), da 7 : 3 = 2 mit einem Rest von 1
+     ergibt.
+     </p></dd><dt class='description'>
+<a id='polynomialtime'></a><span class='rm-lmbx-10x-x-109'>Polynomzeit</span> </dt><dd class='description'>
+     <!-- l. 54 --><p class='noindent'> Ein Polynom ist eine mathematische Funktion der Form <img alt='          k        k−1
+P(n) = akn  + ak−1n    + ...+ a1n + a0   ' class='math' src='main32x.png' />,
+     wobei <img alt='ai  ' class='math' src='main33x.png' /> Konstanten sind und <img alt='k  ' class='math' src='main34x.png' /> eine natürliche Zahl ist. Ein Polynom wächst also nicht
+     exponentiell, sondern in einem viel langsameren Tempo. Ein Algorithmus läuft in Polynomzeit,
+     wenn seine Laufzeit durch ein Polynom in Bezug auf die Eingabegrösse <img alt='n  ' class='math' src='main35x.png' /> beschrieben werden
+     kann, also <img alt='O (nk)  ' class='math' src='main36x.png' /> für einen konstanten Exponent <img alt='k  ' class='math' src='main37x.png' />.
+     </p></dd><dt class='description'>
+<a id='xor-gate-def'></a><span class='rm-lmbx-10x-x-109'>XOR-Gatter</span> </dt><dd class='description'>
+     <!-- l. 59 --><p class='noindent'> Ein logisches Gatter, das zwei Eingänge hat und genau dann eine 1 ausgibt, wenn die Anzahl
+     der Eingänge mit dem Wert 1 ungerade ist.
+</p>
+     <div class='center'>
+<!-- l. 62 --><p class='noindent'>
+</p>
+                                                                                       
+                                                                                       
+<div class='tabular'> <table class='tabular' id='TBL-5'><colgroup id='TBL-5-1g'><col id='TBL-5-1' /></colgroup><colgroup id='TBL-5-2g'><col id='TBL-5-2' /></colgroup><colgroup id='TBL-5-3g'><col id='TBL-5-3' /></colgroup><tr class='hline'><td></td><td></td><td></td></tr><tr id='TBL-5-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-1-1' style='white-space:nowrap; text-align:center;'>A</td><td class='td11' id='TBL-5-1-2' style='white-space:nowrap; text-align:center;'>B</td><td class='td11' id='TBL-5-1-3' style='white-space:nowrap; text-align:center;'>A XOR B</td></tr><tr class='hline'><td></td><td></td><td></td></tr><tr id='TBL-5-2-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-2-1' style='white-space:nowrap; text-align:center;'> 0 </td><td class='td11' id='TBL-5-2-2' style='white-space:nowrap; text-align:center;'>0</td><td class='td11' id='TBL-5-2-3' style='white-space:nowrap; text-align:center;'> 0</td>
+</tr><tr class='hline'><td></td><td></td><td></td></tr><tr id='TBL-5-3-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-3-1' style='white-space:nowrap; text-align:center;'> 0 </td><td class='td11' id='TBL-5-3-2' style='white-space:nowrap; text-align:center;'>1</td><td class='td11' id='TBL-5-3-3' style='white-space:nowrap; text-align:center;'>    1      </td>
+</tr><tr class='hline'><td></td><td></td><td></td></tr><tr id='TBL-5-4-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-4-1' style='white-space:nowrap; text-align:center;'> 1 </td><td class='td11' id='TBL-5-4-2' style='white-space:nowrap; text-align:center;'>0</td><td class='td11' id='TBL-5-4-3' style='white-space:nowrap; text-align:center;'>    1      </td>
+</tr><tr class='hline'><td></td><td></td><td></td></tr><tr id='TBL-5-5-' style='vertical-align:baseline;'><td class='td11' id='TBL-5-5-1' style='white-space:nowrap; text-align:center;'> 1 </td><td class='td11' id='TBL-5-5-2' style='white-space:nowrap; text-align:center;'>1</td><td class='td11' id='TBL-5-5-3' style='white-space:nowrap; text-align:center;'>    0      </td>
+</tr><tr class='hline'><td></td><td></td><td></td></tr></table>                                                                                       </div></div>
+     </dd></dl>
+                                                                                       
+                                                                                       
+<!-- l. 80 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead' id='abkurzungsverzeichnis'><span class='titlemark'>5.2   </span> <a id='x1-340005.2'></a>Abkürzungsverzeichnis</h3>
+     <dl class='description'><dt class='description'>
+<span class='rm-lmbx-10x-x-109'>FPGA</span> </dt><dd class='description'>
+     <!-- l. 82 --><p class='noindent'> Field-Programmable Gate Array (feldprogrammierbare Gatter-Anordnung)
+     </p></dd><dt class='description'>
+<span class='rm-lmbx-10x-x-109'>NIST</span> </dt><dd class='description'>
+     <!-- l. 83 --><p class='noindent'> National Institute of Standards and Technology
+     </p></dd><dt class='description'>
+<span class='rm-lmbx-10x-x-109'>QFT</span> </dt><dd class='description'>
+     <!-- l. 84 --><p class='noindent'> Quanten-Fourier-Transformation
+     </p></dd><dt class='description'>
+<span class='rm-lmbx-10x-x-109'>Qubit</span> </dt><dd class='description'>
+     <!-- l. 85 --><p class='noindent'> Quantenbit
+     </p></dd><dt class='description'>
+<span class='rm-lmbx-10x-x-109'>RSA</span> </dt><dd class='description'>
+     <!-- l. 86 --><p class='noindent'> Rivest-Shamir-Adleman
+     </p></dd><dt class='description'>
+<span class='rm-lmbx-10x-x-109'>PQC</span> </dt><dd class='description'>
+     <!-- l. 87 --><p class='noindent'> Post-Quanten-Kryptographie</p></dd></dl>
+<!-- l. 90 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead' id='abbildungsverzeichnis'><span class='titlemark'>5.3   </span> <a id='x1-350005.3'></a>Abbildungsverzeichnis</h3>
+   <div class='tableofcontents'><span class='lofToc'>1 <a href='#trigonometrische-visualisierung-von-r-und-r-'>Trigonometrische Visualisierung von <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>α</span></sub> und <span class='lmmi-10x-x-109'>r</span><sub><span class='lmmi-8'>β</span></sub></a></span><br /><span class='lofToc'>2 <a href='#blochkugel-wikiblochsphere'>Bloch-Kugel [<a id='page.60'></a>7]</a></span><br /><span class='lofToc'>3 <a href='#vergleich-polynomielle-und-exponentielle-wachstumsraten'>Vergleich
+Polynomielle und Exponentielle Wachstumsraten</a></span><br /><span class='lofToc'>4 <a href='#vergleich-lineare-und-sublineare-wachstumsraten'>Vergleich Lineare und
+Sublineare Wachstumsraten</a></span><br /><span class='lofToc'>5 <a href='#ibm-quantum-system-one-spiegelibmquantum'>IBM Quantum System One [14].</a></span><br /><span class='lofToc'>6 <a href='#funktionsweise-der-symmetrischen-verschlusselung'>Funktionsweise
+der symmetrischen Verschlüsselung</a></span><br /><span class='lofToc'>7 <a href='#funktionsweise-der-asymmetrischen-verschlusselung'>Funktionsweise der asymmetrischen
+Verschlüsselung</a></span><br /><span class='lofToc'>8 <a href='#funktionsweise-des-bruteforceangriffs'>Funktionsweise des Brute-Force-Angriffs</a></span><br /><span class='lofToc'>9 <a href='#funktionsweise-des-shoralgorithmus-quelle-mandrysch-teilweise-modifiziert'>Funktionsweise
+des Shor-Algorithmus, (Quelle: [25] - teilweise modifiziert).</a></span><br /><span class='lofToc'>10 <a href='#ablauf-des-shoralgorithmus-quelle-bashiriquantencomputing-teilweise-modifiziert'>Ablauf des
+Shor-Algorithmus (Quelle: [4] - teilweise modifiziert).</a></span><br /><span class='lofToc'>11 <a href='#sicherheitsbeurteilung-verschiedener-verschlusselungsverfahren-quelle-qday-teilweise-modifiziert'>Sicherheitsbeurteilung
+verschiedener  Verschlüsselungsverfahren.  (Quelle:  [16]  -  teilweise
+modifiziert).</a></span><br /><span class='lofToc'>12 <a href='#fouriertransformation-fouriertransform'>Fourier-Transformation [30].</a></span><br /><span class='lofToc'>13 <a href='#darstellung-komplexer-zahlen-in-der-komplexen-ebene'>Darstellung komplexer
+Zahlen in der komplexen Ebene.</a></span><br />
+                                                                                       
+                                                                                       
+   </div>
+<!-- l. 93 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead' id='tabellenverzeichnis'><span class='titlemark'>5.4   </span> <a id='x1-360005.4'></a>Tabellenverzeichnis</h3>
+   <div class='tableofcontents'><span class='lotToc'>1 <a href='#uberblick-amplituden-und-phasenanteile-eines-qubits'>Überblick Amplituden- und Phasenanteile eines Qubits</a></span><br /><span class='lotToc'>2 <a href='#pauligatter-darstellung'>Pauli-Gatter
+Darstellung</a></span><br /><span class='lotToc'>3 <a href='#hadamardgatter-darstellung'>Hadamard-Gatter Darstellung</a></span><br /><span class='lotToc'>4 <a href='#cnotgatter-darstellung'>CNOT-Gatter Darstellung</a></span><br />
+   </div>
+                                                                                       
+                                                                                       
+   <h3 class='sectionHead' id='literaturverzeichnis'><span class='titlemark'>5.5   </span> <a id='x1-370005.5'></a>Literaturverzeichnis</h3>
+<!-- l. 99 --><p class='noindent'>
+     </p><dl class='thebibliography'><dt class='thebibliography' id='X0-ct2025verschluesselung'>
+ [1]  </dt><dd class='thebibliography' id='bib-1'>
+     <!-- l. 99 --><p class='noindent'><a id='page.62'></a><a href='main.html' id='X0-'></a>S. Patsch. „Bedrohung der Verschlüsselung“. In: <span class='rm-lmri-10x-x-109'>c’t - Magazin für Computertechnik </span>23
+     (2025), S. 24–27.
+     </p></dd><dt class='thebibliography' id='X0-mooreslaw'>
+ [2]  </dt><dd class='thebibliography' id='bib-2'>
+     <!-- l. 99 --><p class='noindent'>C.  Tardi.  <span class='rm-lmri-10x-x-109'>Understanding  Moore’s  Law:  Is  It  Still  Relevant  in  2025?  </span>Investopedia,
+     2025. [Online] Available: <a class='url' href='https://www.investopedia.com/terms/m/mooreslaw.asp'><span class='rm-lmtt-10x-x-109'>https://www.investopedia.com/terms/m/mooreslaw.asp</span></a>
+     (Abrufdatum 20.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-tsmc2022'>
+ [3]  </dt><dd class='thebibliography' id='bib-3'>
+     <!-- l. 99 --><p class='noindent'>TSMC.     <span class='rm-lmri-10x-x-109'>3nm     Process     Technology</span>.     TSMC,     2022.     [Online]     Available:
+     <a class='url' href='https://www.tsmc.com/english/dedicatedFoundry/technology/logic/l_3nm'><span class='rm-lmtt-10x-x-109'>https://www.tsmc.com/english/dedicatedFoundry/technology/logic/l_3nm</span></a>
+     (Abrufdatum 21.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-bashiri2025quantencomputing'>
+ [4]  </dt><dd class='thebibliography' id='bib-4'>
+     <!-- l. 99 --><p class='noindent'>K. Bashiri. <span class='rm-lmri-10x-x-109'>Quantencomputing</span>. Bonn: Rheinwerk Computing, 2025, S. 13, 16–17, 93–94,
+     192, 227, 318, 329, 234–236.
+     </p></dd><dt class='thebibliography' id='X0-youtube2024quantencomputing'>
+ [5]  </dt><dd class='thebibliography' id='bib-5'>
+     <!-- l. 99 --><p class='noindent'>W. /. H. Hamburg. <span class='rm-lmri-10x-x-109'>Wie funktioniert ein Quantencomputer? </span>2024. [Online] Available: 
+<a class='url' href='https://www.youtube.com/watch?v=JWf_g_ForGk'><span class='rm-lmtt-10x-x-109'>https://www.youtube.com/watch?v=JWf_g_ForGk</span></a> (Abrufdatum 21.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-youtube2020blochkugel'>
+ [6]  </dt><dd class='thebibliography' id='bib-6'>
+     <!-- l. 99 --><p class='noindent'>mu-hoch-3.                         <span class='rm-lmri-10x-x-109'>Die                      Bloch-Kugel                      (einfach
+     erklärt)</span>. 2020. [Online]. Available: <a class='url' href='https://www.youtube.com/watch?v=FrvzD9YxnQQ'><span class='rm-lmtt-10x-x-109'>https://www.youtube.com/watch?v=FrvzD9YxnQQ</span></a>
+     (Abrufdatum 21.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-wiki2024blochsphere'>
+ [7]  </dt><dd class='thebibliography' id='bib-7'>
+     <!-- l. 99 --><p class='noindent'>S.                  Meister.                   <span class='rm-lmri-10x-x-109'>Bloch                sphere</span>.                   Wikimedia,
+     2009. [Online] Available: <a class='url' href='https://en.wikipedia.org/wiki/File:Bloch_sphere.svg'><span class='rm-lmtt-10x-x-109'>https://en.wikipedia.org/wiki/File:Bloch_sphere.svg</span></a>
+     (Abrufdatum 21.11.2025).
+     </p></dd><dt class='thebibliography' id='X0-ct2020quantengatter'>
+ [8]  </dt><dd class='thebibliography' id='bib-8'>
+     <!-- l. 99 --><p class='noindent'>F.  Neukart.  „Quantengatter“.  In:  <span class='rm-lmri-10x-x-109'>c’t  -  Magazin  für  Computertechnik  </span>06  (2020),
+     S. 146–151.
+                                                                                       
+                                                                                       
+     </p></dd><dt class='thebibliography' id='X0-ct2022quantencomputer'>
+ [9]  </dt><dd class='thebibliography' id='bib-9'>
+     <!-- l. 99 --><p class='noindent'>B. Baumann. „Einführung in Quantencomputer“. In: <span class='rm-lmri-10x-x-109'>c’t - Magazin für Computertechnik</span>
+     13 (2022), S. 64–69.
+     </p></dd><dt class='thebibliography' id='X0-eth2023quantencomputer'>
+[10]  </dt><dd class='thebibliography' id='bib-10'>
+     <!-- l. 99 --><p class='noindent'>F.      Meyer.      <span class='rm-lmri-10x-x-109'>Für     sehr     kleine     Problemgrössen     ist     ein     klassischer
+     Computer      schneller</span>.       ETH       Zürich,       2023.       [Online]       Available:       
+<a class='url' href='https://ethz.ch/de/news-und-veranstaltungen/eth-news/news/2023/05/fuer-sehr-kleine-problemgroessen-ist-ein-klassischer-computer-schneller.html'><span class='rm-lmtt-10x-x-109'>https://ethz.ch/de/news-und-veranstaltungen/eth-news/news/2023/05/fuer-sehr-kleine-problemgroessen-ist-ein-klassischer-computer-schneller.html</span></a>
+     (Abrufdatum 04.12.2026).
+     </p></dd><dt class='thebibliography' id='X0-3blue1brownGrover'>
+[11]  </dt><dd class='thebibliography' id='bib-11'>
+     <!-- l. 99 --><p class='noindent'>3Blue1Brown.       <span class='rm-lmri-10x-x-109'>Grover’s      Algorithm</span>.       2026.       [Online]       Available:       
+<a class='url' href='https://www.3blue1brown.com/lessons/grover'><span class='rm-lmtt-10x-x-109'>https://www.3blue1brown.com/lessons/grover</span></a> (Abrufdatum 18.12.2026).
+     </p></dd><dt class='thebibliography' id='X0-landauNotation'>
+[12]  </dt><dd class='thebibliography' id='bib-12'>
+     <!-- l. 99 --><p class='noindent'>HappyCoders.eu. <span class='rm-lmri-10x-x-109'>O-Notation und Zeitkomplexität einfach erklärt</span>. HappyCoders.eu, 2026.
+     [Online]                                                                                              Available:
+     <a class='url' href='https://www.happycoders.eu/de/algorithmen/o-notation-zeitkomplexitaet/'><span class='rm-lmtt-10x-x-109'>https://www.happycoders.eu/de/algorithmen/o-notation-zeitkomplexitaet/</span></a>
+     (Abrufdatum 25.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-weekly2025herausforderungen'>
+[13]  </dt><dd class='thebibliography' id='bib-13'>
+     <!-- l. 99 --><p class='noindent'>S. J. Bigelow. <span class='rm-lmri-10x-x-109'>Quantenfehlerkorrektur: Verfahren und Herausforderungen</span>. 2025. [Online]
+     Available: <a class='url' href='https://www.computerweekly.com/de/feature/Quantenfehlerkorrektur-Verfahren-und-Herausforderungen'><span class='rm-lmtt-10x-x-109'>https://www.computerweekly.com/de/feature/Quantenfehlerkorrektur-Verfahren-und-Herausforderungen</span></a>
+     (Abrufdatum 28.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-spiegelIBMQuantum2021'>
+[14]  </dt><dd class='thebibliography' id='bib-14'>
+     <!-- l. 99 --><p class='noindent'>D.   Spiegel.   <span class='rm-lmri-10x-x-109'>IBM   Quantum   System   One:   Deutschlands   erster   Quantencomputer
+     kostet   11.621   Euro   Monatsmiete</span>.    Der    Spiegel,    2021.    [Online]    Available:    
+<a class='url' href='https://www.spiegel.de/netzwelt/netzpolitik/ibm-quantum-system-one-deutschlands-erster-quantencomputer-kostet-11-621-euro-monatsmiete-a-eb402a65-d78a-41f7-9411-047bc99db079'><span class='rm-lmtt-10x-x-109'>https://www.spiegel.de/netzwelt/netzpolitik/ibm-quantum-system-one-deutschlands-erster-quantencomputer-kostet-11-621-euro-monatsmiete-a-eb402a65-d78a-41f7-9411-047bc99db079</span></a>
+     (Abrufdatum 21.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-spektrum2023quantenfehlerkorrektur'>
+[15]  </dt><dd class='thebibliography' id='bib-15'>
+     <!-- l. 99 --><p class='noindent'>K.           Menne.           <span class='rm-lmri-10x-x-109'>Quantencomputer         neuer         Ansatz         verbessert
+     Quantenchips      dramatisch</span>.       Spektrum,       2023.       [Online]       Available:       
+<a class='url' href='https://www.spektrum.de/news/quantencomputer-neuer-ansatz-verbessert-quantenchips-dramatisch/2200904'><span class='rm-lmtt-10x-x-109'>https://www.spektrum.de/news/quantencomputer-neuer-ansatz-verbessert-quantenchips-dramatisch/2200904</span></a>
+     (Abrufdatum 20.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-qday2030'>
+[16]  </dt><dd class='thebibliography' id='bib-16'>
+                                                                                       
+                                                                                       
+     <!-- l. 99 --><p class='noindent'>I.         Daily.         <span class='rm-lmri-10x-x-109'>Q-Day        2030</span>.         2026.         [Online]         Available:         
+<a class='url' href='https://www.it-daily.net/it-sicherheit/datenschutz-grc/q-day-2030'><span class='rm-lmtt-10x-x-109'>https://www.it-daily.net/it-sicherheit/datenschutz-grc/q-day-2030</span></a>
+     (Abrufdatum 23.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-nist800175b'>
+[17]  </dt><dd class='thebibliography' id='bib-17'>
+     <!-- l. 99 --><p class='noindent'>National  Institute  of  Standards  and  Technology.  <span class='rm-lmri-10x-x-109'>Guideline  for  Using  Cryptographic
+     Standards in the Federal Government: Cryptographic Mechanisms</span>.  Special  Publication
+     800-175B Rev. 1. NIST, 2020, S. 20–23.
+     </p></dd><dt class='thebibliography' id='X0-singh1999codebook'>
+[18]  </dt><dd class='thebibliography' id='bib-18'>
+     <!-- l. 99 --><p class='noindent'>S.  Singh.  <span class='rm-lmri-10x-x-109'>The  Code  Book:  The  Science  of  Secrecy  from  Ancient  Egypt  to  Quantum
+     Cryptography</span>. New York: Doubleday, 1999, S. 9–11.
+     </p></dd><dt class='thebibliography' id='X0-nist80056b'>
+[19]  </dt><dd class='thebibliography' id='bib-19'>
+     <!-- l. 99 --><p class='noindent'>National  Institute  of  Standards  and  Technology.  <span class='rm-lmri-10x-x-109'>Recommendation for Pair-Wise Key
+     Establishment Schemes Using Discrete Logarithm Cryptography</span>. Techn. Ber. NIST, 2018.
+     </p></dd><dt class='thebibliography' id='X0-owaspBruteForce'>
+[20]  </dt><dd class='thebibliography' id='bib-20'>
+     <!-- l. 99 --><p class='noindent'>O.  Foundation.  <span class='rm-lmri-10x-x-109'>Brute  Force  Attack</span>.  OWASP  Foundation,  2023.  [Online]  Available:
+     <a class='url' href='https://owasp.org/www-community/attacks/Brute_force_attack'><span class='rm-lmtt-10x-x-109'>https://owasp.org/www-community/attacks/Brute_force_attack</span></a> (Abrufdatum
+     26.12.2025).
+     </p></dd><dt class='thebibliography' id='X0-nist80063b'>
+[21]  </dt><dd class='thebibliography' id='bib-21'>
+     <!-- l. 99 --><p class='noindent'>National   Institute   of   Standards   and   Technology.   <span class='rm-lmri-10x-x-109'>Digital   Identity   Guidelines:
+     Authentication and Lifecycle Management</span>. Techn. Ber. Special Publication 800-63B. NIST,
+     2017, S. 5–7, 69. <span class='rm-lmcsc-10x-x-109'>url</span>: <a class='url' href='https://doi.org/10.6028/NIST.SP.800-63b'><span class='rm-lmtt-10x-x-109'>https://doi.org/10.6028/NIST.SP.800-63b</span></a> (besucht am
+     26. 12. 2025).
+     </p></dd><dt class='thebibliography' id='X0-menezes1996handbook'>
+[22]  </dt><dd class='thebibliography' id='bib-22'>
+     <!-- l. 99 --><p class='noindent'>A. J.   Menezes,   P. C.   van   Oorschot   und   S. A.   Vanstone.   <span class='rm-lmri-10x-x-109'>Handbook  of  Applied
+     Cryptography</span>. Boca Raton: CRC Press, 1996, S. 3–8, 272, 308–340.
+     </p></dd><dt class='thebibliography' id='X0-linkedinBreach'>
+[23]  </dt><dd class='thebibliography' id='bib-23'>
+     <!-- l. 99 --><p class='noindent'>T.        Verge.        <span class='rm-lmri-10x-x-109'>LinkedIn       hacked:       over       six       million       passwords
+     compromised    and    published</span>.     The     Verge,     2013.     [Online]     Available:     
+<a class='url' href='https://www.theverge.com/2012/6/7/3071707/linkedin-hack-six-million-passwords-leaked'><span class='rm-lmtt-10x-x-109'>https://www.theverge.com/2012/6/7/3071707/linkedin-hack-six-million-passwords-leaked</span></a>
+     (Abrufdatum 26.12.2025).
+     </p></dd><dt class='thebibliography' id='X0-wikipedia_bruteforce_passwords'>
+[24]  </dt><dd class='thebibliography' id='bib-24'>
+                                                                                       
+                                                                                       
+     <!-- l. 99 --><p class='noindent'>W.    contributors.    <span class='rm-lmri-10x-x-109'>Aussprobieren   von   Passwörtern</span>.    2024.    [Online]    Available:
+     <a class='url' href='https://de.wikipedia.org/wiki/Passwort\#Ausprobieren_von_Passwörtern'><span class='rm-lmtt-10x-x-109'>https://de.wikipedia.org/wiki/Passwort\#Ausprobieren_von_PasswÃűrtern</span></a>
+     (Abrufdatum 21.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-mandrysch2016'>
+[25]  </dt><dd class='thebibliography' id='bib-25'>
+     <!-- l. 99 --><p class='noindent'>J.  Mandrysch.  „Über  den  Shor-Algorithmus  und  Quantencomputer“.  Magisterarb.
+     Münster: Westfälische Wilhelms-Universität Münster, 2016.
+     </p></dd><dt class='thebibliography' id='X0-fzJuelichShor'>
+[26]  </dt><dd class='thebibliography' id='bib-26'>
+     <!-- l. 99 --><p class='noindent'>R.      Panknin.      <span class='rm-lmri-10x-x-109'>Wie      Primzahlen      helfen,      den      Quantencomputer      zu
+     verbessern</span>.       Forschungszentrum       Jülich,       2019.       [Online]       Available:       
+<a class='url' href='https://www.fz-juelich.de/de/aktuelles/news/feature/wie-primzahlen-helfen-den-quantencomputer-zu-verbessern'><span class='rm-lmtt-10x-x-109'>https://www.fz-juelich.de/de/aktuelles/news/feature/wie-primzahlen-helfen-den-quantencomputer-zu-verbessern</span></a>
+     (Abrufdatum 26.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-srfEinsteinQuantencomputer'>
+[27]  </dt><dd class='thebibliography' id='bib-27'>
+     <!-- l. 99 --><p class='noindent'>T. M.  (Moderation).  <span class='rm-lmri-10x-x-109'>Quantencomputer:  Endlich  verständlich</span>.  SRF  Einstein,  2023.
+     [Online] Available: <a class='url' href='https://www.srf.ch/play/tv/einstein/video/quantencomputer-endlich-verstaendlich?urn=urn:srf:video:dab3c078-7362-4bd4-babb-ea4faec33d84'><span class='rm-lmtt-10x-x-109'>https://www.srf.ch/play/tv/einstein/video/quantencomputer-endlich-verstaendlich?urn=urn:srf:video:dab3c078-7362-4bd4-babb-ea4faec33d84</span></a>
+     (Abrufdatum 26.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-nistpqc'>
+[28]  </dt><dd class='thebibliography' id='bib-28'>
+     <!-- l. 99 --><p class='noindent'>National  Institute  of  Standards  and  Technology.  <span class='rm-lmri-10x-x-109'>Post-Quantum  Cryptography</span>.  2025.
+     [Online] Available: <a class='url' href='https://www.nist.gov/pqcrypto'><span class='rm-lmtt-10x-x-109'>https://www.nist.gov/pqcrypto</span></a> (Abrufdatum 28.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-fraunhoferPQC'>
+[29]  </dt><dd class='thebibliography' id='bib-29'>
+     <!-- l. 99 --><p class='noindent'>Fraunhofer           SIT.           <span class='rm-lmri-10x-x-109'>QuantumRISC</span>.           [Online]           Available:           
+<a class='url' href='https://www.sit.fraunhofer.de/de/quantumrisc/'><span class='rm-lmtt-10x-x-109'>https://www.sit.fraunhofer.de/de/quantumrisc/</span></a> (Abrufdatum 28.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-fourierTransform'>
+[30]  </dt><dd class='thebibliography' id='bib-30'>
+     <!-- l. 99 --><p class='noindent'>R. Vink. <span class='rm-lmri-10x-x-109'>Understanding the Fourier Transform by Example</span>. 2017. [Online] Available: 
+<a class='url' href='https://www.ritchievink.com/blog/2017/04/23/understanding-the-fourier-transform-by-example/'><span class='rm-lmtt-10x-x-109'>https://www.ritchievink.com/blog/2017/04/23/understanding-the-fourier-transform-by-example/</span></a>
+     (Abrufdatum 26.01.2026).
+     </p></dd><dt class='thebibliography' id='X0-dashlaneHashen'>
+[31]  </dt><dd class='thebibliography' id='bib-31'>
+     <!-- l. 99 --><p class='noindent'>Dashlane.        <span class='rm-lmri-10x-x-109'>Was       bedeutet       Hashen?        </span>2026.        [Online]        Available:
+     <a class='url' href='https://www.dashlane.com/de/blog/was-versteht-man-unter-passwort-hashing'><span class='rm-lmtt-10x-x-109'>https://www.dashlane.com/de/blog/was-versteht-man-unter-passwort-hashing</span></a>
+     (Abrufdatum 22.01.2026).</p></dd></dl>
+                                                                                       
+                                                                                       
+<!-- l. 102 --><p class='noindent'>
+</p>
+   <h4 class='subsectionHead' id='mundliche-quellen'><span class='titlemark'>5.5.1   </span> <a id='x1-380005.5.1'></a>Mündliche Quellen</h4>
+<!-- l. 104 --><p class='noindent'>
+</p>
+   <h3 class='likesectionHead' id='interview-mit-dipling-christian-weber-weei-mba'><a id='x1-39000'></a>Interview mit Dipl.-Ing. Christian Weber (WEEI) MBA</h3>
+<!-- l. 105 --><p class='noindent'>Das Interview wurde am 27. Oktober 2025 telefonisch geführt.<br class='newline' /><span class='rm-lmri-10x-x-109'>Welche Verschlüsselungsverfahren wären Ihrer Einschätzung nach am stärksten bedroht, wenn morgen
+ein leistungsfähiger Quantencomputer verfügbar wäre?</span><br class='newline' />Grundsätzlich wären alle heute eingesetzten Verschlüsselungsverfahren betroffen. Nahezu sämtliche
+aktuell verwendeten kryptografischen Algorithmen gelten im Prinzip als bedroht, da es derzeit kein in
+der Praxis breit eingesetztes, vollständig quantensicheres Verfahren gibt. Zwar existieren bereits erste
+quantensichere Algorithmen, die auch auf klassischer Hardware lauffähig sind, diese befinden sich
+jedoch noch nicht im produktiven Einsatz, sondern überwiegend im Forschungs- oder Laborumfeld.
+Kritische Infrastrukturen wie Online-Banking-Systeme operieren nicht im Labor, sondern in realen,
+global vernetzten Umgebungen. <br class='newline' /><a id='pqc_security'></a><span class='rm-lmri-10x-x-109'>Was versteht man unter quantensicheren Algorithmen und wie unterscheiden sie sich von klassischen
+Verschlüsselungsverfahren?</span><br class='newline' />Unter quantensicheren Algorithmen versteht man kryptografische Verfahren, die so aufgebaut sind,
+dass selbst ein Quantencomputer sie nicht in einer praktikablen Zeit brechen kann, auch nicht durch
+Brute-Force-Angriffe. Verschlüsselung zielt grundsätzlich nicht auf ewige Sicherheit ab, sondern darauf,
+Daten so lange zu schützen, bis sie ihren Wert verlieren. Dieses Prinzip gilt sowohl für klassische als
+auch für quantensichere Verfahren. Der wesentliche Unterschied liegt in der mathematischen
+Grundlage, da Quantencomputer völlig anders arbeiten als klassische von-Neumann-Rechner und
+deshalb neue Konzepte erfordern. <br class='newline' /><a id='pqc_migration'></a><span class='rm-lmri-10x-x-109'>Welche konkreten Schritte werden derzeit unternommen, um digitale Systeme auf die Zeit
+leistungsfähiger Quantencomputer vorzubereiten?</span><br class='newline' />Aktuell werden vor allem Standardisierungsbemühungen in internationalen Arbeitsgruppen verfolgt.
+Ein koordinierter, staatlich gesteuerter Ansatz ist jedoch kaum erkennbar. Es existieren keine
+umfassenden Analysen nationaler Infrastrukturen hinsichtlich quantenbedingter Risiken. Besonders
+problematisch ist dies in Bereichen wie dem Gesundheitswesen, in denen grosse Mengen sensibler
+Daten gespeichert werden. Auf politischer Ebene ist das Thema bislang nur unzureichend
+angekommen. <br class='newline' /><a id='dependency_cryptography'></a><span class='rm-lmri-10x-x-109'>Welche Branchen oder Institutionen wären besonders betroffen, wenn heutige Verschlüsselung plötzlich
+unsicher würde?</span><br class='newline' />Betroffen wären praktisch alle Bereiche. Banken sind aufgrund finanzieller Interessen besonders
+                                                                                       
+                                                                                       
+attraktive Ziele, ebenso blockchainbasierte Systeme. Das Militär wäre massiv betroffen, da moderne
+Waffensysteme vollständig auf verschlüsselter Kommunikation basieren. Auch Krankenhäuser,
+Verwaltungen und Unternehmen wären stark eingeschränkt, sobald öffentliche Netze genutzt werden.
+Sobald Verschlüsselung nicht mehr zuverlässig funktioniert, entsteht ein erhebliches Sicherheitsrisiko.
+<br class='newline' /><a id='longterm_security'></a><span class='rm-lmri-10x-x-109'>Wie gross schätzen Sie die Gefahr ein, dass heute verschlüsselt gespeicherte Daten in Zukunft
+nachträglich entschlüsselt werden?</span><br class='newline' />Diese Gefahr ist aus meiner Sicht sehr hoch und liegt langfristig nahezu bei hundert Prozent. Schon
+heute lassen sich viele Verschlüsselungsverfahren mit ausreichend Zeit und Rechenleistung brechen. Ein
+leistungsfähiger Quantencomputer würde diesen Prozess erheblich beschleunigen. Besonders für
+Geheimdienste, aber auch für wirtschaftliche Analysen, sind historische Daten von grossem Interesse,
+da sich daraus zukünftige Entwicklungen ableiten lassen. <br class='newline' /><span class='rm-lmri-10x-x-109'>Welche gesellschaftlichen Folgen hätte es, wenn persönliche Daten oder staatliche Geheimnisse plötzlich
+offenlägen?</span><br class='newline' />Einzelne Datenlecks führen erfahrungsgemäss nur zu geringen gesellschaftlichen Reaktionen. Kritisch
+wird es jedoch, wenn ganze digitale Systeme nicht mehr zuverlässig funktionieren. Elektronische
+Identitäten, digitale Gesundheitsdaten oder bargeldloser Zahlungsverkehr könnten ausfallen. Ohne
+funktionierende Ersatzverfahren wären Staaten, Unternehmen und Gesundheitssysteme erheblich
+eingeschränkt. Die Auswirkungen wären vergleichbar mit einem grossflächigen Stromausfall.
+<br class='newline' /><span class='rm-lmri-10x-x-109'>Könnte ein Wettlauf um die Quantencomputerüberlegenheit zu globalen Machtverschiebungen führen,
+vergleichbar mit der Entwicklung von Atomwaffen?</span><br class='newline' />Ja, eindeutig. Wer im Bereich des Quantencomputings führend ist, erlangt erhebliche wirtschaftliche,
+technologische und militärische Vorteile. Quantencomputer ermöglichen extrem schnelle Datenanalyse,
+Optimierung und Simulation. Diese Fähigkeiten können sowohl zivil als auch militärisch eingesetzt
+werden und bergen ein erhebliches strategisches Potenzial. <br class='newline' /><a id='overall_security'></a><span class='rm-lmri-10x-x-109'>Glauben Sie, dass die Gesellschaft rechtzeitig auf eine Ära leistungsfähiger Quantencomputer vorbereitet
+sein wird?</span><br class='newline' />Nein, als Gesellschaft sind wir darauf nicht ausreichend vorbereitet. Es fehlt an grundlegender
+technologischer Bildung und an einem Verständnis für Schlüsseltechnologien. Bereits in der
+Schule sollte ein Basiswissen über digitale Systeme, IT-Sicherheit und neue Technologien
+vermittelt werden. Viele Menschen nutzen diese Systeme, ohne ihre Funktionsweise oder
+Risiken zu verstehen, was langfristig zu Abhängigkeiten und Fehlentscheidungen führen
+kann.
+</p>
+    
+</body> 
+</html>

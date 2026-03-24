@@ -1,0 +1,879 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{ct2025verschluesselung}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9e4a15c7f35486dd096d0378cd9c84c2}{%
+           family={Patsch},
+           familyi={P\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e4a15c7f35486dd096d0378cd9c84c2}
+      \strng{fullhash}{9e4a15c7f35486dd096d0378cd9c84c2}
+      \strng{fullhashraw}{9e4a15c7f35486dd096d0378cd9c84c2}
+      \strng{bibnamehash}{9e4a15c7f35486dd096d0378cd9c84c2}
+      \strng{authorbibnamehash}{9e4a15c7f35486dd096d0378cd9c84c2}
+      \strng{authornamehash}{9e4a15c7f35486dd096d0378cd9c84c2}
+      \strng{authorfullhash}{9e4a15c7f35486dd096d0378cd9c84c2}
+      \strng{authorfullhashraw}{9e4a15c7f35486dd096d0378cd9c84c2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{c't - Magazin für Computertechnik}
+      \field{title}{Bedrohung der Verschlüsselung}
+      \field{volume}{23}
+      \field{year}{2025}
+      \field{pages}{24\bibrangedash 27}
+      \range{pages}{4}
+    \endentry
+    \entry{mooreslaw}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=4a03b51d9ac2d1e161af477059b96aa7}{%
+           family={Tardi},
+           familyi={T\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Investopedia}%
+      }
+      \strng{namehash}{4a03b51d9ac2d1e161af477059b96aa7}
+      \strng{fullhash}{4a03b51d9ac2d1e161af477059b96aa7}
+      \strng{fullhashraw}{4a03b51d9ac2d1e161af477059b96aa7}
+      \strng{bibnamehash}{4a03b51d9ac2d1e161af477059b96aa7}
+      \strng{authorbibnamehash}{4a03b51d9ac2d1e161af477059b96aa7}
+      \strng{authornamehash}{4a03b51d9ac2d1e161af477059b96aa7}
+      \strng{authorfullhash}{4a03b51d9ac2d1e161af477059b96aa7}
+      \strng{authorfullhashraw}{4a03b51d9ac2d1e161af477059b96aa7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.investopedia.com/terms/m/mooreslaw.asp}}
+      \field{note}{(Abrufdatum 20.01.2026)}
+      \field{title}{Understanding Moore's Law: Is It Still Relevant in 2025?}
+      \field{year}{2025}
+    \endentry
+    \entry{tsmc2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=15df739f1bc91d8ab1f69787526660c9}{%
+           family={TSMC},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {TSMC}%
+      }
+      \strng{namehash}{15df739f1bc91d8ab1f69787526660c9}
+      \strng{fullhash}{15df739f1bc91d8ab1f69787526660c9}
+      \strng{fullhashraw}{15df739f1bc91d8ab1f69787526660c9}
+      \strng{bibnamehash}{15df739f1bc91d8ab1f69787526660c9}
+      \strng{authorbibnamehash}{15df739f1bc91d8ab1f69787526660c9}
+      \strng{authornamehash}{15df739f1bc91d8ab1f69787526660c9}
+      \strng{authorfullhash}{15df739f1bc91d8ab1f69787526660c9}
+      \strng{authorfullhashraw}{15df739f1bc91d8ab1f69787526660c9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.tsmc.com/english/dedicatedFoundry/technology/logic/l_3nm}}
+      \field{note}{(Abrufdatum 21.01.2026)}
+      \field{title}{3nm Process Technology}
+      \field{year}{2022}
+    \endentry
+    \entry{bashiri2025quantencomputing}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=d5a6b665d2cb26e3ba952547a307c439}{%
+           family={Bashiri},
+           familyi={B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Bonn}%
+      }
+      \list{publisher}{1}{%
+        {Rheinwerk Computing}%
+      }
+      \strng{namehash}{d5a6b665d2cb26e3ba952547a307c439}
+      \strng{fullhash}{d5a6b665d2cb26e3ba952547a307c439}
+      \strng{fullhashraw}{d5a6b665d2cb26e3ba952547a307c439}
+      \strng{bibnamehash}{d5a6b665d2cb26e3ba952547a307c439}
+      \strng{authorbibnamehash}{d5a6b665d2cb26e3ba952547a307c439}
+      \strng{authornamehash}{d5a6b665d2cb26e3ba952547a307c439}
+      \strng{authorfullhash}{d5a6b665d2cb26e3ba952547a307c439}
+      \strng{authorfullhashraw}{d5a6b665d2cb26e3ba952547a307c439}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-8362-9848-3}
+      \field{title}{Quantencomputing}
+      \field{year}{2025}
+    \endentry
+    \entry{youtube2024quantencomputing}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b755d829ff9baa73bbe2d1ed4b9e77c2}{%
+           family={Hamburg},
+           familyi={H\bibinitperiod},
+           given={Weitz\bibnamedelimb /\bibnamedelima HAW},
+           giveni={W\bibinitperiod\bibinitdelim /\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{b755d829ff9baa73bbe2d1ed4b9e77c2}
+      \strng{fullhash}{b755d829ff9baa73bbe2d1ed4b9e77c2}
+      \strng{fullhashraw}{b755d829ff9baa73bbe2d1ed4b9e77c2}
+      \strng{bibnamehash}{b755d829ff9baa73bbe2d1ed4b9e77c2}
+      \strng{authorbibnamehash}{b755d829ff9baa73bbe2d1ed4b9e77c2}
+      \strng{authornamehash}{b755d829ff9baa73bbe2d1ed4b9e77c2}
+      \strng{authorfullhash}{b755d829ff9baa73bbe2d1ed4b9e77c2}
+      \strng{authorfullhashraw}{b755d829ff9baa73bbe2d1ed4b9e77c2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.youtube.com/watch?v=JWf_g_ForGk}}
+      \field{note}{(Abrufdatum 21.01.2026)}
+      \field{title}{Wie funktioniert ein Quantencomputer?}
+      \field{year}{2024}
+    \endentry
+    \entry{youtube2020blochkugel}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bbbb339d75631e69a15311210c556008}{%
+           family={mu-hoch-3},
+           familyi={h\bibinithyphendelim 3\bibinitperiod}}}%
+      }
+      \strng{namehash}{bbbb339d75631e69a15311210c556008}
+      \strng{fullhash}{bbbb339d75631e69a15311210c556008}
+      \strng{fullhashraw}{bbbb339d75631e69a15311210c556008}
+      \strng{bibnamehash}{bbbb339d75631e69a15311210c556008}
+      \strng{authorbibnamehash}{bbbb339d75631e69a15311210c556008}
+      \strng{authornamehash}{bbbb339d75631e69a15311210c556008}
+      \strng{authorfullhash}{bbbb339d75631e69a15311210c556008}
+      \strng{authorfullhashraw}{bbbb339d75631e69a15311210c556008}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online]. Available: \url{https://www.youtube.com/watch?v=FrvzD9YxnQQ}}
+      \field{note}{(Abrufdatum 21.01.2026)}
+      \field{title}{Die Bloch-Kugel (einfach erklärt)}
+      \field{year}{2020}
+    \endentry
+    \entry{wiki2024blochsphere}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2640bed7195baf4b412163e33ff7fcc5}{%
+           family={Meister},
+           familyi={M\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wikimedia}%
+      }
+      \strng{namehash}{2640bed7195baf4b412163e33ff7fcc5}
+      \strng{fullhash}{2640bed7195baf4b412163e33ff7fcc5}
+      \strng{fullhashraw}{2640bed7195baf4b412163e33ff7fcc5}
+      \strng{bibnamehash}{2640bed7195baf4b412163e33ff7fcc5}
+      \strng{authorbibnamehash}{2640bed7195baf4b412163e33ff7fcc5}
+      \strng{authornamehash}{2640bed7195baf4b412163e33ff7fcc5}
+      \strng{authorfullhash}{2640bed7195baf4b412163e33ff7fcc5}
+      \strng{authorfullhashraw}{2640bed7195baf4b412163e33ff7fcc5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://en.wikipedia.org/wiki/File:Bloch_sphere.svg}}
+      \field{note}{(Abrufdatum 21.11.2025)}
+      \field{title}{Bloch sphere}
+      \field{year}{2009}
+    \endentry
+    \entry{ct2020quantengatter}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=553c68b0b92aa0ff77bab92c20821fce}{%
+           family={Neukart},
+           familyi={N\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{553c68b0b92aa0ff77bab92c20821fce}
+      \strng{fullhash}{553c68b0b92aa0ff77bab92c20821fce}
+      \strng{fullhashraw}{553c68b0b92aa0ff77bab92c20821fce}
+      \strng{bibnamehash}{553c68b0b92aa0ff77bab92c20821fce}
+      \strng{authorbibnamehash}{553c68b0b92aa0ff77bab92c20821fce}
+      \strng{authornamehash}{553c68b0b92aa0ff77bab92c20821fce}
+      \strng{authorfullhash}{553c68b0b92aa0ff77bab92c20821fce}
+      \strng{authorfullhashraw}{553c68b0b92aa0ff77bab92c20821fce}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{c't - Magazin für Computertechnik}
+      \field{title}{Quantengatter}
+      \field{volume}{06}
+      \field{year}{2020}
+      \field{pages}{146\bibrangedash 151}
+      \range{pages}{6}
+    \endentry
+    \entry{ct2022quantencomputer}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c097fa0f8fe1584f3ac3b7e8e279440d}{%
+           family={Baumann},
+           familyi={B\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{c097fa0f8fe1584f3ac3b7e8e279440d}
+      \strng{fullhash}{c097fa0f8fe1584f3ac3b7e8e279440d}
+      \strng{fullhashraw}{c097fa0f8fe1584f3ac3b7e8e279440d}
+      \strng{bibnamehash}{c097fa0f8fe1584f3ac3b7e8e279440d}
+      \strng{authorbibnamehash}{c097fa0f8fe1584f3ac3b7e8e279440d}
+      \strng{authornamehash}{c097fa0f8fe1584f3ac3b7e8e279440d}
+      \strng{authorfullhash}{c097fa0f8fe1584f3ac3b7e8e279440d}
+      \strng{authorfullhashraw}{c097fa0f8fe1584f3ac3b7e8e279440d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{c't - Magazin für Computertechnik}
+      \field{title}{Einführung in Quantencomputer}
+      \field{volume}{13}
+      \field{year}{2022}
+      \field{pages}{64\bibrangedash 69}
+      \range{pages}{6}
+    \endentry
+    \entry{eth2023quantencomputer}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2d3bca00f759e60bf6648c33bef9dec0}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ETH Zürich}%
+      }
+      \strng{namehash}{2d3bca00f759e60bf6648c33bef9dec0}
+      \strng{fullhash}{2d3bca00f759e60bf6648c33bef9dec0}
+      \strng{fullhashraw}{2d3bca00f759e60bf6648c33bef9dec0}
+      \strng{bibnamehash}{2d3bca00f759e60bf6648c33bef9dec0}
+      \strng{authorbibnamehash}{2d3bca00f759e60bf6648c33bef9dec0}
+      \strng{authornamehash}{2d3bca00f759e60bf6648c33bef9dec0}
+      \strng{authorfullhash}{2d3bca00f759e60bf6648c33bef9dec0}
+      \strng{authorfullhashraw}{2d3bca00f759e60bf6648c33bef9dec0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://ethz.ch/de/news-und-veranstaltungen/eth-news/news/2023/05/fuer-sehr-kleine-problemgroessen-ist-ein-klassischer-computer-schneller.html}}
+      \field{note}{(Abrufdatum 04.12.2026)}
+      \field{title}{Für sehr kleine Problemgrössen ist ein klassischer Computer schneller}
+      \field{year}{2023}
+    \endentry
+    \entry{3blue1brownGrover}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=682352d7b7d88f46edac62cd97b58db1}{%
+           family={{3Blue1Brown}},
+           familyi={3\bibinitperiod}}}%
+      }
+      \strng{namehash}{682352d7b7d88f46edac62cd97b58db1}
+      \strng{fullhash}{682352d7b7d88f46edac62cd97b58db1}
+      \strng{fullhashraw}{682352d7b7d88f46edac62cd97b58db1}
+      \strng{bibnamehash}{682352d7b7d88f46edac62cd97b58db1}
+      \strng{authorbibnamehash}{682352d7b7d88f46edac62cd97b58db1}
+      \strng{authornamehash}{682352d7b7d88f46edac62cd97b58db1}
+      \strng{authorfullhash}{682352d7b7d88f46edac62cd97b58db1}
+      \strng{authorfullhashraw}{682352d7b7d88f46edac62cd97b58db1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.3blue1brown.com/lessons/grover}}
+      \field{note}{(Abrufdatum 18.12.2026)}
+      \field{title}{Grover's Algorithm}
+      \field{year}{2026}
+    \endentry
+    \entry{landauNotation}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=fcf00d40b7392eb0a6b414169071ad30}{%
+           family={HappyCoders.eu},
+           familyi={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {HappyCoders.eu}%
+      }
+      \strng{namehash}{fcf00d40b7392eb0a6b414169071ad30}
+      \strng{fullhash}{fcf00d40b7392eb0a6b414169071ad30}
+      \strng{fullhashraw}{fcf00d40b7392eb0a6b414169071ad30}
+      \strng{bibnamehash}{fcf00d40b7392eb0a6b414169071ad30}
+      \strng{authorbibnamehash}{fcf00d40b7392eb0a6b414169071ad30}
+      \strng{authornamehash}{fcf00d40b7392eb0a6b414169071ad30}
+      \strng{authorfullhash}{fcf00d40b7392eb0a6b414169071ad30}
+      \strng{authorfullhashraw}{fcf00d40b7392eb0a6b414169071ad30}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.happycoders.eu/de/algorithmen/o-notation-zeitkomplexitaet/}}
+      \field{note}{(Abrufdatum 25.01.2026)}
+      \field{title}{O-Notation und Zeitkomplexität einfach erklärt}
+      \field{year}{2026}
+    \endentry
+    \entry{weekly2025herausforderungen}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=4512166d7a11a4592fce76f9f5920b53}{%
+           family={Bigelow},
+           familyi={B\bibinitperiod},
+           given={S.\bibnamedelimi J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4512166d7a11a4592fce76f9f5920b53}
+      \strng{fullhash}{4512166d7a11a4592fce76f9f5920b53}
+      \strng{fullhashraw}{4512166d7a11a4592fce76f9f5920b53}
+      \strng{bibnamehash}{4512166d7a11a4592fce76f9f5920b53}
+      \strng{authorbibnamehash}{4512166d7a11a4592fce76f9f5920b53}
+      \strng{authornamehash}{4512166d7a11a4592fce76f9f5920b53}
+      \strng{authorfullhash}{4512166d7a11a4592fce76f9f5920b53}
+      \strng{authorfullhashraw}{4512166d7a11a4592fce76f9f5920b53}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.computerweekly.com/de/feature/Quantenfehlerkorrektur-Verfahren-und-Herausforderungen}}
+      \field{note}{(Abrufdatum 28.01.2026)}
+      \field{title}{Quantenfehlerkorrektur: Verfahren und Herausforderungen}
+      \field{year}{2025}
+    \endentry
+    \entry{spiegelIBMQuantum2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=11ed026695521d4f5c3c3a5b27d65ad5}{%
+           family={Spiegel},
+           familyi={S\bibinitperiod},
+           given={Der},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Der Spiegel}%
+      }
+      \strng{namehash}{11ed026695521d4f5c3c3a5b27d65ad5}
+      \strng{fullhash}{11ed026695521d4f5c3c3a5b27d65ad5}
+      \strng{fullhashraw}{11ed026695521d4f5c3c3a5b27d65ad5}
+      \strng{bibnamehash}{11ed026695521d4f5c3c3a5b27d65ad5}
+      \strng{authorbibnamehash}{11ed026695521d4f5c3c3a5b27d65ad5}
+      \strng{authornamehash}{11ed026695521d4f5c3c3a5b27d65ad5}
+      \strng{authorfullhash}{11ed026695521d4f5c3c3a5b27d65ad5}
+      \strng{authorfullhashraw}{11ed026695521d4f5c3c3a5b27d65ad5}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.spiegel.de/netzwelt/netzpolitik/ibm-quantum-system-one-deutschlands-erster-quantencomputer-kostet-11-621-euro-monatsmiete-a-eb402a65-d78a-41f7-9411-047bc99db079}}
+      \field{note}{(Abrufdatum 21.01.2026)}
+      \field{title}{IBM Quantum System One: Deutschlands erster Quantencomputer kostet 11.621 Euro Monatsmiete}
+      \field{year}{2021}
+    \endentry
+    \entry{spektrum2023quantenfehlerkorrektur}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=df14ca0aee0a93c68da03b4956d765db}{%
+           family={Menne},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Spektrum}%
+      }
+      \strng{namehash}{df14ca0aee0a93c68da03b4956d765db}
+      \strng{fullhash}{df14ca0aee0a93c68da03b4956d765db}
+      \strng{fullhashraw}{df14ca0aee0a93c68da03b4956d765db}
+      \strng{bibnamehash}{df14ca0aee0a93c68da03b4956d765db}
+      \strng{authorbibnamehash}{df14ca0aee0a93c68da03b4956d765db}
+      \strng{authornamehash}{df14ca0aee0a93c68da03b4956d765db}
+      \strng{authorfullhash}{df14ca0aee0a93c68da03b4956d765db}
+      \strng{authorfullhashraw}{df14ca0aee0a93c68da03b4956d765db}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.spektrum.de/news/quantencomputer-neuer-ansatz-verbessert-quantenchips-dramatisch/2200904}}
+      \field{note}{(Abrufdatum 20.01.2026)}
+      \field{title}{Quantencomputer neuer Ansatz verbessert Quantenchips dramatisch}
+      \field{year}{2023}
+    \endentry
+    \entry{qday2030}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d5bc4507d99607bda4a09f05de42b306}{%
+           family={Daily},
+           familyi={D\bibinitperiod},
+           given={IT},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5bc4507d99607bda4a09f05de42b306}
+      \strng{fullhash}{d5bc4507d99607bda4a09f05de42b306}
+      \strng{fullhashraw}{d5bc4507d99607bda4a09f05de42b306}
+      \strng{bibnamehash}{d5bc4507d99607bda4a09f05de42b306}
+      \strng{authorbibnamehash}{d5bc4507d99607bda4a09f05de42b306}
+      \strng{authornamehash}{d5bc4507d99607bda4a09f05de42b306}
+      \strng{authorfullhash}{d5bc4507d99607bda4a09f05de42b306}
+      \strng{authorfullhashraw}{d5bc4507d99607bda4a09f05de42b306}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.it-daily.net/it-sicherheit/datenschutz-grc/q-day-2030}}
+      \field{note}{(Abrufdatum 23.01.2026)}
+      \field{title}{Q-Day 2030}
+      \field{year}{2026}
+    \endentry
+    \entry{nist800175b}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=ef9cb61878e61d434507444346b29d1a}{%
+           family={{National Institute of Standards and Technology}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {NIST}%
+      }
+      \strng{namehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{fullhash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{fullhashraw}{ef9cb61878e61d434507444346b29d1a}
+      \strng{bibnamehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authorbibnamehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authornamehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authorfullhash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authorfullhashraw}{ef9cb61878e61d434507444346b29d1a}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{S. 35}
+      \field{number}{800-175B Rev. 1}
+      \field{title}{Guideline for Using Cryptographic Standards in the Federal Government: Cryptographic Mechanisms}
+      \field{type}{Special Publication}
+      \field{year}{2020}
+    \endentry
+    \entry{singh1999codebook}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=527e6a66913975262c0b61a2572b6de5}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Doubleday}%
+      }
+      \strng{namehash}{527e6a66913975262c0b61a2572b6de5}
+      \strng{fullhash}{527e6a66913975262c0b61a2572b6de5}
+      \strng{fullhashraw}{527e6a66913975262c0b61a2572b6de5}
+      \strng{bibnamehash}{527e6a66913975262c0b61a2572b6de5}
+      \strng{authorbibnamehash}{527e6a66913975262c0b61a2572b6de5}
+      \strng{authornamehash}{527e6a66913975262c0b61a2572b6de5}
+      \strng{authorfullhash}{527e6a66913975262c0b61a2572b6de5}
+      \strng{authorfullhashraw}{527e6a66913975262c0b61a2572b6de5}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography}
+      \field{year}{1999}
+    \endentry
+    \entry{nist80056b}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=ef9cb61878e61d434507444346b29d1a}{%
+           family={{National Institute of Standards and Technology}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {NIST}%
+      }
+      \strng{namehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{fullhash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{fullhashraw}{ef9cb61878e61d434507444346b29d1a}
+      \strng{bibnamehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authorbibnamehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authornamehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authorfullhash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authorfullhashraw}{ef9cb61878e61d434507444346b29d1a}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Recommendation for Pair-Wise Key Establishment Schemes Using Discrete Logarithm Cryptography}
+      \field{type}{techreport}
+      \field{year}{2018}
+    \endentry
+    \entry{owaspBruteForce}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=6975ae082e3872ce044ce19f2965a01f}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={OWASP},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {OWASP Foundation}%
+      }
+      \strng{namehash}{6975ae082e3872ce044ce19f2965a01f}
+      \strng{fullhash}{6975ae082e3872ce044ce19f2965a01f}
+      \strng{fullhashraw}{6975ae082e3872ce044ce19f2965a01f}
+      \strng{bibnamehash}{6975ae082e3872ce044ce19f2965a01f}
+      \strng{authorbibnamehash}{6975ae082e3872ce044ce19f2965a01f}
+      \strng{authornamehash}{6975ae082e3872ce044ce19f2965a01f}
+      \strng{authorfullhash}{6975ae082e3872ce044ce19f2965a01f}
+      \strng{authorfullhashraw}{6975ae082e3872ce044ce19f2965a01f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://owasp.org/www-community/attacks/Brute_force_attack}}
+      \field{note}{(Abrufdatum 26.12.2025)}
+      \field{title}{Brute Force Attack}
+      \field{year}{2023}
+    \endentry
+    \entry{nist80063b}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=ef9cb61878e61d434507444346b29d1a}{%
+           family={{National Institute of Standards and Technology}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {NIST}%
+      }
+      \strng{namehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{fullhash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{fullhashraw}{ef9cb61878e61d434507444346b29d1a}
+      \strng{bibnamehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authorbibnamehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authornamehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authorfullhash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authorfullhashraw}{ef9cb61878e61d434507444346b29d1a}
+      \field{extraname}{3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{Special Publication 800-63B}
+      \field{title}{Digital Identity Guidelines: Authentication and Lifecycle Management}
+      \field{type}{techreport}
+      \field{urlday}{26}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://doi.org/10.6028/NIST.SP.800-63b
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.6028/NIST.SP.800-63b
+      \endverb
+    \endentry
+    \entry{menezes1996handbook}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=4bd07a7ac2197453f866bfc9e67dad78}{%
+           family={Menezes},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0c7fd828cf8a4a4e67188c6f4cf8207c}{%
+           family={Oorschot},
+           familyi={O\bibinitperiod},
+           given={P.\bibnamedelimi C.},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=53bf42f6914605c20a3a2e318295d448}{%
+           family={Vanstone},
+           familyi={V\bibinitperiod},
+           given={S.\bibnamedelimi A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{8b127882bb93aa888f435503e778dffd}
+      \strng{fullhash}{8b127882bb93aa888f435503e778dffd}
+      \strng{fullhashraw}{8b127882bb93aa888f435503e778dffd}
+      \strng{bibnamehash}{8b127882bb93aa888f435503e778dffd}
+      \strng{authorbibnamehash}{8b127882bb93aa888f435503e778dffd}
+      \strng{authornamehash}{8b127882bb93aa888f435503e778dffd}
+      \strng{authorfullhash}{8b127882bb93aa888f435503e778dffd}
+      \strng{authorfullhashraw}{8b127882bb93aa888f435503e778dffd}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780849385230}
+      \field{title}{Handbook of Applied Cryptography}
+      \field{year}{1996}
+    \endentry
+    \entry{linkedinBreach}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=90f4cc9f580611f65939a9b76a1d91d5}{%
+           family={Verge},
+           familyi={V\bibinitperiod},
+           given={The},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Verge}%
+      }
+      \strng{namehash}{90f4cc9f580611f65939a9b76a1d91d5}
+      \strng{fullhash}{90f4cc9f580611f65939a9b76a1d91d5}
+      \strng{fullhashraw}{90f4cc9f580611f65939a9b76a1d91d5}
+      \strng{bibnamehash}{90f4cc9f580611f65939a9b76a1d91d5}
+      \strng{authorbibnamehash}{90f4cc9f580611f65939a9b76a1d91d5}
+      \strng{authornamehash}{90f4cc9f580611f65939a9b76a1d91d5}
+      \strng{authorfullhash}{90f4cc9f580611f65939a9b76a1d91d5}
+      \strng{authorfullhashraw}{90f4cc9f580611f65939a9b76a1d91d5}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.theverge.com/2012/6/7/3071707/linkedin-hack-six-million-passwords-leaked}}
+      \field{note}{(Abrufdatum 26.12.2025)}
+      \field{title}{LinkedIn hacked: over six million passwords compromised and published}
+      \field{year}{2013}
+    \endentry
+    \entry{wikipedia_bruteforce_passwords}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e2ceeea38f8620383cfbd3e99c5c0cd8}{%
+           family={contributors},
+           familyi={c\bibinitperiod},
+           given={Wikipedia},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{fullhash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{fullhashraw}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{bibnamehash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{authorbibnamehash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{authornamehash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{authorfullhash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \strng{authorfullhashraw}{e2ceeea38f8620383cfbd3e99c5c0cd8}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://de.wikipedia.org/wiki/Passwort\#Ausprobieren_von_Passwörtern}}
+      \field{note}{(Abrufdatum 21.01.2026)}
+      \field{title}{Aussprobieren von Passwörtern}
+      \field{year}{2024}
+    \endentry
+    \entry{mandrysch2016}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=c6d8074e43f4f03b3ec15729cde58d85}{%
+           family={Mandrysch},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Westfälische Wilhelms-Universität Münster}%
+      }
+      \list{location}{1}{%
+        {Münster}%
+      }
+      \strng{namehash}{c6d8074e43f4f03b3ec15729cde58d85}
+      \strng{fullhash}{c6d8074e43f4f03b3ec15729cde58d85}
+      \strng{fullhashraw}{c6d8074e43f4f03b3ec15729cde58d85}
+      \strng{bibnamehash}{c6d8074e43f4f03b3ec15729cde58d85}
+      \strng{authorbibnamehash}{c6d8074e43f4f03b3ec15729cde58d85}
+      \strng{authornamehash}{c6d8074e43f4f03b3ec15729cde58d85}
+      \strng{authorfullhash}{c6d8074e43f4f03b3ec15729cde58d85}
+      \strng{authorfullhashraw}{c6d8074e43f4f03b3ec15729cde58d85}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Über den Shor-Algorithmus und Quantencomputer}
+      \field{type}{mathesis}
+      \field{year}{2016}
+    \endentry
+    \entry{fzJuelichShor}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7620f536acad210591336b7bf630a0c6}{%
+           family={Panknin},
+           familyi={P\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Forschungszentrum Jülich}%
+      }
+      \strng{namehash}{7620f536acad210591336b7bf630a0c6}
+      \strng{fullhash}{7620f536acad210591336b7bf630a0c6}
+      \strng{fullhashraw}{7620f536acad210591336b7bf630a0c6}
+      \strng{bibnamehash}{7620f536acad210591336b7bf630a0c6}
+      \strng{authorbibnamehash}{7620f536acad210591336b7bf630a0c6}
+      \strng{authornamehash}{7620f536acad210591336b7bf630a0c6}
+      \strng{authorfullhash}{7620f536acad210591336b7bf630a0c6}
+      \strng{authorfullhashraw}{7620f536acad210591336b7bf630a0c6}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.fz-juelich.de/de/aktuelles/news/feature/wie-primzahlen-helfen-den-quantencomputer-zu-verbessern#:~:text=Nun%20haben%20Kristel%20Michielsen%20und,%2C%20dass%20wir%20uns%20irren.%22}}
+      \field{note}{(Abrufdatum 26.01.2026)}
+      \field{title}{Wie Primzahlen helfen, den Quantencomputer zu verbessern}
+      \field{year}{2019}
+    \endentry
+    \entry{srfEinsteinQuantencomputer}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=9af33ab944927267e9027fde90436926}{%
+           family={(Moderation)},
+           familyi={(\bibinitperiod},
+           given={T.\bibnamedelimi Müller},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SRF Einstein}%
+      }
+      \strng{namehash}{9af33ab944927267e9027fde90436926}
+      \strng{fullhash}{9af33ab944927267e9027fde90436926}
+      \strng{fullhashraw}{9af33ab944927267e9027fde90436926}
+      \strng{bibnamehash}{9af33ab944927267e9027fde90436926}
+      \strng{authorbibnamehash}{9af33ab944927267e9027fde90436926}
+      \strng{authornamehash}{9af33ab944927267e9027fde90436926}
+      \strng{authorfullhash}{9af33ab944927267e9027fde90436926}
+      \strng{authorfullhashraw}{9af33ab944927267e9027fde90436926}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.srf.ch/play/tv/einstein/video/quantencomputer-endlich-verstaendlich?urn=urn:srf:video:dab3c078-7362-4bd4-babb-ea4faec33d84}}
+      \field{month}{Mai}
+      \field{note}{(Abrufdatum 26.01.2026)}
+      \field{title}{Quantencomputer: Endlich verständlich}
+      \field{year}{2023}
+    \endentry
+    \entry{nistpqc}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ef9cb61878e61d434507444346b29d1a}{%
+           family={{National Institute of Standards and Technology}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {NIST}%
+      }
+      \strng{namehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{fullhash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{fullhashraw}{ef9cb61878e61d434507444346b29d1a}
+      \strng{bibnamehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authorbibnamehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authornamehash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authorfullhash}{ef9cb61878e61d434507444346b29d1a}
+      \strng{authorfullhashraw}{ef9cb61878e61d434507444346b29d1a}
+      \field{extraname}{4}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.nist.gov/pqcrypto}}
+      \field{note}{(Abrufdatum 28.01.2026)}
+      \field{title}{Post-Quantum Cryptography}
+      \field{year}{2025}
+    \endentry
+    \entry{fraunhoferPQC}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=54437ba9c6a0ff5b56e20e05d839dfa2}{%
+           family={{Fraunhofer SIT}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Fraunhofer SIT}%
+      }
+      \strng{namehash}{54437ba9c6a0ff5b56e20e05d839dfa2}
+      \strng{fullhash}{54437ba9c6a0ff5b56e20e05d839dfa2}
+      \strng{fullhashraw}{54437ba9c6a0ff5b56e20e05d839dfa2}
+      \strng{bibnamehash}{54437ba9c6a0ff5b56e20e05d839dfa2}
+      \strng{authorbibnamehash}{54437ba9c6a0ff5b56e20e05d839dfa2}
+      \strng{authornamehash}{54437ba9c6a0ff5b56e20e05d839dfa2}
+      \strng{authorfullhash}{54437ba9c6a0ff5b56e20e05d839dfa2}
+      \strng{authorfullhashraw}{54437ba9c6a0ff5b56e20e05d839dfa2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.sit.fraunhofer.de/de/quantumrisc/}}
+      \field{note}{(Abrufdatum 28.01.2026)}
+      \field{title}{QuantumRISC}
+    \endentry
+    \entry{fourierTransform}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ca27a009d7f4999bd53bd641f6c2302c}{%
+           family={Vink},
+           familyi={V\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca27a009d7f4999bd53bd641f6c2302c}
+      \strng{fullhash}{ca27a009d7f4999bd53bd641f6c2302c}
+      \strng{fullhashraw}{ca27a009d7f4999bd53bd641f6c2302c}
+      \strng{bibnamehash}{ca27a009d7f4999bd53bd641f6c2302c}
+      \strng{authorbibnamehash}{ca27a009d7f4999bd53bd641f6c2302c}
+      \strng{authornamehash}{ca27a009d7f4999bd53bd641f6c2302c}
+      \strng{authorfullhash}{ca27a009d7f4999bd53bd641f6c2302c}
+      \strng{authorfullhashraw}{ca27a009d7f4999bd53bd641f6c2302c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.ritchievink.com/blog/2017/04/23/understanding-the-fourier-transform-by-example/}}
+      \field{note}{(Abrufdatum 26.01.2026)}
+      \field{title}{Understanding the Fourier Transform by Example}
+      \field{year}{2017}
+    \endentry
+    \entry{dashlaneHashen}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=57f56a7f49444b17887ec94b05f0b571}{%
+           family={{Dashlane}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{57f56a7f49444b17887ec94b05f0b571}
+      \strng{fullhash}{57f56a7f49444b17887ec94b05f0b571}
+      \strng{fullhashraw}{57f56a7f49444b17887ec94b05f0b571}
+      \strng{bibnamehash}{57f56a7f49444b17887ec94b05f0b571}
+      \strng{authorbibnamehash}{57f56a7f49444b17887ec94b05f0b571}
+      \strng{authornamehash}{57f56a7f49444b17887ec94b05f0b571}
+      \strng{authorfullhash}{57f56a7f49444b17887ec94b05f0b571}
+      \strng{authorfullhashraw}{57f56a7f49444b17887ec94b05f0b571}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{[Online] Available: \url{https://www.dashlane.com/de/blog/was-versteht-man-unter-passwort-hashing}}
+      \field{note}{(Abrufdatum 22.01.2026)}
+      \field{title}{Was bedeutet Hashen?}
+      \field{year}{2026}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

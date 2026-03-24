@@ -1,0 +1,377 @@
+htfcss: rm-lmbo  font-style: oblique;
+htfcss: rm-lmbx  font-weight: bold;
+htfcss: rm-lmbxi  font-style:italic; font-weight: bold;
+htfcss: rm-lmbxo  font-style: oblique; font-weight: bold;
+htfcss: rm-lmri  font-style:italic;
+htfcss: rm-lmro  font-style: oblique;
+htfcss: rm-lmss  font-family: sans-serif;
+htfcss: rm-lmssbo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: rm-lmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: rm-lmssdc  font-family: sans-serif;
+htfcss: rm-lmssdo  font-family: sans-serif; font-style: oblique;
+htfcss: rm-lmsso  font-family: sans-serif; font-style: oblique;
+htfcss: rm-lmssq  font-family: sans-serif;
+htfcss: rm-lmssqbo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: rm-lmssqbx  font-family: sans-serif; font-weight: bold;
+htfcss: rm-lmssqo  font-family: sans-serif; font-style: oblique;
+htfcss: rm-lmcsc font-variant: small-caps;
+htfcss: lmmib font_weight:bold;
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
+htfcss: rm-lmtcso  font-style: oblique; font-family: monospace,monospace;
+htfcss: rm-lmtk  font-family: monospace,monospace;
+htfcss: rm-lmtko  font-style: oblique; font-family: monospace,monospace;
+htfcss: rm-lmtl  font-weight: light; font-family: monospace,monospace;
+htfcss: rm-lmtlc  font-weight: light; font-family: monospace,monospace;
+htfcss: rm-lmtlco  font-weight: light; font-style: oblique; font-family: monospace,monospace;
+htfcss: rm-lmtlo  font-weight: light; font-style: oblique; font-family: monospace,monospace;
+htfcss: rm-lmtt  font-family: monospace,monospace;
+htfcss: rm-lmtk  font-family: monospace,monospace;
+htfcss: rm-lmtti  font-family: monospace,monospace; font-style:italic;
+htfcss: rm-lmtto  font-style: oblique; font-family: monospace,monospace;
+htfcss: lmmib font_weight:bold;
+htfcss: lmmib font_weight:bold;
+htfcss: ts1-lmbx  font-weight: bold;
+htfcss: ts1-lmbxi  font-style:italic; font-weight: bold;
+htfcss: ts1-lmbxo  font-style: oblique; font-weight: bold;
+htfcss: ts1-lmcsco  font-style: oblique;
+htfcss: ts1-lmri  font-style:italic;
+htfcss: ts1-lmro  font-style: oblique;
+htfcss: ts1-lmss  font-family: sans-serif;
+htfcss: ts1-lmssbo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: ts1-lmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: ts1-lmssdc  font-family: sans-serif;
+htfcss: ts1-lmssdo  font-family: sans-serif; font-style: oblique;
+htfcss: ts1-lmsso  font-family: sans-serif; font-style: oblique;
+htfcss: ts1-lmssq  font-family: sans-serif;
+htfcss: ts1-lmssqbo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: ts1-lmssqbx  font-family: sans-serif; font-weight: bold;
+htfcss: ts1-lmssqo  font-family: sans-serif; font-style: oblique;
+htfcss: ts1-lmtcsc  font-family: monospace,monospace;
+htfcss: ts1-lmtcso  font-style: oblique; font-family: monospace,monospace;
+htfcss: ts1-lmtk  font-family: monospace,monospace;
+htfcss: ts1-lmtko  font-style: oblique; font-family: monospace,monospace;
+htfcss: ts1-lmtl  font-weight: light; font-family: monospace,monospace;
+htfcss: ts1-lmtlc  font-weight: light; font-family: monospace,monospace;
+htfcss: ts1-lmtlco  font-weight: light; font-style: oblique; font-family: monospace,monospace;
+htfcss: ts1-lmtlo  font-weight: light; font-style: oblique; font-family: monospace,monospace;
+htfcss: ts1-lmtt  font-family: monospace,monospace;
+htfcss: ts1-lmtti  font-family: monospace,monospace; font-style:italic;
+htfcss: ts1-lmtto  font-style: oblique; font-family: monospace,monospace;
+htfcss: ts1-lmvtk  font-family: monospace,monospace;
+htfcss: ts1-lmvtko  font-style: oblique; font-family: monospace,monospace;
+htfcss: ts1-lmvtl  font-weight: light; font-family: monospace,monospace;
+htfcss: ts1-lmvtlo  font-weight: light; font-style: oblique; font-family: monospace,monospace;
+htfcss: ts1-lmvtt  font-family: monospace,monospace;
+htfcss: ts1-lmvtto  font-style: oblique; font-family: monospace,monospace;
+htfcss: ts1-lmbo  font-style: oblique;
+htfcss: lmmib font_weight:bold;
+htfcss: lmmib font_weight:bold;
+htfcss: lmmib font_weight:bold;
+htfcss: rm-lmtcso  font-style: oblique; font-family: monospace,monospace;
+htfcss: rm-lmtk  font-family: monospace,monospace;
+htfcss: rm-lmtko  font-style: oblique; font-family: monospace,monospace;
+htfcss: rm-lmtl  font-weight: light; font-family: monospace,monospace;
+htfcss: rm-lmtlc  font-weight: light; font-family: monospace,monospace;
+htfcss: rm-lmtlco  font-weight: light; font-style: oblique; font-family: monospace,monospace;
+htfcss: rm-lmtlo  font-weight: light; font-style: oblique; font-family: monospace,monospace;
+htfcss: rm-lmtt  font-family: monospace,monospace;
+htfcss: rm-lmtk  font-family: monospace,monospace;
+htfcss: rm-lmtti  font-family: monospace,monospace; font-style:italic;
+htfcss: rm-lmtto  font-style: oblique; font-family: monospace,monospace;
+File: main.html
+File: main.css
+File: main.tmp
+Css: p{margin-top:0;margin-bottom:0}
+Css: p.indent{text-indent:0;}
+Css: p + p{margin-top:1em;}
+Css: p + div, p + pre {margin-top:1em;}
+Css: div + p, pre + p {margin-top:1em;}
+Css: a { overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; }
+Css: @media print {div.crosslinks {visibility:hidden;}}
+Css: table.tabular{border-collapse: collapse; border-spacing: 0;}
+Css: a img { border-top: 0; border-left: 0; border-right: 0; }
+Font_Css("4"): .small-caps{font-variant: small-caps; }
+Font_Css("10"): .htf-cmbx {font-weight: bold; font-style:normal;}
+Font_Css("12"): .htf-calligraphy {font-family:cursive}
+Font_Css("14"): .htf-italic {font-style: italic;}
+Font_Css("16"): .htf-bold {font-weight: bold;}
+Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
+Css: center { margin-top:1em; margin-bottom:1em; }
+Css: td center { margin-top:0em; margin-bottom:0em; }
+Css: .Canvas { position:relative; }
+Css: img.math{vertical-align:middle;}
+Css: div.par-math-display, div.math-display{text-align:center;}
+Css: body{ margin:1em auto; max-width:80ch; padding:0 .62em; }
+Css: h1,h2,h3,h4,h5 { line-height:1.2; }
+Css: @media print{ body{ max-width:none } }
+Css: .partHead, .likepartHead { font-size: 2em; }
+Css: .chapterHead, .likechapterHead { font-size: 1.7411em; }
+Css: .sectionHead, .likesectionHead { font-size: 1.5157em; }
+Css: .subsectionHead, .likesubsectionHead { font-size: 1.3195em; }
+Css: .subsubsectionHead, .likesubsubsectionHead { font-size: 1.1487em; }
+Css:  @media (prefers-color-scheme: dark) { img[src^="main"]{filter: invert(1); } } 
+Css: li p.indent { text-indent: 0em }
+Css: li p:first-child{ margin-top:0em; }
+Css: li p:last-child, li div:last-child { margin-bottom:0.5em; }
+Css: li p:first-child{ margin-bottom:0; }
+Css: li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }
+Css: .enumerate1 {list-style-type:decimal;}
+Css: .enumerate2 {list-style-type:lower-alpha;}
+Css: .enumerate3 {list-style-type:lower-roman;}
+Css: .enumerate4 {list-style-type:upper-alpha;}
+Css: div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+Css: div.newtheorem .head{font-weight: bold;}
+Css: .obeylines-h,.obeylines-v {white-space: nowrap; }
+Css: div.obeylines-v p { margin-top:0; margin-bottom:0; }
+Css: .overline{ text-decoration:overline; }
+Css: .overline img{ border-top: 1px solid black; }
+Css: td.displaylines {text-align:center; white-space:nowrap;}
+Css: .centerline {text-align:center;}
+Css: .rightline {text-align:right;}
+Css: pre.verbatim {font-family: monospace,monospace; text-align:left; clear:both; }
+Css: .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.fbox {display:table}
+Css: div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.minipage{width:100%;}
+Css: div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+Css: div.center div {text-align: left;}
+Css: div.flushright, div.flushright div.flushright {text-align: right;}
+Css: div.flushright div {text-align: left;}
+Css: div.flushleft {text-align: left;}
+Css: .underline{ text-decoration:underline; }
+Css: .underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
+Css: .framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: .framebox-c {text-align:center;}
+Css: .framebox-l {text-align:left;}
+Css: .framebox-r {text-align:right;}
+Css: span.thank-mark{ vertical-align: super }
+Css: span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
+Css: td p:first-child{ margin-top:0em; }
+Css: td p:last-child{ margin-bottom:0em; }
+Css: div.td00{ margin-left:0pt; margin-right:0pt; }
+Css: div.td01{ margin-left:0pt; margin-right:5pt; }
+Css: div.td10{ margin-left:5pt; margin-right:0pt; }
+Css: div.td11{ margin-left:5pt; margin-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: td.td00{ padding-left:0pt; padding-right:0pt; }
+Css: td.td01{ padding-left:0pt; padding-right:5pt; }
+Css: td.td10{ padding-left:5pt; padding-right:0pt; }
+Css: td.td11{ padding-left:5pt; padding-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: .hline hr, .cline hr{ height : 0px; margin:0px; }
+Css: .hline td, .cline td{ padding: 0; }
+Css: .hline hr, .cline hr{border:none;border-top:1px solid black;}
+Css: .hline {border-top: 1px solid black;}
+Css: .hline + .vspace:last-child{display:none;}
+Css: .hline:first-child{border-bottom:1px solid black;border-top:none;}
+Css: .tabbing-right {text-align:right;}
+Css: div.float, div.figure {margin-left: auto; margin-right: auto;}
+Css: div.float img {text-align:center;}
+Css: div.figure img {text-align:center;}
+Css: .marginpar,.reversemarginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+Css: .marginpar p,.reversemarginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+Css: .reversemarginpar{float:left;}
+Css: table.equation {width:100%;}
+Css: .equation td{text-align:center; }
+Css: td.equation { margin-top:1em; margin-bottom:1em; } 
+Css: td.equation-label { width:5%; text-align:center; }
+Css: td.eqnarray4 { width:5%; white-space: normal; }
+Css: td.eqnarray2 { width:5%; }
+Css: table.eqnarray-star, table.eqnarray {width:100%;}
+Css: div.eqnarray{text-align:center;}
+Css: div.array {text-align:center;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.pmatrix img{vertical-align:middle;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.bar-css {text-decoration:overline;}
+Css: img.cdots{vertical-align:middle;}
+Css: .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+Css: .chapterToc a, .chapterToc, .likechapterToc a, .likechapterToc, .appendixToc a, .appendixToc {line-height: 200%; font-weight:bold;}
+Css: .index-item, .index-subitem, .index-subsubitem {display:block}
+Css: div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
+Css: div.caption span.id{font-weight: bold; white-space: nowrap; }
+Css: h1.partHead{text-align: center}
+Css: p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: .subsubsectionHead, .likesubsubsectionHead { font-size: 1em; }
+Css: .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
+Css: .subparagraphHead, .likesubparagraphHead { font-weight: bold;}
+Css: .verse{white-space:nowrap; margin-left:2em}
+Css: div.maketitle {text-align:center;}
+Css: h2.titleHead{text-align:center;}
+Css: div.maketitle{ margin-bottom: 2em; }
+Css: div.author, div.date {text-align:center;}
+Css: div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
+Css: div.author{white-space: nowrap;}
+Font_Size: 11
+Css: h1.partHead{text-align: center}
+Css: div.abstract p {margin-left:5%; margin-right:5%;}
+Css: div.abstract {width:100%;}
+Css: .abstracttitle{text-align:center;margin-bottom:1em;}
+Css:  .chapterToc, .likechapterToc {margin-left:0em;}
+Css:  .likesectionToc, .sectionToc {margin-left:1em;}
+Css:  .likesubsectionToc, .subsectionToc {margin-left:2em;}
+Css:  .likesubsectionToc, .subsectionToc {margin-left:2em;}
+Css:  .likesubsubsectionToc, .subsubsectionToc {margin-left:3em;}
+Css: .paragraphToc, .likeparagraphToc {margin-left:4em;}
+Css: .subparagraphToc, .likesubparagraphToc {margin-left:5em;}
+Css: figure.float, div.figure {margin-left: auto; margin-right: auto;}
+Css: figure.figure {text-align:center;}
+Css: figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center;}
+Css: figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
+Css: p + figcaption, img + figcaption{margin-top: 1em;}
+Css: .abstract{margin:1em;}
+Css: .rotatebox{display: inline-block;}
+Css: .equation td{text-align:center; }
+Css: .equation-star td{text-align:center; }
+Css: table.equation-star { width:100%; }
+Css: table.equation { width:100%; }
+Css: table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:95%; margin-left:5%; white-space: nowrap;}
+Css: table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}
+Css: td.align-label { width:5%; text-align:center; }
+Css: td.align-odd { text-align:right; padding-right:0.3em;}
+Css: td.align-even { text-align:left; padding-right:0.6em;}
+Css: table.multline, table.multline-star {width:100%;}
+Css: td.gather {text-align:center; }
+Css: table.gather {width:100%;}
+Css: div.gather-star {text-align:center;}
+Css: dt.printshorthands{float:left; clear:left; margin-right:1em;}
+Css: dd.thebibliography {margin-left: 2.5em;}
+Css: dt.thebibliography {float:left; clear:left; margin-right:1em;}
+File: images/title_bloch_sphere.png
+--- needs --- main.idv[2] ==> main0x.png ---
+--- needs --- main.idv[3] ==> main1x.png ---
+--- needs --- main.idv[5] ==> main2x.png ---
+Css: #TBL-1-1{border-left: 1px solid black;}
+Css: #TBL-1-1{border-right:1px solid black;}
+Css: #TBL-1-2{border-right:1px solid black;}
+File: images/phase_alpha_1.png
+File: images/phase_beta_1.png
+File: images/phase_alpha_2.png
+File: images/phase_beta_2.png
+--- needs --- main.idv[7] ==> main3x.png ---
+--- needs --- main.idv[8] ==> main4x.png ---
+File: images/trigonometric_visualization_alpha_beta.png
+--- needs --- main.idv[10] ==> main5x.png ---
+--- needs --- main.idv[11] ==> main6x.png ---
+--- needs --- main.idv[12] ==> main7x.png ---
+--- needs --- main.idv[13] ==> main8x.png ---
+File: images/bloch_sphere.png
+Css: #TBL-2-1{border-left: 1px solid black;}
+Css: #TBL-2-1{border-right:1px solid black;}
+Css: #TBL-2-2{border-right:1px solid black;}
+Css: #TBL-2-3{border-right:1px solid black;}
+File: images/PauliX_gate0.png
+File: images/PauliX_gate1.png
+File: images/PauliY_gate0.png
+File: images/PauliY_gate1.png
+File: images/PauliZ_gate0.png
+File: images/PauliZ_gate1.png
+--- needs --- main.idv[15] ==> main9x.png ---
+--- needs --- main.idv[16] ==> main10x.png ---
+Css: #TBL-3-1{border-left: 1px solid black;}
+Css: #TBL-3-1{border-right:1px solid black;}
+Css: #TBL-3-2{border-right:1px solid black;}
+File: images/Hadamard_gate0.png
+File: images/Hadamard_gate1.png
+Css: #TBL-4-1{border-left: 1px solid black;}
+Css: #TBL-4-1{border-right:1px solid black;}
+Css: #TBL-4-2{border-right:1px solid black;}
+File: images/Hadamard_gate0.png
+File: images/PauliX_gate0.png
+File: images/gate_ket1.png
+File: images/PauliX_gate1.png
+--- needs --- main.idv[17] ==> main11x.png ---
+File: images/Comparison_polynomiel_exponentiel.png
+--- needs --- main.idv[19] ==> main12x.png ---
+--- needs --- main.idv[20] ==> main13x.png ---
+File: images/Comparison_linear_sqrt.png
+File: images/IBM_quanutm_one.jpg
+File: images/Symmetrische_Verschluesselung.png
+File: images/Asymmetrische_Verschluesselung.png
+File: images/Brute_Force_Attack.png
+File: images/Shor_Algorithm_Sequence.png
+--- needs --- main.idv[22] ==> main14x.png ---
+--- needs --- main.idv[23] ==> main15x.png ---
+Css: img[src="main16x.png"]{vertical-align:-31.11116561243759%}
+--- needs --- main.idv[24] ==> main16x.png ---
+Css: img[src="main17x.png"]{vertical-align:-19.25135274880533%}
+--- needs --- main.idv[25] ==> main17x.png ---
+File: images/Shor_Algorithm_quantum_circuit.png
+File: images/Auswirkungen_Kryptografie.png
+Css: img[src="main18x.png"]{vertical-align:-24.9999303250476%}
+--- needs --- main.idv[27] ==> main18x.png ---
+Css: img[src="main19x.png"]{vertical-align:-24.9999303250476%}
+--- needs --- main.idv[28] ==> main19x.png ---
+Css: img[src="main20x.png"]{vertical-align:-41.70294811637073%}
+--- needs --- main.idv[29] ==> main20x.png ---
+Css: img[src="main21x.png"]{vertical-align:-34.79191868158512%}
+--- needs --- main.idv[30] ==> main21x.png ---
+--- needs --- main.idv[31] ==> main22x.png ---
+--- needs --- main.idv[32] ==> main23x.png ---
+File: images/fourier_transformation.png
+--- needs --- main.idv[34] ==> main24x.png ---
+Css: img[src="main25x.png"]{vertical-align:-0%}
+--- needs --- main.idv[35] ==> main25x.png ---
+Css: img[src="main26x.png"]{vertical-align:-9.087193108551855%}
+--- needs --- main.idv[36] ==> main26x.png ---
+Css: img[src="main27x.png"]{vertical-align:-24.9999303250476%}
+--- needs --- main.idv[37] ==> main27x.png ---
+Css: img[src="main28x.png"]{vertical-align:-24.9999303250476%}
+--- needs --- main.idv[38] ==> main28x.png ---
+File: images/explanation_complex_numbers.png
+Css: img[src="main29x.png"]{vertical-align:-23.0687430644226%}
+--- needs --- main.idv[39] ==> main29x.png ---
+Css: img[src="main30x.png"]{vertical-align:-0%}
+--- needs --- main.idv[40] ==> main30x.png ---
+Css: img[src="main31x.png"]{vertical-align:-0%}
+--- needs --- main.idv[41] ==> main31x.png ---
+Css: img[src="main32x.png"]{vertical-align:-22.31640069609695%}
+--- needs --- main.idv[42] ==> main32x.png ---
+Css: img[src="main33x.png"]{vertical-align:-25.83722180617163%}
+--- needs --- main.idv[43] ==> main33x.png ---
+Css: img[src="main34x.png"]{vertical-align:-0%}
+--- needs --- main.idv[44] ==> main34x.png ---
+Css: img[src="main35x.png"]{vertical-align:-0%}
+--- needs --- main.idv[45] ==> main35x.png ---
+Css: img[src="main36x.png"]{vertical-align:-22.31640069609695%}
+--- needs --- main.idv[46] ==> main36x.png ---
+Css: img[src="main37x.png"]{vertical-align:-0%}
+--- needs --- main.idv[47] ==> main37x.png ---
+Css: #TBL-5-1{border-left: 1px solid black;}
+Css: #TBL-5-1{border-right:1px solid black;}
+Css: #TBL-5-2{border-right:1px solid black;}
+Css: #TBL-5-3{border-right:1px solid black;}
+--- characters ---
+Font("rm-lmr","10","10","109")
+Font("rm-lmcsc","10","10","109")
+Font("rm-lmcsc","10","10","120")
+Font("rm-lmcsc","10","10","144")
+Font("rm-lmr","12","12","100")
+Font("rm-lmtt","10","10","109")
+Font("rm-lmri","10","10","109")
+Font("rm-lmr","8","8","100")
+Font("rm-lmr","6","6","100")
+Font("lmmi","10","10","109")
+Font("lmmi","8","8","100")
+Font("lmmi","6","6","100")
+Font("lmsy","10","10","109")
+Font("lmsy8","","8","100")
+Font("lmsy6","","6","100")
+Font("lmex","10","10","100")
+Font("msbm","10","10","109")
+Font("ts1-lmr10","","10","109")
+Font("rm-lmr","10","10","100")
+Font("lmmi","10","10","100")
+Font("lmmi","7","7","100")
+Font("rm-lmtt","10","10","100")
+Font("rm-lmr","9","9","100")
+Font("lmmi","9","9","100")
+Font("lmsy9","","9","100")
+Font("rm-lmbx","10","10","109")
