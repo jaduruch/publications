@@ -1,4 +1,5 @@
- 
+@import url('https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/index.css');
+
 /* start css.sty */
 .ec-lmr-10x-x-109{}
 .ec-lmcsc-10x-x-109{ font-variant: small-caps;}
@@ -223,6 +224,22 @@ div.abstract {width:100%;}
  .likesubsubsectionToc, .subsubsectionToc {margin-left:3em;}
 .paragraphToc, .likeparagraphToc {margin-left:4em;}
 .subparagraphToc, .likesubparagraphToc {margin-left:5em;}
+
+/* Ensure headings and TOC use Computer Modern on systems without local TeX fonts */
+.sectionHead, .likesectionHead,
+.subsectionHead, .likesubsectionHead,
+.subsubsectionHead, .likesubsubsectionHead,
+.titlemark,
+.tableofcontents,
+.tableofcontents a,
+.chapterToc, .chapterToc a,
+.sectionToc, .sectionToc a,
+.subsectionToc, .subsectionToc a,
+.subsubsectionToc, .subsubsectionToc a,
+.lofToc, .lofToc a,
+.lotToc, .lotToc a {
+  font-family: "CMU Serif", "Computer Modern Serif", "Latin Modern Roman", serif;
+}
 figure.float, div.figure {margin-left: auto; margin-right: auto;}
 figure.figure {text-align:center;}
 figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center;}
