@@ -1,0 +1,109 @@
+\documentclass[11pt,a4paper]{report} % report verwenden da bei artikel chapter nicht funktioniert
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage{caption}
+\captionsetup{font=small}   %small font for Image and Table captions
+\usepackage{booktabs}
+\usepackage{csquotes}
+\usepackage[style=numeric,sorting=none,giveninits=true,maxbibnames=99,backend=biber,isbn=false]{biblatex}
+\addbibresource{literatur.bib}
+\DeclareNameAlias{default}{given-family}
+\DeclareFieldFormat[book]{pages}{S.\addspace#1}
+\setlength\bibitemsep{1.5\itemsep}
+
+% Custom format for misc entries (websites)
+\DeclareBibliographyDriver{misc}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author/editor+others/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  \usebibmacro{title}%
+  \newunit\newblock
+  \printlist{publisher}%
+  \setunit*{\addcomma\space}%
+  \printfield{year}%
+  \newunit\newblock
+  \printfield{howpublished}%
+  \setunit{\space}%
+  \printfield{note}%
+  \usebibmacro{finentry}%
+}
+
+\usepackage{hyperref}
+\usepackage{bookmark} % improves hyperref bookmarks and eliminates rerun warnings
+\usepackage{ragged2e} % bessere Zeilenumbruch-Kontrolle
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{lmodern} % Latin Modern scalable fonts
+\usepackage[expansion=true,protrusion=true,kerning=true]{microtype} % reduziert overfull hboxes
+\usepackage{transparent} % for image transparency
+\usepackage{url}
+% Improve bibliography URL breaking
+\usepackage{xurl}
+%\bibliographystyle{gerplain}
+\sloppy % erlaubt flexiblere Zeilenumbrüche
+\hypersetup{
+  colorlinks = false,
+  pdfborder  = {0 0 0}
+}
+
+% Allow URLs to break at hyphens, slashes, dots, underscores, and other characters
+% chktex-file 4
+\def\UrlBreaks{\do\/\do-\do.\do_\do:\do=\do?\do\&}
+\def\UrlBigBreaks{\do\:\do\/}
+
+\counterwithout{figure}{chapter} % Continuous figure numbering across chapters
+\counterwithout{table}{chapter} % Continuous table numbering across chapters
+\onehalfspacing
+
+% Reduce space before chapter titles
+\usepackage{titlesec}
+\titlespacing*{\chapter}{0pt}{-30pt}{20pt}
+
+% Remove default titles from list of figures and tables
+\usepackage{etoolbox}
+
+\patchcmd{\listoffigures}{\chapter*{\listfigurename}}{}{}{}
+\patchcmd{\listoftables}{\chapter*{\listtablename}}{}{}{}
+\patchcmd{\thebibliography}{\chapter*{\bibname}}{}{}{}
+
+\title{Bedrohen Quantencomputer unsere Daten?}
+\author{Hatt Darius, Ruch Jana}
+\date{30. Januar 2026}
+
+\addto\captionsngerman{\renewcommand{\chaptername}{}}
+
+% Define missing BibTeX commands for gerplain style
+\providecommand{\btxmastthesis}{Masterarbeit}
+\providecommand{\Btxtechreplong}{Technischer Bericht}
+\providecommand{\btxeditionlong}{Auflage}
+\providecommand{\btxandlong}{und}
+
+\begin{document}
+\input{sections/Titelblatt.tex}
+\pagenumbering{roman}   % römische Nummerierung (Vorwort, Abstract, Inhaltsverzeichnis)
+
+\input{sections/abstract}
+\input{sections/vorwort}
+
+\tableofcontents    % Inhaltsverzeichnis erstellen
+
+
+\cleardoublepage % Wechsel auf arabische Nummerierung (Hauptteil)
+\pagenumbering{arabic}
+\input{sections/einleitung}
+
+% Hauptkapitel – jeweils eine Person
+\input{sections/Grundlagen_Quantencomputer}
+\input{sections/Datenverschluesselung}
+
+\input{sections/Fazit_und_Ausblick}
+\input{sections/Anhang}
+
+
+
+\end{document}
