@@ -1,1 +1,63 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Abstract}}{2}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Kurzfassung}}{3}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{Vorwort}}{4}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-4}{Inhaltsverzeichnis}}{5}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-5}{1. Einleitung}}{2}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-6}{}{1. Einleitung}}{2}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-6000}{QQ2-1-7}{2. Grundlagen Quantencomputer}}{3}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-8}{}{2. Grundlagen Quantencomputer}}{3}\relax 
+\doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-70002.1}{QQ2-1-9}{Wichtige Prinzipien der Quantenphysik}}{4}\relax 
+\doTocEntry\tocsubsection{2.1.1}{\csname a:TocLink\endcsname{1}{x1-80002.1.1}{QQ2-1-10}{Superposition}}{4}\relax 
+\doTocEntry\toclot{1}{\csname a:TocLink\endcsname{1}{x1-8001r1}{}{\ignorespaces Überblick Amplituden- und Phasenanteile eines Qubits}}{table}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-8004r1}{}{\ignorespaces Trigonometrische Visualisierung von $r_\alpha $ und $r_\beta $}}{figure}\relax 
+\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-8006r2}{}{\ignorespaces Bloch-Kugel \cite {wiki2024blochsphere}}}{figure}\relax 
+\doTocEntry\tocsubsection{2.1.2}{\csname a:TocLink\endcsname{1}{x1-90002.1.2}{QQ2-1-14}{Verschränkung}}{14}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-100002.2}{QQ2-1-15}{Quantengatter}}{14}\relax 
+\doTocEntry\toclot{2}{\csname a:TocLink\endcsname{1}{x1-10003r2}{}{\ignorespaces Pauli-Gatter Darstellung}}{table}\relax 
+\doTocEntry\toclot{3}{\csname a:TocLink\endcsname{1}{x1-10005r3}{}{\ignorespaces Hadamard-Gatter Darstellung}}{table}\relax 
+\doTocEntry\toclot{4}{\csname a:TocLink\endcsname{1}{x1-10006r4}{}{\ignorespaces CNOT-Gatter Darstellung}}{table}\relax 
+\doTocEntry\tocsection{2.3}{\csname a:TocLink\endcsname{1}{x1-110002.3}{QQ2-1-19}{Rechengeschwindigkeit}}{17}\relax 
+\doTocEntry\toclof{3}{\csname a:TocLink\endcsname{1}{x1-11003r3}{}{\ignorespaces Vergleich Polynomielle und Exponentielle Wachstumsraten}}{figure}\relax 
+\doTocEntry\toclof{4}{\csname a:TocLink\endcsname{1}{x1-11006r4}{}{\ignorespaces Vergleich Lineare und Sublineare Wachstumsraten}}{figure}\relax 
+\doTocEntry\tocsection{2.4}{\csname a:TocLink\endcsname{1}{x1-120002.4}{QQ2-1-22}{Aktueller Stand der Entwicklung}}{24}\relax 
+\doTocEntry\tocsubsection{2.4.1}{\csname a:TocLink\endcsname{1}{x1-130002.4.1}{QQ2-1-23}{Herausforderungen}}{24}\relax 
+\doTocEntry\toclof{5}{\csname a:TocLink\endcsname{1}{x1-13001r5}{}{\ignorespaces IBM Quantum System One \cite {spiegelIBMQuantum2021}.}}{figure}\relax 
+\doTocEntry\tocsubsection{2.4.2}{\csname a:TocLink\endcsname{1}{x1-140002.4.2}{QQ2-1-25}{Dauer bis Marktreife}}{28}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-15000}{QQ2-1-26}{3. Datenverschlüsselung}}{29}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-27}{}{3. Datenverschlüsselung}}{29}\relax 
+\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-160003.1}{QQ2-1-28}{Funktionsweise moderner Verschlüsselung}}{29}\relax 
+\doTocEntry\tocsubsection{3.1.1}{\csname a:TocLink\endcsname{1}{x1-170003.1.1}{QQ2-1-29}{Symmetrische Verschlüsselung}}{29}\relax 
+\doTocEntry\toclof{6}{\csname a:TocLink\endcsname{1}{x1-17001r6}{}{\ignorespaces Funktionsweise der symmetrischen Verschlüsselung}}{figure}\relax 
+\doTocEntry\tocsubsection{3.1.2}{\csname a:TocLink\endcsname{1}{x1-180003.1.2}{QQ2-1-31}{Asymmetrische Verschlüsselung}}{32}\relax 
+\doTocEntry\toclof{7}{\csname a:TocLink\endcsname{1}{x1-18001r7}{}{\ignorespaces Funktionsweise der asymmetrischen Verschlüsselung}}{figure}\relax 
+\doTocEntry\tocsubsection{3.1.3}{\csname a:TocLink\endcsname{1}{x1-190003.1.3}{QQ2-1-33}{RSA-Verschlüsselungsverfahren}}{35}\relax 
+\doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{1}{x1-200003.2}{QQ2-1-34}{Methoden der Entschlüsselung}}{36}\relax 
+\doTocEntry\tocsubsection{3.2.1}{\csname a:TocLink\endcsname{1}{x1-210003.2.1}{QQ2-1-35}{Brute-Force Angriff}}{36}\relax 
+\doTocEntry\toclof{8}{\csname a:TocLink\endcsname{1}{x1-21002r8}{}{\ignorespaces Funktionsweise des Brute-Force-Angriffs}}{figure}\relax 
+\doTocEntry\tocsubsection{3.2.2}{\csname a:TocLink\endcsname{1}{x1-220003.2.2}{QQ2-1-37}{Shor-Algorithmus}}{40}\relax 
+\doTocEntry\toclof{9}{\csname a:TocLink\endcsname{1}{x1-22002r9}{}{\ignorespaces Funktionsweise des Shor-Algorithmus, (Quelle: \cite {mandrysch2016} - teilweise modifiziert).}}{figure}\relax 
+\doTocEntry\toclof{10}{\csname a:TocLink\endcsname{1}{x1-22005r10}{}{\ignorespaces Ablauf des Shor-Algorithmus (Quelle: \cite {bashiri2025quantencomputing} - teilweise modifiziert).}}{figure}\relax 
+\doTocEntry\tocsection{3.3}{\csname a:TocLink\endcsname{1}{x1-230003.3}{QQ2-1-40}{Beurteilung der aktuellen Sicherheit}}{47}\relax 
+\doTocEntry\toclof{11}{\csname a:TocLink\endcsname{1}{x1-23004r11}{}{\ignorespaces Sicherheitsbeurteilung verschiedener Verschlüsselungsverfahren. (Quelle: \cite {qday2030} - teilweise modifiziert).}}{figure}\relax 
+\doTocEntry\tocsubsection{3.3.1}{\csname a:TocLink\endcsname{1}{x1-240003.3.1}{QQ2-1-42}{Grenzen der Sicherheit}}{50}\relax 
+\doTocEntry\tocsubsection{3.3.2}{\csname a:TocLink\endcsname{1}{x1-250003.3.2}{QQ2-1-43}{Harvest now, decrypt later}}{50}\relax 
+\doTocEntry\tocsubsection{3.3.3}{\csname a:TocLink\endcsname{1}{x1-260003.3.3}{QQ2-1-44}{Gesamtbewertung}}{50}\relax 
+\doTocEntry\tocsection{3.4}{\csname a:TocLink\endcsname{1}{x1-270003.4}{QQ2-1-45}{Zukunftsaussichten}}{52}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-28000}{QQ2-1-46}{4. Fazit}}{53}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-47}{}{4. Fazit \& Ausblick}}{53}\relax 
+\doTocEntry\tocsection{4.1}{\csname a:TocLink\endcsname{1}{x1-290004.1}{QQ2-1-48}{Zusammenfassung}}{53}\relax 
+\doTocEntry\tocsection{4.2}{\csname a:TocLink\endcsname{1}{x1-300004.2}{QQ2-1-49}{Beantwortung der Fragestellung}}{53}\relax 
+\doTocEntry\tocsection{4.3}{\csname a:TocLink\endcsname{1}{x1-310004.3}{QQ2-1-50}{Kritische Reflexion}}{54}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-32000}{QQ2-1-51}{5. Anhang}}{55}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-52}{}{5. Anhang}}{55}\relax 
+\doTocEntry\tocsection{5.1}{\csname a:TocLink\endcsname{1}{x1-330005.1}{QQ2-1-53}{Glossar}}{55}\relax 
+\doTocEntry\toclof{12}{\csname a:TocLink\endcsname{1}{x1-33003r12}{}{\ignorespaces Fourier-Transformation \cite {fourierTransform}.}}{figure}\relax 
+\doTocEntry\toclof{13}{\csname a:TocLink\endcsname{1}{x1-33005r13}{}{\ignorespaces Darstellung komplexer Zahlen in der komplexen Ebene.}}{figure}\relax 
+\doTocEntry\tocsection{5.2}{\csname a:TocLink\endcsname{1}{x1-340005.2}{QQ2-1-56}{Abkürzungsverzeichnis}}{57}\relax 
+\doTocEntry\tocsection{5.3}{\csname a:TocLink\endcsname{1}{x1-350005.3}{QQ2-1-57}{Abbildungsverzeichnis}}{57}\relax 
+\doTocEntry\tocsection{5.4}{\csname a:TocLink\endcsname{1}{x1-360005.4}{QQ2-1-58}{Tabellenverzeichnis}}{58}\relax 
+\doTocEntry\tocsection{5.5}{\csname a:TocLink\endcsname{1}{x1-370005.5}{QQ2-1-59}{Literaturverzeichnis}}{59}\relax 
+\doTocEntry\tocsubsection{5.5.1}{\csname a:TocLink\endcsname{1}{x1-380005.5.1}{QQ2-1-60}{Mündliche Quellen}}{63}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-39000}{QQ2-1-61}{Interview mit Dipl.-Ing. Christian Weber (WEEI) MBA}}{63}\relax 
 \par 

@@ -1,33 +1,86 @@
  
 /* start css.sty */
-.rm-lmr-10x-x-109{}
-.rm-lmcsc-10x-x-109{font-variant: small-caps;}
-.rm-lmcsc-10x-x-120{font-size:109%;font-variant: small-caps;}
-.rm-lmcsc-10x-x-144{font-size:130%;font-variant: small-caps;}
-.rm-lmr-12{font-size:109%;}
-.rm-lmtt-10x-x-109{ font-family: monospace,monospace;}
-.rm-lmtt-10x-x-109{ font-family: monospace,monospace;}
-.rm-lmri-10x-x-109{ font-style:italic;}
-.rm-lmr-8{font-size:72%;}
-.rm-lmr-6{font-size:54%;}
-.lmmi-10x-x-109{}
-.lmmi-8{font-size:72%;}
-.lmmi-6{font-size:54%;}
-.lmsy-10x-x-109{}
-.lmsy8-{font-size:72%;}
-.lmsy6-{font-size:54%;}
-.lmex-10{font-size:90%;}
-.msbm-10x-x-109{}
-.ts1-lmr10-x-x-109{}
-.rm-lmr-10{font-size:90%;}
-.lmmi-10{font-size:90%;}
-.lmmi-7{font-size:63%;}
-.rm-lmtt-10{font-size:90%; font-family: monospace,monospace;}
-.rm-lmtt-10{ font-family: monospace,monospace;}
-.rm-lmr-9{font-size:81%;}
-.lmmi-9{font-size:81%;}
-.lmsy9-{font-size:81%;}
-.rm-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmr-10x-x-109{}
+.ec-lmcsc-10x-x-109{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-109{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-109{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-109{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-109{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-109{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-109{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-109{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-109{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-109{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-109{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-120{font-size:109%; font-variant: small-caps;}
+.ec-lmcsc-10x-x-120{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-120{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-120{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-120{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-120{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-120{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-120{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-120{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-120{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-120{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-144{font-size:130%; font-variant: small-caps;}
+.ec-lmcsc-10x-x-144{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-144{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-144{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-144{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-144{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-144{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-144{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-144{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-144{ font-variant: small-caps;}
+.ec-lmcsc-10x-x-144{ font-variant: small-caps;}
+.ec-lmr-12{font-size:109%;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmr-10{font-size:90%;}
+.ec-lmtt-10{font-size:90%; font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmr-9{font-size:81%;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
 p{margin-top:0;margin-bottom:0}
 p.indent{text-indent:0;}
 p + p{margin-top:1em;}
@@ -37,40 +90,22 @@ a { overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hy
 @media print {div.crosslinks {visibility:hidden;}}
 table.tabular{border-collapse: collapse; border-spacing: 0;}
 a img { border-top: 0; border-left: 0; border-right: 0; }
-img[src^="images/"] {
-	max-width: 100%;
-	height: auto;
-}
-img[src="images/trigonometric_visualization_alpha_beta.png"] {
-	width: 199px;
-}
-img[src="images/bloch_sphere.png"] {
-	width: 150px;
-}
-img[src="images/Symmetrische_Verschluesselung.png"] {
-	width: 245px;
-}
-img[src="images/Asymmetrische_Verschluesselung.png"] {
-	width: 245px;
-}
-img[src="images/Brute_Force_Attack.png"] {
-	width: 298px;
-}
-img[src="images/Shor_Algorithm_Sequence.png"] {
-	width: 236px;
-}
 center { margin-top:1em; margin-bottom:1em; }
 td center { margin-top:0em; margin-bottom:0em; }
 .Canvas { position:relative; }
 img.math{vertical-align:middle;}
-img.math,
-img.math-display,
-img.sqrt{
-	image-rendering: -webkit-optimize-contrast;
-	image-rendering: crisp-edges;
-}
 div.par-math-display, div.math-display{text-align:center;}
 body{ margin:1em auto; max-width:80ch; padding:0 .62em; font-family:"Computer Modern Serif","CMU Serif","Latin Modern Roman",serif; }
+img[src^="images/"] {
+  max-width: 100%;
+  height: auto;
+}
+img[src="images/trigonometric_visualization_alpha_beta.png"] { width: 199px; }
+img[src="images/bloch_sphere.png"] { width: 150px; }
+img[src="images/Symmetrische_Verschluesselung.png"] { width: 245px; }
+img[src="images/Asymmetrische_Verschluesselung.png"] { width: 245px; }
+img[src="images/Brute_Force_Attack.png"] { width: 298px; }
+img[src="images/Shor_Algorithm_Sequence.png"] { width: 236px; }
 h1,h2,h3,h4,h5 { line-height:1.2; }
 @media print{ body{ max-width:none } }
 .partHead, .likepartHead { font-size: 2em; }
@@ -78,9 +113,7 @@ h1,h2,h3,h4,h5 { line-height:1.2; }
 .sectionHead, .likesectionHead { font-size: 1.5157em; }
 .subsectionHead, .likesubsectionHead { font-size: 1.3195em; }
 .subsubsectionHead, .likesubsubsectionHead { font-size: 1.1487em; }
- @media (prefers-color-scheme: dark) {
-img[src^="main"]{filter:none;}
- } 
+ @media (prefers-color-scheme: dark) { img[src^="main"]{filter: none; } } 
 li p.indent { text-indent: 0em }
 li p:first-child{ margin-top:0em; }
 li p:last-child, li div:last-child { margin-bottom:0.5em; }
@@ -226,25 +259,6 @@ dt.thebibliography {float:left; clear:left; margin-right:1em;}
 #TBL-4-1{border-left: 1px solid black;}
 #TBL-4-1{border-right:1px solid black;}
 #TBL-4-2{border-right:1px solid black;}
-img[src="main16x.png"]{vertical-align:-31.11116561243759%}
-img[src="main17x.png"]{vertical-align:-19.25135274880533%}
-img[src="main18x.png"]{vertical-align:-24.9999303250476%}
-img[src="main19x.png"]{vertical-align:-24.9999303250476%}
-img[src="main20x.png"]{vertical-align:-41.70294811637073%}
-img[src="main21x.png"]{vertical-align:-34.79191868158512%}
-img[src="main25x.png"]{vertical-align:-0%}
-img[src="main26x.png"]{vertical-align:-9.087193108551855%}
-img[src="main27x.png"]{vertical-align:-24.9999303250476%}
-img[src="main28x.png"]{vertical-align:-24.9999303250476%}
-img[src="main29x.png"]{vertical-align:-23.0687430644226%}
-img[src="main30x.png"]{vertical-align:-0%}
-img[src="main31x.png"]{vertical-align:-0%}
-img[src="main32x.png"]{vertical-align:-22.31640069609695%}
-img[src="main33x.png"]{vertical-align:-25.83722180617163%}
-img[src="main34x.png"]{vertical-align:-0%}
-img[src="main35x.png"]{vertical-align:-0%}
-img[src="main36x.png"]{vertical-align:-22.31640069609695%}
-img[src="main37x.png"]{vertical-align:-0%}
 #TBL-5-1{border-left: 1px solid black;}
 #TBL-5-1{border-right:1px solid black;}
 #TBL-5-2{border-right:1px solid black;}
