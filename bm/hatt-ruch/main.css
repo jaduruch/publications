@@ -97,16 +97,23 @@ td center { margin-top:0em; margin-bottom:0em; }
 img.math{vertical-align:middle;}
 div.par-math-display, div.math-display{text-align:center;}
 body{ margin:1em auto; max-width:80ch; padding:0 .62em; font-family:"Computer Modern Serif","CMU Serif","Latin Modern Roman",serif; }
-img[src^="images/"] {
+img[src^="images/"],
+img[src^="../images/"] {
   max-width: 100%;
   height: auto;
 }
-img[src="images/trigonometric_visualization_alpha_beta.png"] { width: 199px; }
-img[src="images/bloch_sphere.png"] { width: 150px; }
-img[src="images/Symmetrische_Verschluesselung.png"] { width: 245px; }
-img[src="images/Asymmetrische_Verschluesselung.png"] { width: 245px; }
-img[src="images/Brute_Force_Attack.png"] { width: 298px; }
-img[src="images/Shor_Algorithm_Sequence.png"] { width: 236px; }
+img[src="images/trigonometric_visualization_alpha_beta.png"],
+img[src="../images/trigonometric_visualization_alpha_beta.png"] { width: 199px; }
+img[src="images/bloch_sphere.png"],
+img[src="../images/bloch_sphere.png"] { width: 150px; }
+img[src="images/Symmetrische_Verschluesselung.png"],
+img[src="../images/Symmetrische_Verschluesselung.png"] { width: 245px; }
+img[src="images/Asymmetrische_Verschluesselung.png"],
+img[src="../images/Asymmetrische_Verschluesselung.png"] { width: 245px; }
+img[src="images/Brute_Force_Attack.png"],
+img[src="../images/Brute_Force_Attack.png"] { width: 298px; }
+img[src="images/Shor_Algorithm_Sequence.png"],
+img[src="../images/Shor_Algorithm_Sequence.png"] { width: 236px; }
 h1,h2,h3,h4,h5 { line-height:1.2; }
 @media print{ body{ max-width:none } }
 .partHead, .likepartHead { font-size: 2em; }
